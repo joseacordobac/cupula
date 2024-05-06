@@ -1,0 +1,45 @@
+.a-img {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+
+.a-img__img {
+    width: 101%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+}
+
+.a-img__img--rounded {
+    border-radius: var(--border-radius--regular);
+}
+
+.a-img__video-icon {
+    position: absolute;
+    top: 38%;
+    right: 32%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* video */
+dialog.a-img__dialog {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.a-img__dialog__close {
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: var(--size-medium);
+    cursor: pointer;
+}

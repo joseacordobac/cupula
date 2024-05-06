@@ -1,0 +1,37 @@
+.m-card-program__content {
+    border-radius: var(--border-radius--regular);
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    padding: 40px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.m-card-program__image {
+    padding: 16px;
+    border-radius: 20px;
+    width: 93px;
+}
+
+.m-card-program__title {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.m-card-program__title b {
+    display: block;
+}
+
+.m-card-program__link-icon{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0px);
+}
+
+.m-card-program__content:hover .m-card-program__link-icon{
+    transform: translateX(10px);
+}

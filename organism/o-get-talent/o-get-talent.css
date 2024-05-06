@@ -1,0 +1,39 @@
+.o-get-talent__content {
+    display: grid;
+    grid-template-columns: 47% 49%;
+    align-items: center;
+    gap: 45px;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius--regular);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.o-get-talent__left {
+    padding: 35px 0px;
+    padding-left: 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: flex-start;
+}
+
+.o-get-talent__right{
+    height: 100%;
+}
+
+.o-get-talent__list {
+    list-style: none;
+}
+
+@media(max-width: 768px) {
+    .o-get-talent__content {
+        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .o-get-talent__left{
+        padding-left: 14px;
+        padding-top: 33px;
+    }
+}

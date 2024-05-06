@@ -1,0 +1,11 @@
+.a-list {
+    display: flex;
+    gap: 10px;
+    color: #525151;
+    margin-bottom: 10px;
+}
+
+.a-list::before{
+    content: url('../../assets/icons/list-market.svg');
+    position: relative;
+}

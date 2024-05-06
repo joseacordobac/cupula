@@ -1,0 +1,50 @@
+.m-card-compare__content{
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 3rem;
+}
+
+.m-card-compare__img{
+  position: relative;
+}
+
+.m-card-compare__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.m-card-compare__label--render {
+  padding: 1rem 2rem;
+  color: var(--main-color);
+  background: var(--secondary-color);
+  border-radius: 0px 0px 1rem 1rem;
+  font-size: 2rem;
+  width: 10.9rem;
+  display: inline-block;
+}
+
+.m-card-compare__label--real {
+  padding: 1rem 2rem;
+  color: white;
+  background: var(--main-color);
+  border-radius: 0px 0px 1rem 1rem;
+  font-size: 2rem;
+  width: 10.8rem;
+  display: inline-block;
+}
+
+.m-card-compare__render-data {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.m-card-compare__body {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+  margin: 2rem 0px;
+}

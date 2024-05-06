@@ -1,0 +1,12 @@
+.o-team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+
+@media(max-width: 768px){
+    .o-team{
+        grid-template-columns: 1fr;
+    }
+}

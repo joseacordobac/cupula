@@ -1,0 +1,29 @@
+
+.o-iprogram__pagination {
+    position: relative;
+    top: 15px !important;
+}
+
+.o-iprogram__pagination .swiper-pagination-bullet {
+    background-color: white;
+}
+
+@media(max-width: 768px){
+
+    .programs-list{
+        max-width: 95%;
+    }
+
+    .o-iprogram__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-height: inherit !important;
+    }
+
+    .m-card-iprogram__title-link{
+        gap: 9px;
+    }
+
+    
+}

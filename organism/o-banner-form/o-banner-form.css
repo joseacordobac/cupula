@@ -1,0 +1,63 @@
+
+.o-banner-form{
+    background-color: var(--main-color);
+    position: relative;
+}
+
+.o-banner-form::after {
+    content: url(../../assets/img/circle-white.svg);
+    position: absolute;
+    transform: scale(0.7);
+    top: 14%;
+    right: 50%;
+}
+
+.o-banner-form__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    max-width: 74%;
+    margin: auto;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.o-banner-form__imagen-src {
+    max-width: 450px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    object-fit: contain;
+    object-position: bottom;
+    height: 100%;
+}
+
+.forminator-row-last .forminator-field{
+    text-align: center;
+}
+
+.forminator-ui#forminator-module-307.forminator-design--default .forminator-button-submit{
+    border-radius: 50px;
+}
+
+.forminator-checkbox__wrapper p {
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+
+    .o-banner-form__content {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 90%;
+    }
+
+    .o-banner-form__imagen {
+        display: none;
+    }
+
+    .forminator-checkbox__label.forminator-consent__label p {
+        color: white !important;
+    }
+}

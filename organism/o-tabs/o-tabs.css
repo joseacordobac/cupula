@@ -1,0 +1,203 @@
+.o-tabs{
+  max-width: 85%;
+  margin: auto;
+}
+
+.o-tabs__nav {
+  text-align: center;
+  border: 1px solid var(--main-color);
+  padding: 12px;
+  border-radius: 16px;
+  max-width: 70%;
+  margin: 24px auto;
+  background-color: var(--clear-color-two);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.o-tabs__item{
+  color: var(--main-color);
+  padding: 8px 25px;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: solid 1px transparent;
+  background: transparent;
+}
+
+.o-tabs__item.o-tabs__item--active {
+  background: white;
+  border-radius: 16px;
+  border: solid 1px var(--main-color);
+}
+
+.o-tabs__body {
+  display: none;
+}
+
+.o-tabs__body.o-tabs__body--active {
+  display: block;
+}
+
+.o-tabs_habilites {
+  font-size: var(--size-medium);
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 31px;
+}
+
+.habilities-description {
+  display: flex;
+  gap: 54px;
+}
+
+.habilities-description h3 {
+  font-size: var(--size-medium);
+  color: var(--main-color);
+  margin: 12px;
+}
+
+.habilitites__title {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  color: var(--main-color);
+  font-size: var(--size-medium);
+}
+
+.tools-img img {
+  object-fit: contain;
+  width: 90%;
+  height: 100px;
+  object-position: center;
+}
+
+.o-tabs__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clear-color-five);
+  padding: 15px 11px;
+  border: solid 1px var(--quinary-color);
+  border-radius: 20px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.card-talento .o-tabs__text {
+  background: transparent;
+  border: none;
+  border-left: solid 3px var(--quinary-color);
+  border-radius: 0px;
+  justify-content: flex-start;
+}
+
+.o-tab-habilites__tech-hum {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.o-tab-habilites__column {
+  width: 50%;
+}
+
+.habilities-logos,
+.habilities-skills {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  gap: 25px;
+  margin: 40px auto;
+  display: grid;
+}
+
+.habilities-skills{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width:780px){
+  .o-tabs{
+    max-width: 94%;
+  }
+
+  .o-tabs__nav{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+  }
+
+  .o-tabs__item{
+    display: flex;
+    border: solid 1px;
+    margin-bottom: 5px;
+    border-radius: 23px;
+    position: relative;
+  }
+
+  .o-tabs__item::after {
+    content: url(../../assets/icons/arrow-single.svg);
+    position: absolute;
+    top: 27%;
+    right: 21px;
+    text-align: right;
+    transform: rotate(0deg);
+    transition: 0.35s;
+    display: inline-table;
+    transition: 0.3s;
+  }
+
+  .o-tabs__text{
+    font-size: 14px;
+    padding: 6px 2px;
+  }
+
+  .o-tabs__item--active::after{
+    transform: rotate(90deg) translate(-9px, 1px);
+    transition: 0.35s;
+  }
+
+  .o-tabs__body.o-tabs__body--active {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .habilities-description{
+    gap: 12px;  
+  }
+
+  .o-tab-habilites__column{
+    width: 100%;
+  }
+
+  .habilities-logos{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .o-tab-habilites-description__colummn ul {
+    text-align: left;
+  }
+
+  .o-tab-habilites-description__column ul {
+    text-align: left;
+}
+
+
+  .habilities-skills{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .habilities-description{
+    flex-direction: column;
+  }
+
+  .o-tab-habilites__tech-hum{
+    flex-direction: column;
+  }
+}
+

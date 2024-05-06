@@ -1,0 +1,33 @@
+
+.p-form-basic__title {
+    color: white;
+    font-size: var(--size-medium-large);
+    font-weight: 500;
+}
+
+.m-form-basic{
+    position: relative;
+    z-index: 1;
+}
+
+.m-form-basic label {
+    display: none !important;
+}
+
+.m-form-basic label.forminator-consent{
+    display: block !important;
+}
+
+.p-form__mision {
+    display: none;
+}
+
+.p-form-basic__btn-send {
+    border-radius: 50px !important;
+}
+
+@media(max-width: 768px){
+    .p-form-basic__title {
+        text-align: center;
+    }
+}

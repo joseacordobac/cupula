@@ -1,0 +1,38 @@
+.o-stadistics {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 2rem;
+  max-width: 75%;
+  margin: 5rem auto;
+}
+
+.o-stadisctics-card {
+  display: grid;
+  grid-template-columns: 53% 43%;
+  min-height: 19rem;
+  align-items: center;
+  gap: 2rem;
+  border-radius: var(--border-radius--regular);
+  overflow: hidden;
+  box-shadow: var(--shadow-boxes);
+}
+
+.o-stadisctics-card__img {
+  overflow: hidden;
+  border-radius: var(--border-radius--regular);
+}
+
+.o-stadisctics-card .a-img__img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.o-stadisctis-card__body {
+  text-align: center;
+}
+
+.o-stadisctis-card__body {
+  text-align: center;
+  padding-right: 2rem;
+}

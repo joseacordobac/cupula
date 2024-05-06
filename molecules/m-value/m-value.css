@@ -1,0 +1,29 @@
+.m-value {
+    padding: 12px 21px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0px;
+}
+
+.m-value__icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.m-value__title-text{
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+}
+
+.m-value__text-text {
+    font-size: 1rem;
+    color: #525151;
+}
+
+@media(max-width: 768px){
+    .m-value {
+        flex-direction: column;
+    }
+}

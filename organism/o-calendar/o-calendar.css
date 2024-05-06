@@ -1,0 +1,14 @@
+.o-calendar {
+  display: grid;
+  grid-template-columns: 20% 78%;
+  gap: 23px;
+  margin: 23px auto;
+}
+
+@media(max-width:780px){
+  
+  .o-calendar{
+    grid-template-columns: 1fr;
+  }
+  
+}

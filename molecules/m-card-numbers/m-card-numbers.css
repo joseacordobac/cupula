@@ -1,0 +1,20 @@
+.m-card-numbers {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: solid 1px var(--main-color);
+    border-radius: 20px;
+    padding: 24px;
+    background-color: var(--clear-color-two);
+}
+
+.m-card-numbers .a-numbers {
+    margin: 0px;
+}
+
+@media(max-width: 768px){
+    .m-card-numbers {
+        flex-direction: column;
+        gap: 0px;
+    }
+}

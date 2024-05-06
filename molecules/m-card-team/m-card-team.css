@@ -1,0 +1,48 @@
+.m-card-team {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.m-card-team__img {
+    height: 250px;
+}
+
+.m-card-team__body {
+    text-align: center;
+}
+
+.m-card-team__title {
+    color: var(--main-color);
+    font-size: var(--size-medium-large);
+    margin-bottom: 9px;
+}
+
+.m-card-team__btn {
+    max-width: 50%;
+    margin: auto;
+}
+
+.m-card-team__link {
+    margin-top: 14px;
+    background-color: var(--secondary-color);
+    padding: 6px 40px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    transition: 0.35s;
+}
+
+.m-card-team__link:hover{
+    background-color: var(--main-color);
+    transition: 0.35s;
+}
+
+.m-card-team__link-img {
+    max-width: 24px;
+}

@@ -1,0 +1,11 @@
+.a-numbers {
+    font-size: var(--size-xlarge);
+    color: var(--main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.o-impact-item__description {
+    color: var(--gray-color);
+    font-family: var(--font-titles);
+    font-size: var(--size-medium);
+}

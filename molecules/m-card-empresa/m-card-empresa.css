@@ -1,0 +1,61 @@
+.m-card-empresa {
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow-boxes);
+  border-radius: 28px;
+}
+
+.m-card-empresas-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  justify-content: space-around;
+  height: 250px;
+}
+
+.m-card-empresas-body__title {
+  color: var(--main-color);
+}
+
+.m-card-empresas-body__title-text{
+  font-size: var(--size-medium-large);
+}
+
+.m-card-empresa__head{
+  height: 200px;
+}
+
+.m-card-emprsas-body__title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--main-color);
+}
+
+.m-card-eempresas-body__title-tag {
+  font-size: var(--size-medium-large);
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+.m-card-empresa:first-child .m-card-eempresas-body__title-tag, 
+.m-card-empresa:nth-child(4n) .m-card-eempresas-body__title-tag{
+  background-color: var(--clear-color-six);
+}
+
+.m-card-empresa:nth-child(2n) .m-card-eempresas-body__title-tag{
+  background-color: var(--quinary-color);
+}
+
+.m-card-empresa:nth-child(3n) .m-card-eempresas-body__title-tag{
+  background-color: var(--main-color);
+  color: white;
+}
+
+
+

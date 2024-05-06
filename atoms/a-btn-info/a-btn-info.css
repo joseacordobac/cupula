@@ -1,0 +1,28 @@
+
+
+.a-btn-info__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #FFFFFFA1;
+  border-radius: 2rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+.a-btn-info__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.a-btn-info__icon-content {
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: 5rem;
+}
+
+.a-btn-info__link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+

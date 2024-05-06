@@ -1,0 +1,9 @@
+.a-logo-white__logo {
+  width: 200px;
+  transition: all 0.35s ease-in-out;
+}
+
+
+.a-logo--js-active .a-logo-white__logo {
+  width: 141px !important;
+}

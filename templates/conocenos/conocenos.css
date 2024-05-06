@@ -1,0 +1,141 @@
+.swiper-pagination__main-banner.swiper-pagination-bullets {
+    position: absolute;
+    top: 41%;
+    left: 7%;
+    width: 20px;
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+}
+
+.our-addvalues {
+    margin: 65px 0px;
+}
+
+.our-addvalues .a-titles {
+    margin-bottom: 48px;
+}
+
+.our-changes-theory__content {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    justify-content: center;
+}
+
+.our-changes-theory .a-titles {
+    margin-bottom: 46px;
+}
+
+.our-ods {
+    margin: 64px 0px;
+}
+
+.our-ods__content {
+    display: grid;
+    margin-top: 49px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+    grid-template-rows: 50px 95px 50px;
+}
+
+.our-ods__content>div:nth-child(odd){
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.our-ods__content>div:nth-child(even){
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.our-ods__content .a-img__img{
+    border-radius: 0px;
+}
+
+.move-us {
+    background-color: var(--clear-color-three);
+    padding: 120px 0px;
+}
+
+.move-us__content{
+    max-width: 77%;
+    margin: auto;
+}
+
+.move-us__content-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 90px;
+    justify-content: center;
+}
+
+.move-us__content-list>:nth-child(odd) {
+    margin-top: 50px;
+}
+
+.our-start {
+    padding: 120px 0px;
+}
+
+.our-start__content {
+    max-width: 75%;
+    margin: auto;
+}
+
+.our-team {
+    max-width: 80%;
+    margin: auto;
+}
+
+.our-team--titles{
+    margin-bottom: 60px;
+}
+
+
+
+@media(max-width: 768px){
+
+    .our-ods__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .our-ods__content .a-img {
+        width: 40%;
+    }
+
+    .move-us{
+        padding: 37px 0px;
+    }
+
+    .move-us__content-list{
+        flex-direction: column;
+        gap: 62px;
+        margin-top: 80px;
+    }
+
+    .move-us__content-list>:nth-child(odd){
+        margin-top: 0px;
+    }
+
+    .our-start{
+        padding: 23px 0px;
+    }
+
+    .our-start__content{
+        max-width: 95%;
+    }
+
+    .our-team{
+        max-width: 94%;
+    }
+}
+
+
+
+

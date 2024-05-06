@@ -1,0 +1,190 @@
+/* tranning */
+.o-you-get-list {
+    margin-top: 43px;
+}
+
+.incon-brand {
+    margin-bottom: 29px;
+    width: 86px;
+    height: 100px;
+}
+
+.o-you-get-info {
+    display: grid;
+    grid-template-columns: 45% 53%;
+    gap: 40px;
+}
+
+.o-you-get-info .a-btn__content{
+    margin-top: 27px;
+}
+
+.o-you-get-info  .a-img__video-icon {
+    top: 74%;
+}
+
+.o-you-get--main-color{
+    color: var(--main-color);
+}
+
+.o-you-get-list__content .o-you-get--flex-start{
+    align-items: self-start;    
+}
+
+.o-you-get--main-color .m-value__icon-img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/** Modification **/
+/*integral-process-cards*/
+
+.integral-process-cards {
+    margin: 80px auto;
+}
+
+.integral-process-cards .m-value__title-text {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+/** tek-community-cards */
+.tek-community-cards {
+    grid-template-columns: 41% 55%;
+    margin: 33px auto;
+    box-shadow: var(--shadow-boxes);
+    border-radius: 24px;
+
+        .a-titles-title {
+        color: var(--main-color);
+        font-family: var(--font-text);
+        font-size: var(--size-medium);
+    }
+
+    .o-you-get-list{
+        margin-top: 5px;    
+    }
+
+    .o-you-get-info-right {
+        padding: 40px 0px 20px 40px;
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .o-you-get-info-left {
+        grid-column: 2 / -1;
+    }
+    .m-value{
+        padding-left: 0px;
+    }
+}
+
+.tek-community-cards.grid-52-42{
+    grid-template-columns: 54% 42%;
+
+    .m-value__title-text{
+        font-weight: 500;
+        font-size: var(--size-medium);
+    }
+
+    .m-value__icon-img{
+        width: 43px;
+        height: 39px;
+    }
+}
+
+/** our-team--cards */
+.our-team--cards{
+    grid-template-columns: 55% 41%;
+    margin: 50px auto;
+    box-shadow: var(--shadow-boxes);
+    border-radius: 24px;
+
+    .a-titles-title {
+        color: var(--main-color);
+        font-family: var(--font-text);
+        font-size: var(--size-medium);
+    }
+
+    .o-you-get-list{
+        margin-top: 5px;
+    }
+
+    .o-you-get-info-right {
+        padding: 40px 40px 20px 0px;
+    }
+
+    .m-value{
+        padding-left: 0px;
+    }
+}
+
+/** v2 configuration */
+.o-you-get--v2{
+    grid-template-columns: 55% 41%;
+    margin: 50px auto;
+    box-shadow: transparent !important;
+    border-radius: 24px;
+    max-width: 100% !important;
+
+    .a-titles-title {
+        color: var(--main-color);
+        font-family: var(--font-text);
+        font-size: var(--size-medium);
+    }
+
+    .o-you-get-list{
+        margin-top: 5px;
+    }
+
+    .m-value__icon-img{
+        width: 48px;
+        height: 37px;
+    }
+
+    .o-you-get-info-right {
+        padding: 39px 2px 17px 85px;
+    }
+
+    .m-value{
+        padding-left: 0px;
+    }
+
+    .o-you-get-info-left {
+        grid-column: 2 / -1;
+    }
+
+    .o-you-get-info-right {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+}
+
+@media(max-width: 768px) {
+    .o-you-get-info {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
+    .tek-community-cards{
+        .o-you-get-info-right, & .o-you-get-info-right{
+            padding: 28px 0px 9px 13px;
+        }
+    }
+
+    .integral-process-cards{
+        margin: 42px auto;
+    }
+
+    .o-you-get-list{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .o-you-get-info-right {
+        padding: 13px 26px 10px 23px !important;
+    }
+
+}

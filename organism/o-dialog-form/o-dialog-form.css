@@ -1,0 +1,40 @@
+.o-dialog-form {
+    border: none;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    z-index: 2;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.o-dialog-form__close-icon {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    right: 39px;
+    top: 23px;
+    font-size: var(--size-large);
+    font-weight: bold;
+    font-family: var(--font-titles);
+    cursor: pointer;
+}
+
+.o-dialog-form .o-banner-form__imagen-src{
+    height: 100%;
+    bottom: -17px;
+}
+
+@media(max-width: 768px){
+    .o-dialog-form{
+        max-width: 94%;
+        top: -19px;
+    }
+
+    .o-dialog-form__close-icon{
+        right: 17px;
+        top: 5px;
+    }
+}

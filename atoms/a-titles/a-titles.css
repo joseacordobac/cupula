@@ -1,0 +1,29 @@
+.a-titles-title{
+    font-size: var(--size-medium-large);
+    position: relative;
+}
+
+.a-titles.a-titles--main{
+    text-align: center;
+}
+
+.a-titles.a-titles--main .a-titles-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 61px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.a-titles--main .a-titles-title{
+    color: var(--main-color);
+    position: relative;
+}
+
+.a-titles--black .a-titles-title{
+    color: var(--black-color);
+}

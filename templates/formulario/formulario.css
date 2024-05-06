@@ -1,0 +1,116 @@
+.form-hero-banner {
+    height: 80vh;
+    max-height: 500px;
+    background-color: var(--clear-color-three);
+    position: relative;
+}
+
+.form-hero-banner::before {
+    content: url(../../assets/img/circle.svg);
+    position: absolute;
+    transform: scale(0.7);
+    top: -24%;
+    right: 50%;
+}
+
+.form-hero-banner__content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-hero-banner__title {
+    font-size: var(--size-large);
+    color: var(--main-color);
+    text-align: center;
+}
+
+.form-hero-banner__title-span {
+    text-transform: capitalize;
+}
+
+.formulario .forminator-ui {
+    max-width: 46%;
+    margin: auto !important;
+    z-index: 1;
+    position: relative;
+    top: -150px;
+    padding: 40px 0px !important;
+    border-radius: 50px !important;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.p-form__title {
+    font-size: var(--size-medium-large);
+    text-align: center;
+    color: var(--main-color);
+    max-width: 80%;
+    margin: auto;
+}
+
+.p-form__user-data .forminator-all-group-copies {
+    background: white !important;
+    box-shadow: none !important;
+}
+
+.forminator-all-group-copies{
+    box-shadow: none !important;
+    padding: 20px 50px 30px 50px !important;
+    background: var(--clear-color-four) !important;
+}
+
+.formulario .select2-results__option, 
+.formulario span {
+    text-transform: uppercase !important;
+}
+
+.forminator-row-last .forminator-field {
+    display: flex;
+    justify-content: center;
+}
+
+
+.forminator-field-consent {
+    padding: 0px 62px !important;
+}
+
+body .formulario .p-form-submit{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 20px !important;
+}
+
+/* parches */
+label {
+    display: none !important;
+}
+
+label.forminator-consent{
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .form-hero-banner{
+        height: 60vh;
+    }
+
+    .formulario .forminator-ui{
+        max-width: 100%;
+        top: -60px;
+    }
+
+    .p-form__title{
+        max-width: 90%;
+    }
+
+    .forminator-all-group-copies{
+        padding: 16px 12px 9px 9px !important;
+    }
+
+    .forminator-field-consent{
+        padding: 0px 17px !important;
+    }
+}

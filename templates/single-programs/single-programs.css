@@ -1,0 +1,106 @@
+.hero-banner__content {
+  display: grid;
+  grid-template-columns: 40% 42%;
+  gap: 8%;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 60px;
+  margin-top: 50px;
+}
+
+.hero-banner__content .a-img__img{
+  width: 90%;
+}
+
+.hero-banner__title .a-titles-title {
+  font-size: var(--size-large);
+  text-align: left;
+}
+
+.hero-banner__left-contains {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: baseline;
+}
+
+.information {
+  padding: 61px 0px;
+}
+
+.information_btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.tools {
+  margin: 44px auto;
+}
+
+.tools_btn{
+  text-align: center;
+}
+
+.steps-contains {
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.add-step-card .a-numbers {
+  color: var(--main-color) !important;
+}
+
+.add-step-card .m-card-move__text-title {
+  color: var(--main-color);
+}
+
+.steps_btn {
+  text-align: center;
+  margin: 38px auto;
+}
+
+.misions-dates {
+  margin: 70px auto;
+}
+
+.missions-dates-timer {
+  max-width: 70%;
+  margin: auto;
+}
+
+.missions-dates__btn{
+  text-align: center;
+}
+
+
+.intergral-process{
+  margin-top: 40px;
+}
+
+@media(max-width:780px){  
+  .hero-banner {
+    padding-top: 50px;  
+  }
+
+  .hero-banner__content{
+    display: block;
+    padding-top: 0px;
+  }
+
+  .steps-contains {
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 90%;
+  }
+
+  .missions-dates-timer{
+    max-width: 90%;
+  }
+}

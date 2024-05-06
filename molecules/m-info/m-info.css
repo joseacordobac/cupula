@@ -1,0 +1,27 @@
+.m-info-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.m-info {
+    display: flex;
+    gap: 14px;
+}
+
+.m-info__img-icon {
+    background: white;
+    border-radius: 50px;
+}
+
+.m-info__text{
+    text-align: left;
+}
+
+@media(max-width: 768px) {
+    .m-info-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

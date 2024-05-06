@@ -1,0 +1,82 @@
+.m-card-model{
+  display: grid;
+  grid-template-columns: 40% 56%;
+  gap: 2rem;
+  box-shadow: var(--shadow-boxes);
+  border-radius: var(--border-radius--regular);
+  overflow: hidden;
+}
+
+.m-card-model:first-child {
+  grid-row-start: 1;
+  grid-row-end: -3;
+  grid-template-columns: 100%;
+}
+
+.m-card-model__body {
+  padding: 2rem;
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.m-card-model:first-child .m-card-model__body{
+  padding-left: 2rem; 
+}
+
+
+.m-card-model__body-city {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.m-card-model__body-title {
+  color: var(--main-color);
+} 
+
+.m-card-model .a-img {
+  height: 18rem;
+}
+
+.m-card-model  .a-img__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.m-card-model__body-text{
+  width: 70%;
+}
+
+.m-card-model__places {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.m-card-model__places-waze {
+  background: #0085ff29;
+  padding: 10px 12px;
+  border-radius: 5rem;
+}
+
+.m-card-model__places-maps {
+  background: #0085ff29;
+  padding: 7px 16px;
+  border-radius: 5rem;
+}
+
+.m-card-model__places-waze-img {
+  width: 3.4rem;
+}
+
+.m-card-model__places-maps-img {
+  width: 2.4rem;
+}
+
+.m-card-model__body-data {
+  font-size: 1.2rem;
+}
