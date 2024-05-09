@@ -16,6 +16,16 @@ const leningStart = () => {
 
 const gIsMobile = () =>  window.innerWidth < 780;
 
+// swiper to slide
+const swiperToSlide = (swiperProgram, swiper) => {
+    const getSlider = swiperProgram.querySelectorAll('.swiper-slide');
+    getSlider.forEach((slide, index) => {
+        slide.addEventListener('click', () => {
+            swiper.slideTo(index);
+        })
+    })
+}
+
 window.addEventListener('load', () => {
     // leningStart();
 })

@@ -15,10 +15,26 @@
     transition: 0.35s;
 }
 
+.nav-btn a{
+    color: white;
+}
+
 .m-nav a:hover{
     border-bottom: solid 3px var(--quinary-color);
     transition: 0.35s;
 } 
+
+.pagos-pse {
+    background: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
+
+.usuarios-btn {
+    background: var(--secondary-color);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
 
 @media(max-width: 768px){
     .m-nav {

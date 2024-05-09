@@ -23,8 +23,14 @@
       <div class="m-card-model__body-text">
         <h3 class="m-card-model__body-city"><?php the_field('city'); ?></h3>
         <h2 class="m-card-model__body-title"><?php the_title(); ?></h2>
-        <p class="m-card-model__body-data"><?php the_field('adress'); ?></p>
-        <p class="m-card-model__body-data"><?php the_field('phone'); ?></p>
+        <p class="m-card-model__body-data">
+          <img class="m-card-model__icon" src="<?php echo get_stylesheet_directory_uri() . '/assets/icons/call.svg'; ?>" />
+          <?php the_field('adress'); ?>
+        </p>
+        <p class="m-card-model__body-data">
+          <img class="m-card-model__icon" src="<?php echo get_stylesheet_directory_uri() . '/assets/icons/phone.svg'; ?>" />
+          <?php the_field('phone'); ?>
+        </p>
       </div>
       <div class="m-card-model__places">
         <a href="<?php the_field('waze'); ?>" class="m-card-model__places-waze" target="_blank">

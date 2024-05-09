@@ -14,7 +14,7 @@ function enque_custom_molecules() {
     'm-testimonial',
     'm-logo-card',
     'm-info',
-    'm-social',
+    'm-socials',
     'm-nav-footer',
     'm-whatsapp',
     'm-card-iprogram',

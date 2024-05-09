@@ -28,7 +28,9 @@ function theme_setup(){
   if (!function_exists('register_new_menu')) :
       function register_new_menu(){
         register_nav_menu('nav-main', __('Menu principal'));
+        register_nav_menu('nav-btn', __('Botones'));
         register_nav_menu('nav-footer', __('Menu footer'));
+        register_nav_menu('nav-project', __('Menu proyectos'));
         register_nav_menu('nav-legal', __('Menu legal'));
       }
       add_action('after_setup_theme', 'register_new_menu');

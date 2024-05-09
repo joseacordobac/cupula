@@ -14,7 +14,7 @@
 }
 
 .a-btn__icon {
-    width: 27px;
+    width: 1.8rem;
     transform: translateX(0px);
     transition: all 0.3s ease-in-out;
 }

@@ -38,7 +38,7 @@
            get_template_part('/atoms/a-img/a-img', null,
            array(
                'image_id' => get_field('imagen'),
-               'image_size' => 'medium',
+               'image_size' => 'full',
                'alt' => get_field('title'),
                'class' => 'o-banner-qr__img-src',
            ));

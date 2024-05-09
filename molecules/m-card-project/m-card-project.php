@@ -10,7 +10,7 @@
    $custom_link = get_field('custom_link');
    $button_link = $custom_link ? $custom_link : get_the_permalink();
 
-   $image = wp_get_attachment_image($image_project_id, 'medium', null, array('class' => 'm-card-project__img'));
+   $image = wp_get_attachment_image($image_project_id, 'full', null, array('class' => 'm-card-project__img'));
    $image_logo = wp_get_attachment_image(get_field('project_logo'), 'medium', null, array('class' => 'm-card-project__logo-img'));
 ?>
 

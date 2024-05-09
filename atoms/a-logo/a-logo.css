@@ -4,12 +4,17 @@
 }
 
 .a-logo.a-logo--js-active{
-    transform: scale(0.7);
+    transform: scale(0.8);
     transition: all 0.3s ease-in-out;
 }
 
+.o-header .a-logo .custom-logo {
+    height: 50px;
+    width: 100%;
+}
+
 .a-logo .custom-logo {
-    height: 80px;
+    height: 90px;
     width: 100%;
 }
 

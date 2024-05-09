@@ -1,7 +1,9 @@
 'use strinct'
 
 const testimonialSwiper = () => {
-    const swiper = new Swiper('.o-testimonials__swiper', {
+    const swiperProgram = document.querySelector('.o-testimonials__swiper');
+
+    const swiper = new Swiper(swiperProgram, {
         spaceBetween: 20,
         slidesPerView: 2,
         centeredSlides: true,
@@ -34,6 +36,9 @@ const testimonialSwiper = () => {
         },
         initialSlide: 1,
     });
+
+    swiperToSlide(swiperProgram, swiper);
+
 }
 
 window.addEventListener('DOMContentLoaded', () => {

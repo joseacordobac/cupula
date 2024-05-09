@@ -15,15 +15,15 @@
             <?php } ?>
 
         </div>
-        <div class="o-header__mobile-content">
-            <div class="o-header__mobile">
-                <span class="o-header__mobile-line"></span>
-                <span class="o-header__mobile-line o-header__mobile-line--center"></span>
-                <span class="o-header__mobile-line o-header__mobile-line--bottom"></span>
-            </div>
-        </div>
         <div class="o-header__nav-content">
             <?php get_template_part('/molecules/m-nav/m-nav'); ?>
+            <div class="o-header__mobile-content">
+                <div class="o-header__mobile">
+                    <span class="o-header__mobile-line"></span>
+                    <span class="o-header__mobile-line o-header__mobile-line--center"></span>
+                    <span class="o-header__mobile-line o-header__mobile-line--bottom"></span>
+                </div>
+            </div>
         </div>
     </div>
 </header>

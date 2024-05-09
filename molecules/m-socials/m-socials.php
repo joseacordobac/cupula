@@ -2,8 +2,8 @@
 
 /** template name: Socials */
 
-wp_enqueue_style('m-social');
-wp_enqueue_script('m-social');
+wp_enqueue_style('m-socials');
+wp_enqueue_script('m-socials');
 
 $custom_css = isset($args['custom_css']) ? $args['custom_css'] : '';
 ?>

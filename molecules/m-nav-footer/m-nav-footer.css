@@ -1,6 +1,5 @@
 .m-nav-footer {
     display: flex;
-    gap: 30px;
     justify-content: center;
     list-style: none;
 }

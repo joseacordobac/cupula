@@ -26,6 +26,10 @@
   padding-left: 2rem; 
 }
 
+.m-card-model:first-child .m-card-model__body-text{
+  width: 70%;
+}
+
 
 .m-card-model__body-city {
   font-size: 2rem;
@@ -46,7 +50,7 @@
 }
 
 .m-card-model__body-text{
-  width: 70%;
+  width: 90%;
 }
 
 .m-card-model__places {
@@ -79,4 +83,8 @@
 
 .m-card-model__body-data {
   font-size: 1.2rem;
+}
+
+.m-card-model__icon {
+  width: 1.5rem;
 }
