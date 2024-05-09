@@ -57,3 +57,18 @@
   gap: 2rem;
   max-width: 85%;
 }
+
+
+@media(max-width:780px){
+  .m-card-project{
+    display: block;
+  }
+
+  .m-card-project__body{
+    padding: 1rem 1rem 3rem 1rem;
+  }
+
+  .m-card-project__descripton{
+    max-width: 100%;
+  }
+}

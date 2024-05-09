@@ -36,3 +36,20 @@
   text-align: center;
   padding-right: 2rem;
 }
+
+@media(max-width:780px){
+  .o-stadistics{
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+
+  .o-stadisctics-card {
+    grid-template-columns: 100%;
+    gap: 0rem;
+  }
+
+  .o-stadisctis-card__body {
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+}

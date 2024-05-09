@@ -37,6 +37,7 @@
 
 .m-testimonial-info__name {
     color: var(--main-color);
+    font-size: 2rem;
 }
 
 @media(max-width: 768px) {

@@ -99,4 +99,12 @@
         bottom: 2px;
         left: 0px;
     }
+
+    .o-header--js-active .o-header__logo-content{
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .o-header__logo-content{
+        padding: 1rem 
+    }
 }

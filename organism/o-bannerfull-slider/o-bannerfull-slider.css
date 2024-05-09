@@ -22,7 +22,7 @@
   color: var(--main-color);
   letter-spacing: -1px;
   line-height: var(--size-large);
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .o-bannerfull-slider__description {
@@ -74,10 +74,22 @@
   }
 
   .o-bannerfull-slider__image{
-      height: 36vh
+    height: 50vh;
   }
 
   .o-bannerfull-slider__img {
       grid-row-start: 1;
+  }
+
+  .swiper-pagination__main-banner.swiper-pagination-bullets{
+    display: none;
+  }
+
+  .o-bannerfull-slider--absolute{
+    left: 1rem;
+  }
+
+  .o-bannerfull-slider__title{
+    margin-bottom: 0px;
   }
 }

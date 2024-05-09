@@ -48,3 +48,23 @@
   text-align: center;
   margin: 2rem 0px;
 }
+
+@media(max-width:780px){
+  .m-card-compare__content {
+    grid-template-columns: 100%;
+    gap: 0px;
+  }
+
+  .m-card-compare__body{
+    gap: 1rem;
+  }
+
+  .m-card-compare__render-data{
+    font-size: 2rem;
+  }
+
+  .m-card-compare__render-description{
+    font-size: 1.3rem;
+  }
+
+}

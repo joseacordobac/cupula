@@ -49,3 +49,27 @@
   width: 2rem;
     height: 2rem;
 }
+
+
+@media(max-width:780px){
+  .o-banner-qr__content {
+    grid-template-columns: 100%;
+    padding-top: 3rem;
+  }
+
+  .o-banner-qr__info{
+    max-width: 92%;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .o-banner-qr__btns-content{
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .o-banner-qr__info-text{
+    max-width: 100%;
+  }
+
+}

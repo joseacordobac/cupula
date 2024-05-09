@@ -32,7 +32,14 @@
   
 
 @media(max-width: 768px){
-
+    .content-project{
+        max-width: 92%;
+    }
     
+    .card-experiencie{
+        margin-top: 4rem;
+        max-width: 94%;
+        padding: 1rem;
+    }
 
 }

@@ -132,12 +132,12 @@ span.swiper-pagination-bullet {
 @media(max-width: 768px){
     
     :root{    
-        --size-xlarge: 3rem;
-        --size-large: 1.8rem;
-        --size-medium-large: 1.288rem;
-        --size-medium: 1rem;
-        --size-medium-regular: 0.75rem;
-        --size-regular: 0.625rem;
+        --size-xlarge: 4rem;
+        --size-large: 2.8rem;
+        --size-medium-large: 2.288rem;
+        --size-medium: 2rem;
+        --size-medium-regular: 1.75rem;
+        --size-regular: 1.625rem;
     
     }
 

@@ -9,3 +9,10 @@
   max-width: 75%;
   margin: auto;
 }
+
+@media(max-width:780px){
+  .o-model-appartment__content{
+    grid-template-columns: 100%;
+    max-width: 90%;
+  }
+}

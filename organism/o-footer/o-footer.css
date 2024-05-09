@@ -61,3 +61,13 @@
     color: white;
     font-size: 1.6rem;
 }
+
+@media(max-width:780px){
+    .o-footer__section{
+        display: block;
+    }
+
+    .o-footer__bottom{
+        grid-template-columns:100%;
+    }
+}

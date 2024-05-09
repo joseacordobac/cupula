@@ -88,3 +88,13 @@
 .m-card-model__icon {
   width: 1.5rem;
 }
+
+@media(max-width:780px){
+  .m-card-model{
+    grid-template-columns: 100%;
+  }
+
+  .m-card-model__body{
+    padding-left: 2rem
+  }
+}
