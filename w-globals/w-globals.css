@@ -116,15 +116,6 @@ span.swiper-pagination-bullet {
     align-items: stretch !important;
 }
 
-.swiper-slide{
-    height: auto !important;
-}
-
-.swiper-wrapper {
-    max-height: 100vh;
-    height: 100vw;
-}
-
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background-color: var(--secondary-color) !important;
 }

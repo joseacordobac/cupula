@@ -80,3 +80,26 @@
   width: 100%;
   height: 100%;
 }
+
+@media(max-width:780px){
+  .m-banner-full__text{
+    max-width: 90%;
+  }
+  
+  .m-banner-full__content-info{
+    display: none;
+  }
+
+  .m-banner-full__video{
+    width: inherit;
+  }
+
+  .m-banner-full__video-src{
+    width: inherit !important;
+  }
+
+  .m-banner-full__video .wp-video{
+    width: inherit !important;
+    height:100%;
+  }
+}

@@ -34,8 +34,8 @@
 
 
 @media(max-width: 768px) {
-    .a-logo .custom-logo {
-        height: 50px;
+    .o-header .a-logo .custom-logo {
+        height: 35px;
     }
 
     .a-logo-white__logo{

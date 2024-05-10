@@ -4,6 +4,7 @@ const starMainSwipper = () =>{
   direction: 'horizontal', 
   speed: 400,
   spaceBetween: 100,
+  autoHeight: true, 
   loop: true,
 //   autoplay: {
 //       delay: 10000,

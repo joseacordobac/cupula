@@ -63,11 +63,35 @@
 }
 
 @media(max-width:780px){
+
+    .footer{
+        padding: 54px 0px 40px;
+    }
+
     .o-footer__section{
         display: block;
+    }
+    .o-footer-nav{
+        text-align: center;
+        gap: 1rem;
+        margin: 2rem 0px;
+    }
+
+    .o-footer-nav a{
+        font-size: 2rem;
     }
 
     .o-footer__bottom{
         grid-template-columns:100%;
     }
+
+    .o-footer__botton-nav-legal{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .o-footer__botton-nav-legal a{
+        font-size: 1.4rem;
+    }
+    
 }
