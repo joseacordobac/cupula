@@ -29,7 +29,9 @@ function enque_custom_molecules() {
     'm-card-event',
     'm-card-project',
     'm-card-model',
-    'm-card-compare'
+    'm-card-compare',
+    'm-banner-columns',
+    'm-banner-full'
   );
 
   foreach ($molecules as $molecule) {

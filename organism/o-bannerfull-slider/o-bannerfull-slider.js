@@ -5,9 +5,9 @@ const starMainSwipper = () =>{
   speed: 400,
   spaceBetween: 100,
   loop: true,
-  autoplay: {
-      delay: 10000,
-  },
+//   autoplay: {
+//       delay: 10000,
+//   },
   pagination: {
           el: '.swiper-pagination__main-banner', 
           clickable: true,  

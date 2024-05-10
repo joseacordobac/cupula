@@ -1,0 +1,82 @@
+.m-banner-full__content {
+  position: relative;
+}
+
+
+.m-banner-full__text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.m-banner-full__title.js-title {
+  font-size: var(--size-large);
+  color: var(--main-color);
+  letter-spacing: -1px;
+  line-height: var(--size-large);
+  margin-bottom: 1.6rem;
+}
+
+.m-banner-full__description {
+  font-size: var(--size-medium);
+  color: white;
+}
+
+.m-banner-full__content-info {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 6rem;
+}
+
+.m-banner-full__img {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.m-banner-full__img::after {
+  position: absolute;
+  content: '';
+  background: #14387f14;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.m-banner-full__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.m-banner-full__video {
+  width: 100vw;
+  height: 100%;
+}
+
+.m-banner-full__video .wp-video {
+  width: 100vw !important;
+}
+
+.m-banner-full__video-src {
+  width: 100%;
+  height: 100%;
+}
