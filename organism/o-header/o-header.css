@@ -9,7 +9,7 @@
 }
 
 .o-header--js-active{
-    background-color: white;
+    background-color:var(--main-color);
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -21,7 +21,7 @@
 }
 
 .o-header--js-active .o-header__logo-content{
-    padding: 4rem 1rem 2rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     transition: 0.35s;
 }
 
@@ -65,6 +65,10 @@
     background-color: var(--main-color);
     position: relative;
     transition: 0.35s;
+}
+
+.o-header--js-active .o-header__mobile-line{
+    background-color: white;
 }
 
 .o-header__mobile-line--center {

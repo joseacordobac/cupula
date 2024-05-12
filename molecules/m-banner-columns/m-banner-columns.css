@@ -39,6 +39,19 @@
 
 .m-banner-columns__img{
   position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.m-banner-columns__video, 
+.m-banner-columns__video-src{
+  height: 100%;
+  width: 100%;
+}
+
+.m-banner-columns__video .wp-video{
+  height: 100%;
+  width: 100% !important;
 }
 
 .m-banner-columns--absolute{

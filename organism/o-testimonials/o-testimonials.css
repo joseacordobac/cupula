@@ -8,6 +8,7 @@
     border-radius: var(--border-radius--regular);
     opacity: 0.5;
     transition: all 0.3s ease-in-out;
+    height: auto;
 }
 
 .o-testimonials__slide.swiper-slide-active{

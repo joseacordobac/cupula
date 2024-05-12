@@ -28,19 +28,14 @@
 
     if ($info_btn) {
       echo '<div class="m-banner-full__content-info m-banner-full--absolute">';
-      while (have_rows('button')) : the_row();
 
         get_template_part('/atoms/a-btn-info/a-btn-info', null,
           array(
-            'button_text' => get_sub_field('button_text'),
-            'button_link' => get_sub_field('button_link'),
-            'button_img' => get_sub_field('button_img'),
-            'custom_color' => get_sub_field('color_icono'),
             'custom_class' => '',
             'target' => true
           )
         );
-      endwhile;
+
       echo '</div>';
     }
 

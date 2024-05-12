@@ -27,6 +27,14 @@ if( function_exists('acf_add_options_page') ) {
 
 	acf_add_options_sub_page(
 		array(
+			'page_title' => 'Botones información',
+      'menu_title' => 'Botones información',
+      'post_id' => 'information'
+		)
+	);
+
+	acf_add_options_sub_page(
+		array(
 			'page_title' => 'Equipo',
         	'menu_title' => 'equipo',
         	'post_id' => 'team'

@@ -28,6 +28,15 @@
     background: var(--main-color);
     padding: 1rem 2rem;
     border-radius: 5rem;
+    transition: 0.35s;
+}
+
+.o-header--js-active .pagos-pse{
+    background-color: white;
+}
+
+.o-header--js-active .nav-btn a{
+    color: var(--main-color);
 }
 
 .usuarios-btn {
