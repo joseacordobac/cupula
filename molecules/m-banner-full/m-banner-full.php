@@ -44,25 +44,17 @@
   </div>
   <div class="m-banner-full__img">
     <?php 
-      $id_img = get_sub_field('main_img');
-      $image = wp_get_attachment_image($id_img, 'large', false, array('class' => 'm-banner-full__image'));
-      
-      if(get_sub_field('link_video')){
-        $video_attr = [
-          'src' => get_sub_field('link_video')['url'],
-          'frameborder' => '0',
-          'allowfullscreen' => 'allowfullscreen',
-          'muted' => 'muted',
-          'autoplay' => 'autoplay',
-          'loop' => 'loop',
-          'class' => 'm-banner-full__video-src',
-        ];
+      get_template_part('/atoms/a-img/a-img', null,
+      array(
+            'image_id' => get_sub_field('main_img'),
+            'image_size' => 'large',
+            'alt' => get_the_title(),
+            'class' => 'm-banner-full__image',
+            'img_radius' => false,
+            'has_video' => get_sub_field('link_video'),
+            'autoplay' => true
+      )); 
 
-        echo "<div class='m-banner-full__video'>" . wp_video_shortcode( $video_attr )."</div>";
-
-      }else{
-        echo $image;
-      }
     ?>
   </div>
 </div>

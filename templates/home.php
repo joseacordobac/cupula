@@ -36,22 +36,25 @@ wp_enqueue_style('home');
             ?>
         </div>
 
-        <div class="content-project">
-            <?php
-                $args = u_args_pt('proyectos', 1);
+        <div class="content-project swiper-project">
+            <div class="swiper-wrapper">
+                <?php
+                    $args = u_args_pt('proyectos', -1, 'desc', 'date', 'estado', 'en-venta');
 
-                $proyectos = new WP_Query($args);
+                    $proyectos = new WP_Query($args);
 
-                if($proyectos->have_posts()):
-                    while($proyectos->have_posts()):
-                        $proyectos->the_post();
-                        get_template_part('/molecules/m-card-project/m-card-project');
-                    endwhile;
-                endif;
+                    if($proyectos->have_posts()):
+                        while($proyectos->have_posts()):
+                            $proyectos->the_post();
+                            get_template_part('/molecules/m-card-project/m-card-project');
+                        endwhile;
+                    endif;
 
-                wp_reset_postdata();
-            ?>
+                    wp_reset_postdata();
+                ?>
+            </div>
         </div>
+
     </section>
 
     <section id="confiar" class="reazons-trust">

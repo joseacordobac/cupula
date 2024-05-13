@@ -10,13 +10,20 @@
     align-items: center;
     gap: 10px;
     border-radius: var(--border-radius--regular);
+    box-shadow: transparent;
     text-decoration: none;
+    transition: 0.35s;
 }
 
 .a-btn__icon {
     width: 1.8rem;
     transform: translateX(0px);
     transition: all 0.3s ease-in-out;
+}
+
+.a-btn__content:hover{
+    box-shadow: var(--shadow-boxes);
+    transition: 0.35s;
 }
 
 .a-btn__content:hover .a-btn__icon{

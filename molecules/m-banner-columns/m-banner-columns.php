@@ -13,40 +13,33 @@
   <div class="m-banner-columns__text js-title-tranning">
     <h3 class="m-banner-columns__title js-title"><?php the_sub_field('title'); ?></h3>
     <p class="m-banner-columns__description"><?php the_sub_field('decription'); ?></p>
+    
     <?php
-    get_template_part(
-      '/atoms/a-btn/a-btn',
-      null,
-      array(
-        'button_text' => get_sub_field('btn_text'),
-        'button_link' => get_sub_field('url_btn'),
-        'btn_type' => 'a-btn--primary',
-        'icons_path' => get_template_directory_uri() . '/assets/icons/arrow-to-right.svg',
-      )
-    );
+      get_template_part(
+        '/atoms/a-btn/a-btn',
+        null,
+        array(
+          'button_text' => get_sub_field('btn_text'),
+          'button_link' => get_sub_field('url_btn'),
+          'btn_type' => 'a-btn--primary',
+          'icons_path' => get_template_directory_uri() . '/assets/icons/arrow-to-right.svg',
+        )
+      );
     ?>
   </div>
   <div class="m-banner-columns__img">
-    <?php $id_img = get_sub_field('main_img');
-    $image = wp_get_attachment_image($id_img, 'large', false, array('class' => 'm-banner-columns__image'));
-
-
-    if(get_sub_field('link_video')){
-      $video_attr = [
-        'src' => get_sub_field('link_video')['url'],
-        'frameborder' => '0',
-        'allowfullscreen' => 'allowfullscreen',
-        'muted' => 'muted',
-        'autoplay' => 'autoplay',
-        'loop' => 'loop',
-        'class' => 'm-banner-columns__video-src',
-      ];
-
-      echo "<div class='m-banner-columns__video'>" . wp_video_shortcode( $video_attr )."</div>";
-
-    }else{
-      echo $image;
-    }
+    
+    <?php 
+    get_template_part('/atoms/a-img/a-img', null,
+      array(
+            'image_id' => get_sub_field('main_img'),
+            'image_size' => 'large',
+            'alt' => get_the_title(),
+            'class' => 'm-banner-columns__image',
+            'has_video' => get_sub_field('link_video'),
+            'autoplay' => true,
+            'img_radius' => false
+    )); 
 
     if ($info_btn) {
       echo '<div class="m-banner-columns__content-info m-banner-columns--absolute">';

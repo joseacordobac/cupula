@@ -43,17 +43,6 @@
   width: 100%;
 }
 
-.m-banner-columns__video, 
-.m-banner-columns__video-src{
-  height: 100%;
-  width: 100%;
-}
-
-.m-banner-columns__video .wp-video{
-  height: 100%;
-  width: 100% !important;
-}
-
 .m-banner-columns--absolute{
   position: absolute;
   bottom: 2rem;
@@ -64,6 +53,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.m-banner-columns__image--video{
+  width: 100%;
+  min-height: 80vh;
+  object-fit: cover;
+  object-position: left;
 }
 
 .swiper-pagination__main-banner.swiper-pagination-bullets {

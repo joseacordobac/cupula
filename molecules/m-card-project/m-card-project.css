@@ -1,9 +1,13 @@
 .m-card-project {
   display: grid;
   grid-template-columns: 53% 41%;
-  gap: 6%;
+  gap: 4%;
   box-shadow: var(--shadow-boxes);
   border-radius: var(--border-radius--regular);
+  overflow: hidden;
+}
+
+.m-card-project__header{
   overflow: hidden;
 }
 
@@ -33,7 +37,7 @@
 
 .m-card-project__logo-img {
   height: 100%;
-  width: 10rem;
+  width: 12rem;
 }
 
 .m-card-project__title-text {
@@ -55,7 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 85%;
+  margin-top: 1rem;
 }
 
 

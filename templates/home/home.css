@@ -9,6 +9,11 @@
     margin-top: 4.5rem;
 }
 
+.swiper-project{
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
+
 
 .card-experiencie .a-titles-title {
     text-align: center;

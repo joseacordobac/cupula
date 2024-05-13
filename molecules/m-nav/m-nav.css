@@ -19,11 +19,6 @@
     color: white;
 }
 
-.m-nav a:hover{
-    border-bottom: solid 3px var(--quinary-color);
-    transition: 0.35s;
-} 
-
 .pagos-pse {
     background: var(--main-color);
     padding: 1rem 2rem;

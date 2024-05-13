@@ -34,14 +34,21 @@ class CustomPostType
         $this->has_archive = $has_archive;
         $this->rewrite = $rewrite;
 
-        add_action('init', array($this, 'register_custom_post_type'));
-        add_action('init', array($this, 'custom_cop_add_caps'));
+        add_action('init', array($this, 'register_and_add_caps'));
+
+    }
+
+
+    public function register_and_add_caps() {
+        $this->register_custom_post_type();
+        $this->custom_cop_add_caps();
     }
 
     public function register_custom_post_type(){
         $labels = array(
             'name' => $this->name,
-            'singular_name' => $this->singular_name
+            'singular_name' => $this->singular_name,
+            'capabilities' => $this->capabilities
         );
 
         $supports = array(
@@ -69,7 +76,6 @@ class CustomPostType
             'show_in_nav_menus' => true,
             'show_in_admin_bar' => true,
             'menu_position' => 30,
-            'menu_icon' => $this->menu_icon,
             'can_export' => true,
             'has_archive' => $this->has_archive,
             'menu_icon' => 'dashicons-' . $this->menu_icon,
@@ -79,8 +85,6 @@ class CustomPostType
             'show_in_rest' => true,
             'rewrite' => array('slug' => $this->rewrite == '' ? $this->register_post_type_name : $this->rewrite  ),
         );
-
-        // $args['rewrite'] = array
 
         register_post_type($this->register_post_type_name, $args);
     }

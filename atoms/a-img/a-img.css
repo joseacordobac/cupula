@@ -5,7 +5,7 @@
 }
 
 .a-img__img {
-    width: 101%;
+    width: 100%;
     object-fit: cover;
     object-position: top;
     height: 100%;
@@ -23,23 +23,17 @@
     cursor: pointer;
 }
 
-/* video */
-dialog.a-img__dialog {
-    position: fixed;
-    top: 50%;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-}
+.a-img__video{
+    height: 100%;
+    width: 100%;
+    
+    & .wp-video{
+        max-width: inherit !important;
+        width: 100% !important;
+        height: 100%;
+    }
 
-.a-img__dialog__close {
-    position: fixed;
-    z-index: 1;
-    right: 0px;
-    top: 0px;
-    background: white;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: var(--size-medium);
-    cursor: pointer;
+    .m-card-project__img--video {
+        height: 100%;
+    }
 }
