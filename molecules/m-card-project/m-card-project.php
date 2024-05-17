@@ -5,6 +5,8 @@
    */
 
    wp_enqueue_style('m-card-project');
+   wp_enqueue_script('m-card-project');
+
    $id_post = get_the_ID();
 
    $image_project_id = get_field('imagen', $id_post);
@@ -15,18 +17,27 @@
 ?>
 <div class="swiper-slide">
   <article class="m-card-project">  
-    <header class="m-card-project__header">
-      <?php 
-         get_template_part('/atoms/a-img/a-img', null,
-         array(
-             'image_id' => $image_project_id,
-             'image_size' => 'full',
-             'alt' =>'Cupula proyectos',
-             'class' => 'm-card-project__img',
-             'has_video' => get_field('project_video', $id_post),
-             'img_radius' => true
-         ));
-      ?>
+    <header class="m-card-project__header m-card-project__swiper">
+      <div class="swiper-wrapper">
+        <?php 
+          while (have_rows('media')) : the_row();
+
+          echo '<div class="swiper-slide">';
+            get_template_part('/atoms/a-img/a-img', null,
+            array(
+                'image_id' => get_sub_field('imagen'),
+                'image_size' => 'full',
+                'alt' =>'Cupula proyectos',
+                'class' => 'm-card-project__img',
+                'has_video' => get_sub_field('video'),
+                'img_radius' => true
+            ));
+          echo '</div>';
+
+          endwhile;
+        ?>
+      </div>
+      <div class="swiper-pagination swiper-pagination--project"></div>
     </header>
   
     <div class="m-card-project__body">

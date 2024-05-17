@@ -9,6 +9,7 @@
 
 .m-card-project__header{
   overflow: hidden;
+  position: relative;
 }
 
 .m-card-project__img{
@@ -62,6 +63,14 @@
   margin-top: 1rem;
 }
 
+.swiper-pagination--project {
+  bottom: 3rem !important;
+}
+
+.swiper-pagination--project .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.8;
+}
 
 @media(max-width:780px){
   .m-card-project{
