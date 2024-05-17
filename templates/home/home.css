@@ -25,13 +25,13 @@
 }
 
 .card-experiencie {
+    position: relative;
     padding: 4rem;
     padding-bottom: 1rem;
     box-shadow: var(--shadow-boxes);
     max-width: 75%;
     border-radius: var(--border-radius--regular);
-    margin: 4rem auto;
-    margin-top: 10rem;
+    margin: 8rem auto 12rem auto;
 }
 
   

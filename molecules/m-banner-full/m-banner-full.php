@@ -50,7 +50,6 @@
             'image_size' => 'large',
             'alt' => get_the_title(),
             'class' => 'm-banner-full__image',
-            'img_radius' => false,
             'has_video' => get_sub_field('link_video'),
             'autoplay' => true
       )); 

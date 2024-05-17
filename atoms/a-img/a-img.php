@@ -9,7 +9,7 @@
             'alt' => alt name,
             'class' => img class,
             'aspect_ratio' => aspect ratio
-            'img_radius' => img radius,
+            'img_radius' => true,
             'has_video' => has video,
             'autoplay' => autoplay
         ));
@@ -31,8 +31,7 @@
     'class' => 'a-img__img ' . $img_radius,
     'alt' => $img_alt,
 ) );
-
-
+ 
 if($has_video){
 $video_attr = [
     'poster' => wp_get_attachment_image_url($image_id, $image_size),

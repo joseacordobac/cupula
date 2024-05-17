@@ -31,7 +31,7 @@ $imagen_real_id = get_field('real');
         <?php get_template_part('/atoms/a-img/a-img', null, array(
           'image_id' => $imagen_render_id,
           'image_class' => 'm-card-compare__render-img',
-          'image_size' => 'medium',
+          'image_size' => 'full',
           'img_radius' => true
         )) ?>
         <div class="m-card-compare__label">
@@ -52,7 +52,7 @@ $imagen_real_id = get_field('real');
         <?php get_template_part('/atoms/a-img/a-img', null, array(
           'image_id' => $imagen_real_id,
           'image_class' => 'm-card-compare__render-img',
-          'image_size' => 'medium',
+          'image_size' => 'full',
           'img_radius' => true
         )) ?>
         <div class="m-card-compare__label">

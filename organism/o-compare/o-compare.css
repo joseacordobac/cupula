@@ -1,3 +1,41 @@
 .o-compare-slider{
+  position: relative;
   overflow: hidden;
+}
+
+.swiper-button-prev--compare,
+.swiper-button-next--compare {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.swiper-button-prev--compare {
+  left: -10rem;
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev--compare:hover{
+  left: -11rem;
+  transition: 0.35s;
+}
+
+.swiper-button-next--compare {
+  right: -10rem;
+  top: 50%;
+}
+
+.swiper-button-next--compare:hover{
+  right: -11rem;
+  transition: 0.35s;
+}
+
+.swiper-button-disabled{
+  opacity: 0;
+}
+
+.o-compare-slider__pagination{
+  position: absolute;
+  bottom: -5rem !important;
 }

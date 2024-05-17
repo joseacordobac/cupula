@@ -4,6 +4,10 @@ const swiperCompare = (getCompare) => {
     speed: 400,
     spaceBetween: 20,
     slidesPerView: 1,
+    navigation: {
+      nextEl: ".swiper-button-next--compare",
+      prevEl: ".swiper-button-prev--compare",
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
