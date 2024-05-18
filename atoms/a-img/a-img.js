@@ -36,7 +36,30 @@ const triggerDialog = () =>{
     })
 }
 
+const playVideoBTn = () => {
+    const getVideoContent = document.querySelectorAll('.a-img__video');
+
+    if(getVideoContent){
+
+        getVideoContent.forEach((elementVideo)=>{
+            const playIcon = elementVideo.querySelector('.a-img__video-play')
+            const video =  elementVideo.querySelector('video')
+
+            playIcon.addEventListener('click', ()=>{
+                if(video.paused){
+                    video.play()
+                    playIcon.classList.add('a-img__video-play--active')
+                }else if(video.played){
+                    video.pause()
+                    playIcon.classList.remove('a-img__video-play--active')
+                }
+            })
+        })
+
+    }
+}
+
 window.addEventListener('load', ()=>{
+    playVideoBTn();
     gsapImgAnimation();
-    triggerDialog();
 })

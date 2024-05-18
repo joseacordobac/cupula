@@ -26,6 +26,7 @@
 .a-img__video{
     height: 100%;
     width: 100%;
+    position: relative;
     
     & .wp-video{
         max-width: inherit !important;
@@ -36,4 +37,31 @@
     .m-card-project__img--video {
         height: 100%;
     }
+}
+
+.a-img__video-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.35s;
+    border: solid var(--main-color);
+    border-radius: 5rem;
+}
+
+.a-img__video-play--active{
+    opacity: 0;
+}
+
+.a-img__video-play svg {
+    max-width: 80%;
+    height: 80%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
 }

@@ -5,9 +5,9 @@ function cardProjectSlide(){
     const swiper = new Swiper(project, {
       slidesPerView: 1,
       loop: true,
-      autoplay: {
-        delay: 5000,
-      },
+      // autoplay: {
+      //   // delay: 5000,
+      // },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
