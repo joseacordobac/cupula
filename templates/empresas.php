@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
     <section class="hero-banner js-hero-banner">
-        <div class="hero-banner-cotainer g-content-regular">
+        <div class="hero-banner-cotainer g-content-regular swiper-content">
             <div class="swiper-wrapper hero-banner">
                 <?php while( have_rows('hero_banner') ) : the_row(); ?>
                 <?php while( have_rows('slider_banner') ) : the_row(); ?>

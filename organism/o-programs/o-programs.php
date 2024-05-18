@@ -39,7 +39,7 @@ $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
         <div class="o-programs__right">
             <div class="o-programs__right-content">
                 <h4 class="o-programs__rigth-title"><?php echo $title ?></h4>
-                <div class="o-programs-list js-programs">
+                <div class="o-programs-list js-programs swiper-content">
                     <div class="swiper-wrapper o-programs__swiper-wrapper">
                     <?php while( have_rows($repeater_name) ): the_row(); ?>
                         

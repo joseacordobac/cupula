@@ -1,0 +1,24 @@
+.swiper-button-disabled{
+  opacity: 0;
+}
+
+.a-arrows-slide {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: 0.35s;
+  z-index: 1;
+}
+
+.a-arrows-slide:hover {
+  transition: 0.35s;
+}
+
+.a-arrows-slide>img {
+  transition: 0.35s;
+}
+
+.a-arrows-slide:hover>img{
+  transform: translate(1rem, 0px);
+  transition: 0.35s;
+}

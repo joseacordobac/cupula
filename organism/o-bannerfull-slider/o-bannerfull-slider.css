@@ -1,3 +1,18 @@
 .o-bannerfull-slider .swiper-slide {
   min-height: 70vh;
+  position: relative;
 }
+
+.o-bannerfull-slider .a-arrows-slide{
+  top:40%;
+}
+
+.swiper-button-prev--bannerfull {
+  left: 11rem;
+  transform: rotate(180deg);  
+}
+
+.swiper-button-next--bannerfull {
+  right: 11rem;
+}
+

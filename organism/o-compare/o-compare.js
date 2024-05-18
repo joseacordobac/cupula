@@ -12,9 +12,8 @@ const swiperCompare = (getCompare) => {
       el: '.swiper-pagination',
       clickable: true,
     },
-  }
-
-)};
+  })
+};
 
 window.addEventListener('load', ()=>{
   const getCompare = document.querySelector('.o-compare-slider');

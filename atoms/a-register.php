@@ -14,7 +14,8 @@ function enqueue_custom_atoms() {
     'a-numbers',
     'a-social',
     'a-tags',
-    'a-btn-info'
+    'a-btn-info',
+    'a-arrows-slide',
   );
 
   foreach($register_scripts_styles as $key => $value) {

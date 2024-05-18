@@ -44,14 +44,22 @@ const playVideoBTn = () => {
         getVideoContent.forEach((elementVideo)=>{
             const playIcon = elementVideo.querySelector('.a-img__video-play')
             const video =  elementVideo.querySelector('video')
-
+            
+            if(video.played){
+                playIcon.classList.remove('a-img__video-play--stop')
+            }
+            
+            if(video.paused){
+                playIcon.classList.add('a-img__video-play--stop')
+            }
+            
             playIcon.addEventListener('click', ()=>{
                 if(video.paused){
                     video.play()
-                    playIcon.classList.add('a-img__video-play--active')
+                    playIcon.classList.remove('a-img__video-play--stop')
                 }else if(video.played){
                     video.pause()
-                    playIcon.classList.remove('a-img__video-play--active')
+                    playIcon.classList.add('a-img__video-play--stop')
                 }
             })
         })

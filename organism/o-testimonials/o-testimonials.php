@@ -17,7 +17,7 @@
     $possition = isset($args['possition']) ? $args['possition'] : '';
 ?>
 <div class="o-testimonials <?php echo $custom_class; ?>">
-    <div class="o-testimonials__swiper">
+    <div class="o-testimonials__swiper swiper-content">
         <div class="swiper-wrapper">
             <?php while (have_rows($repater_name)): the_row(); ?>
                 <div class="swiper-slide o-testimonials__slide">

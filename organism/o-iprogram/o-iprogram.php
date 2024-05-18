@@ -18,7 +18,7 @@ $args = array(
 $query = new WP_Query($args); 
 ?>
 
-<div class="<?php echo $custom_css; ?> o-iprogram__wrapper o-iprogram">
+<div class="<?php echo $custom_css; ?> o-iprogram__wrapper o-iprogram swiper-content">
     <div class="<?php echo !$slider ? 'swiper-wrapper' : ''; ?>  o-iprogram__container">
         <?php if ($query->have_posts()) :
             while ($query->have_posts()) : $query->the_post(); ?>

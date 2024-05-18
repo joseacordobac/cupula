@@ -50,10 +50,11 @@
     transition: 0.35s;
     border: solid var(--main-color);
     border-radius: 5rem;
+    opacity: 0;
 }
 
-.a-img__video-play--active{
-    opacity: 0;
+.a-img__video-play--stop{
+    opacity: 1;
 }
 
 .a-img__video-play svg {

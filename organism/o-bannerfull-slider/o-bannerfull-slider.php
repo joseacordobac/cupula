@@ -10,7 +10,7 @@
 ?>
 
 
-<section class="o-bannerfull-slider js-conocenos-banner g-background--home">
+<section class="o-bannerfull-slider js-conocenos-banner g-background--home swiper-content">
     <div class=" swiper-wrapper">
         <?php while( have_rows('hero_banner') ) : the_row();
         $type = get_sub_field('slide_type'); 
@@ -20,5 +20,5 @@
         
         endwhile; ?>
     </div>
-    <div class="swiper-pagination__main-banner"></div>    
+    <?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'bannerfull' ));   ?> 
 </section>

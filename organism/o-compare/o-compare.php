@@ -27,12 +27,7 @@ $proyectos = new WP_Query($args);
 
 </div>
 
-<div class="swiper-button-prev--compare">
-  <img class="button-prev__icon" src="<?php echo get_stylesheet_directory_uri() . '/assets/icons/arrow-purple.svg'; ?>" alt="arrow-left">
-</div>
-<div class="swiper-button-next--compare">
-  <img class="button-next__icon" src="<?php echo get_stylesheet_directory_uri() . '/assets/icons/arrow-purple.svg'; ?>" alt="arrow-left">
-</div>
+<?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'compare')); ?>
 
 <div class="swiper-pagination o-compare-slider__pagination"></div>
   <?php wp_reset_postdata();

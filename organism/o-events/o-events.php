@@ -11,7 +11,7 @@
   <div class="events-resources">
     <h3 class="events-resources__title">Eventos y recursos</h3>
     
-    <div class="events-resources-swipe swiper">
+    <div class="events-resources-swipe swiper swiper-content">
       <div class="swiper-wrapper">
       
         <?php 

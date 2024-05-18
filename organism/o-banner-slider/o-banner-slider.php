@@ -7,7 +7,7 @@
 
 ?>
 <section class="hero-banner js-hero-banner g-content-regular">
-<div class="swiper-wrapper hero-banner">
+<div class="swiper-wrapper hero-banner swiper-content">
     <?php while( have_rows('slider_baner') ) : the_row(); ?>
         <div class="swiper-slide hero-banner-slide">
             <div class="hero-banner__slide-content">
@@ -41,5 +41,5 @@
         </div>
     <?php endwhile; ?>
 </div>
-<div class="swiper-pagination__main-banner"></div>
+
 </section>

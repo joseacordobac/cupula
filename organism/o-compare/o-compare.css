@@ -31,10 +31,6 @@
   transition: 0.35s;
 }
 
-.swiper-button-disabled{
-  opacity: 0;
-}
-
 .o-compare-slider__pagination{
   position: absolute;
   bottom: -5rem !important;

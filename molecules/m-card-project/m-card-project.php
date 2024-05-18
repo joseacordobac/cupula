@@ -17,7 +17,7 @@
 ?>
 <div class="swiper-slide">
   <article class="m-card-project">  
-    <header class="m-card-project__header m-card-project__swiper">
+    <header class="m-card-project__header m-card-project__swiper swiper-content">
       <div class="swiper-wrapper">
         <?php 
           while (have_rows('media')) : the_row();

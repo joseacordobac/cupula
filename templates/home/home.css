@@ -1,12 +1,14 @@
 /* project */
 .projects {
     margin: 6rem 0px;
+    position: relative;
 }
 
 .content-project {
     max-width: 73%;
     margin: auto;
     margin-top: 4.5rem;
+    position: relative;
 }
 
 .swiper-project{
@@ -14,6 +16,14 @@
     padding: 1rem 2rem;
 }
 
+.swiper-button-next--project {
+    right: 12rem;
+}
+
+.swiper-button-prev--project {
+    transform: rotate(180deg);
+    left: 11rem;
+}
 
 .card-experiencie .a-titles-title {
     text-align: center;
@@ -22,6 +32,7 @@
 
 .model-appartment {
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .card-experiencie {
@@ -31,7 +42,7 @@
     box-shadow: var(--shadow-boxes);
     max-width: 75%;
     border-radius: var(--border-radius--regular);
-    margin: 8rem auto 12rem auto;
+    margin: 6rem auto 12rem auto;
 }
 
   

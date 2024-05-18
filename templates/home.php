@@ -36,7 +36,7 @@ wp_enqueue_style('home');
             ?>
         </div>
 
-        <div class="content-project swiper-project">
+        <div class="content-project swiper-project swiper-content">
             <div class="swiper-wrapper">
                 <?php
                     $args = u_args_pt('proyectos', -1, 'desc', 'date', 'estado', 'en-venta');
@@ -54,6 +54,7 @@ wp_enqueue_style('home');
                 ?>
             </div>
         </div>
+        <?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'project' ));   ?>
 
     </section>
 

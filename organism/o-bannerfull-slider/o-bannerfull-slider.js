@@ -6,26 +6,9 @@ const starMainSwipper = () =>{
   spaceBetween: 100,
   autoHeight: true, 
   loop: true,
-  autoplay: {
-      //delay: 10000,
-   },
-  pagination: {
-          el: '.swiper-pagination__main-banner', 
-          clickable: true,  
-      },
-  breakpoints: {
-      0: {
-          direction: 'horizontal',
-          autoplay: {
-              delay: 10000,
-          },
-      },
-      768: {
-          direction: 'horizontal',
-          autoplay: {
-              delay: 10000,
-          },
-      },
+  navigation: {
+    nextEl: '.swiper-button-next--bannerfull',
+    prevEl: '.swiper-button-prev--bannerfull',
   }
   });
 
