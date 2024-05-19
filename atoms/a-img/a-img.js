@@ -74,17 +74,19 @@ const modalTrigger = () => {
             })
 
             const closeModal = getModal.querySelector('.a-img__modal-close')
-            
+            const video = getModal.querySelector('video')
+
             closeModal?.addEventListener('click', ()=>{
                 getModal.classList.remove('a-img__video-modal--show')
                 getBody.classList.remove('scroll-block')
-                getModal.querySelector('video').pause()
+                video.pause()
             })
 
             document.addEventListener('keydown', (event) => {
                 if (event.code === 'Escape') {
                     getModal.classList.remove('a-img__video-modal--show')
                     getBody.classList.remove('scroll-block')
+                    video.pause()
                 }
             });
 
