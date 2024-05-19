@@ -37,7 +37,8 @@
             'alt' => get_the_title(),
             'class' => 'm-banner-columns__image',
             'has_video' => get_sub_field('link_video'),
-            'autoplay' => true  
+            'autoplay' => false,
+            'has_modal' => true
     )); 
 
     if ($info_btn) {

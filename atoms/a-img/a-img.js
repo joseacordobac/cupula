@@ -24,16 +24,6 @@ const gsapImgAnimation = () =>{
             duration: 0.5,
         });
     });
-
-}
-
-const triggerDialog = () =>{
-    const iconsTrigger = document.querySelectorAll('.a-img__video-icon');
-    iconsTrigger.forEach((icon)=>{
-        icon.addEventListener('click', ()=>{
-            console.log('icon click');
-        })
-    })
 }
 
 const playVideoBTn = () => {
@@ -46,14 +36,14 @@ const playVideoBTn = () => {
             const video =  elementVideo.querySelector('video')
             
             if(video.played){
-                playIcon.classList.remove('a-img__video-play--stop')
+                playIcon?.classList.remove('a-img__video-play--stop')
             }
             
             if(video.paused){
-                playIcon.classList.add('a-img__video-play--stop')
+                playIcon?.classList.add('a-img__video-play--stop')
             }
             
-            playIcon.addEventListener('click', ()=>{
+            playIcon?.addEventListener('click', ()=>{
                 if(video.paused){
                     video.play()
                     playIcon.classList.remove('a-img__video-play--stop')
@@ -67,7 +57,45 @@ const playVideoBTn = () => {
     }
 }
 
+const modalTrigger = () => {
+    const getVideoContent = document.querySelectorAll('.a-img--modal');
+    
+    if(getVideoContent){
+        getVideoContent.forEach((elementVideo)=>{
+            
+            const getBody = document.querySelector('body')
+            const getModal = elementVideo.querySelector('.a-img__video-modal')
+            const getPlayIcon = elementVideo.querySelector('.a-img__video-play')
+
+            getPlayIcon.addEventListener('click', ()=>{
+                getModal.classList.add('a-img__video-modal--show')
+                getBody.classList.add('scroll-block')
+                window.scrollTo(0,0);
+            })
+
+            const closeModal = getModal.querySelector('.a-img__modal-close')
+            
+            closeModal?.addEventListener('click', ()=>{
+                getModal.classList.remove('a-img__video-modal--show')
+                getBody.classList.remove('scroll-block')
+                getModal.querySelector('video').pause()
+            })
+
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    getModal.classList.remove('a-img__video-modal--show')
+                    getBody.classList.remove('scroll-block')
+                }
+            });
+
+
+        })
+    }
+    
+}
+
 window.addEventListener('load', ()=>{
     playVideoBTn();
+    modalTrigger();
     gsapImgAnimation();
 })
