@@ -1,0 +1,45 @@
+.a-btn-imobile {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+  box-shadow: var(--shadow-boxes);
+}
+
+.a-btn-imobile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  background: white;
+  padding: 1rem 0.2rem;
+  cursor: pointer;
+  transition: 0.35s;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.a-btn-imobile__content:hover{
+  background: white;
+  box-shadow: var(--shadow-boxes);
+  transition: 0.35s;
+}
+
+.a-btn-imobile__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.a-btn-imobile__icon-content {
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: 5rem;
+}
+
+.a-btn-imobile__link {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+

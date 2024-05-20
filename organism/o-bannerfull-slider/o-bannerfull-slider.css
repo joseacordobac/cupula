@@ -16,3 +16,23 @@
   right: 11rem;
 }
 
+
+@media(max-width: 780px){
+
+  .o-bannerfull-slider .swiper-slide{
+    height: 85vh;
+  }
+
+  .swiper-button-next--bannerfull{
+    right: 1rem;
+  }
+
+  .swiper-button-prev--bannerfull{
+    left: 1rem;
+  }
+
+  .o-bannerfull-slider .a-arrows-slide{
+    top: 40%;
+  }
+
+}

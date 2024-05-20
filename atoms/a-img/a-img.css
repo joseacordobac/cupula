@@ -117,3 +117,14 @@
 .a-img__modal-close:hover{
     transform: scale(1.1);
 }
+
+@media(max-width: 780px){
+    .a-img__video-modal .wp-video {
+        max-width: 95%;
+    }
+
+    .a-img__modal-close{
+        right: 1rem;
+        top: 1rem;
+    }
+}

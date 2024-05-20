@@ -4,11 +4,7 @@
 wp_enqueue_style('o-footer');
 wp_enqueue_script('o-footer');
 
-?>
-
-<?php 
-    get_template_part( 'molecules/m-whatsapp/m-whatsapp', null, array( 'custom_class' => 'footer--pading' ) );
-?>
+get_template_part('atoms/a-btn-imobile/a-btn-imobile'); ?>
 
 <div class="o-footer g-content-regular">
 
