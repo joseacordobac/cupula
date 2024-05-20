@@ -59,8 +59,10 @@
 
 @media(max-width:780px){
   .o-banner-qr__content {
-    grid-template-columns: 100%;
+    display: block;
     padding-top: 3rem;
+    max-height: 80vh;
+    overflow: hidden;
   }
 
   .o-banner-qr__info{
@@ -76,6 +78,10 @@
 
   .o-banner-qr__info-text{
     max-width: 100%;
+  }
+
+  .o-banner-qr__img{
+    height: 35vh;
   }
 
 }

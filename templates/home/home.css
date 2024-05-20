@@ -49,7 +49,7 @@
 
 @media(max-width: 768px){
     .content-project{
-        max-width: 92%;
+        max-width: 100%;
     }
     
     .card-experiencie{
@@ -58,5 +58,11 @@
         padding: 1rem;
     }
     
+    .swiper-button-next--project{
+        right: 1rem;
+    }
 
+    .swiper-button-prev--project{
+        left: 1rem;
+    }
 }

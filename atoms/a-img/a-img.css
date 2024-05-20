@@ -43,7 +43,8 @@
     }
 
     .m-card-project__img--video {
-        height: 100%;
+        height: auto;
+        width: 100%;
     }
 }
 
@@ -126,5 +127,10 @@
     .a-img__modal-close{
         right: 1rem;
         top: 1rem;
+    }
+
+    .m-card-project .swiper-slide{
+        height: auto;
+        height: 25vh;
     }
 }

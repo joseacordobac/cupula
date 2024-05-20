@@ -5,10 +5,11 @@
   box-shadow: var(--shadow-boxes);
   border-radius: var(--border-radius--regular);
   overflow: hidden;
+  position: relative;
 }
 
 .m-card-project__header{
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .m-card-project__title-text {
-  font-size: var(--size-medium-large);
+  font-size: 2.4rem;
   color: var(--main-color);
 }
 
@@ -81,7 +82,20 @@
     padding: 1rem 1rem 3rem 1rem;
   }
 
+  .m-card-project__logo-img{
+    width: 10rem;
+  }
+
   .m-card-project__descripton{
     max-width: 100%;
+    gap: 0px;
+  }
+
+  .swiper-pagination--project {
+    bottom: -3rem !important;
+  }
+
+  .swiper-pagination--project .swiper-pagination-bullet{
+    background-color: gray;
   }
 }
