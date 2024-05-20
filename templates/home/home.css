@@ -60,10 +60,10 @@
     }
     
     .swiper-button-next--project{
-        right: 1rem;
+        display: none;
     }
 
     .swiper-button-prev--project{
-        left: 1rem;
+        display: none;
     }
 }

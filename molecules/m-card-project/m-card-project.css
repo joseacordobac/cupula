@@ -92,7 +92,7 @@
   }
 
   .swiper-pagination--project {
-    bottom: -3rem !important;
+    display: none;
   }
 
   .swiper-pagination--project .swiper-pagination-bullet{

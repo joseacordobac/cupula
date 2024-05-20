@@ -16,6 +16,9 @@
   right: 11rem;
 }
 
+.swiper-pagination--bannerfull{
+  display: none;
+}
 
 @media(max-width: 780px){
 
@@ -28,11 +31,22 @@
   }
 
   .swiper-button-prev--bannerfull{
-    left: 1rem;
+    display: none;
   }
 
   .o-bannerfull-slider .a-arrows-slide{
-    top: 40%;
+    display: none;
+  }
+
+  .swiper-pagination--bannerfull{
+    display: block;
+  }
+
+  .swiper-pagination--bannerfull {
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    bottom: 2.7rem !important;
   }
 
 }
