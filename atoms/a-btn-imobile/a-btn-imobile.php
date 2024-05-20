@@ -14,7 +14,7 @@ echo '<div class="a-btn-imobile ' . $custom_class . '">';
 while (have_rows('button', 'information')) : the_row(); 
   
   $button_img = get_sub_field('button_img', 'information');
-  $img = wp_get_attachment_image($button_img, 'medium', false, array('class' => 'a-btn-imobile__icon', 'alt' => 'contacto'));
+  $img = wp_get_attachment_image($button_img, 'small', false, array('class' => 'a-btn-imobile__icon', 'alt' => 'contacto'));
   
 ?>
 
