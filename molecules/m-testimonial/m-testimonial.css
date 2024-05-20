@@ -45,6 +45,7 @@
     .m-testimonial {
         max-width: 100%;
         margin: auto;
+        height: auto;
     }
 
     .m-testimonial__content{
@@ -52,8 +53,9 @@
         gap: 0;
     }
 
-    .m-testimonial__image{
-        height: 258px;
+    .m-testimonial__image {
+        height: 170px;
+        object-position: top;
     }
     
     .m-testimonial-left {
@@ -61,7 +63,11 @@
     }
 
     .m-testimonial-info {
-        padding: 5px 14px 30px;
+        padding: 5px 7px 30px;
         width: 95%;
+    }
+
+    .m-testimonial .m-testimonial-info__text{
+        font-size: 1.4rem;
     }
 }

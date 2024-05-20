@@ -30,4 +30,9 @@
     .o-testimonials{
         padding: 20px 0px;
     }
+
+    .o-testimonials__slide{
+        height: 100%;
+    }
+
 }
