@@ -9,7 +9,7 @@
 }
 
 .m-card-project__header{
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 
