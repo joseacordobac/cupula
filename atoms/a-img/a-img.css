@@ -43,8 +43,7 @@
     }
 
     .m-card-project__img--video {
-        height: auto;
-        width: 100%;
+        height: 100%;
     }
 }
 
@@ -132,5 +131,10 @@
     .m-card-project .swiper-slide{
         height: auto;
         height: 25vh;
+    }
+
+    .m-card-project__img--video{
+        height: auto;
+        width: 100%;
     }
 }

@@ -35,4 +35,9 @@
         height: 100%;
     }
 
+    .o-testimonials__swiper{
+        padding: 1rem;
+        padding-bottom: 4rem;
+    }
+
 }

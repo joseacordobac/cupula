@@ -83,6 +83,7 @@
   .m-banner-columns__text{
     width: 95%;
     margin: auto;
+    align-items: center;
   }
 
   .m-banner-columns__image{

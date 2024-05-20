@@ -98,4 +98,8 @@
   .swiper-pagination--project .swiper-pagination-bullet{
     background-color: gray;
   }
+
+  .m-card-project__footer{
+    text-align: center;
+  }
 }
