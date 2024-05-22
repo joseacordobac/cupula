@@ -14,6 +14,7 @@
     }
 ?>
 
+<?php  get_template_part('atoms/a-btn-top/a-btn-top'); ?>
 <footer class="footer">
     <?php  get_template_part( 'organism/o-footer/o-footer', null, 
         array( 

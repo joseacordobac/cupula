@@ -88,6 +88,10 @@
   object-position: top;
 }
 
+.a-img__video .a-img__video-play{
+  display: none;
+}
+
 @media(max-width:780px){
   .m-banner-full__text{
     max-width: 90%;

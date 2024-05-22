@@ -1,0 +1,16 @@
+.a-btn-top {
+  background: var(--main-color);
+  display: inline-block;
+  padding: 1.1rem 1.5rem;
+  border-radius: 5rem;
+  position: fixed;
+  bottom: 5%;
+  z-index: 1;
+  right: 9rem;
+}
+
+@media(max-width: 780px){
+  .a-btn-top {
+    display: none;
+  }
+}

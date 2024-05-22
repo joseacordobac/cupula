@@ -7,7 +7,7 @@
     wp_enqueue_style('single-programs');
     ?>
     
-    <main class="main">
+    <main class="main" id="main">
         <?php while( have_rows('hero_banner') ) : the_row(); ?>
         <section class="hero-banner" style="background-color: #<?php the_sub_field('background_color'); ?>;">
             <div class="hero-banner__content">
