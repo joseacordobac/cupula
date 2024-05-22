@@ -99,5 +99,5 @@ const modalTrigger = () => {
 window.addEventListener('load', ()=>{
     playVideoBTn();
     modalTrigger();
-    gsapImgAnimation();
+    // gsapImgAnimation();
 })
