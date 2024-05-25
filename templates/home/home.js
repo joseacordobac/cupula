@@ -6,6 +6,10 @@ const swiperProjects = () => {
     navigation: {
       nextEl: '.swiper-button-next--project',
       prevEl: '.swiper-button-prev--project',
+    },
+    pagination: {
+      el: '.swiper-pagination--content-project',
+      clickable: true,
     }
   });
 }

@@ -73,6 +73,14 @@
   opacity: 0.8;
 }
 
+.swiper-button-next--card-project {
+  right: 1.5rem;
+}
+.swiper-button-prev--card-project{
+  transform: rotate(180deg);
+  left: 1.5rem;
+}
+
 @media(max-width:780px){
   .m-card-project{
     display: block;
@@ -89,6 +97,15 @@
   .m-card-project__descripton{
     max-width: 100%;
     gap: 0px;
+  }
+
+  .m-card-project__description-main{
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .m-card-project__description-general{
+    font-size: 1.6rem;
   }
 
   .swiper-pagination--project {

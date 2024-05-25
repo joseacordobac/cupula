@@ -37,6 +37,9 @@
           endwhile;
         ?>
       </div>
+      
+      <?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'card-project' )); ?> 
+
       <div class="swiper-pagination swiper-pagination--project"></div>
     </header>
   

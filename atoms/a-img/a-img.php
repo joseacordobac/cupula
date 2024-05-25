@@ -11,7 +11,8 @@
             'aspect_ratio' => aspect ratio
             'img_radius' => true,
             'has_video' => has video,
-            'autoplay' => autoplay
+            'has_modal' => has modal,
+            'autoplay' => autoplay,
         ));
  * **/
 

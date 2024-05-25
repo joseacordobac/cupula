@@ -103,6 +103,7 @@
     .o-header{
         background-color: var(--main-color);
         position: sticky;
+        z-index: 7;
     }
 
     .o-header__nav-content {

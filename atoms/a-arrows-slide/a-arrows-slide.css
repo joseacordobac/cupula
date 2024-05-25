@@ -22,3 +22,16 @@
   transform: translate(1rem, 0px);
   transition: 0.35s;
 }
+
+.m-card-project .button-next__icon,
+.m-card-project .button-prev__icon {
+  display: none;
+}
+
+@media(max-width: 780px){
+  .m-card-project .button-next__icon,
+  .m-card-project .button-prev__icon {
+    width: 3rem;
+    display: block !important;
+  }
+}

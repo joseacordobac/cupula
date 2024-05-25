@@ -28,6 +28,7 @@ $proyectos = new WP_Query($args);
 </div>
 
 <?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'compare')); ?>
+<div class="swiper-pagination--compare"></div>
 
 <div class="swiper-pagination o-compare-slider__pagination"></div>
   <?php wp_reset_postdata();

@@ -54,6 +54,7 @@ wp_enqueue_style('home');
                 ?>
             </div>
         </div>
+        <div class="swiper-pagination swiper-pagination--content-project"></div>
         <?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'project' ));   ?>
 
     </section>

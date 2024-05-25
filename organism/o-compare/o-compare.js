@@ -8,10 +8,18 @@ const swiperCompare = (getCompare) => {
       nextEl: ".swiper-button-next--compare",
       prevEl: ".swiper-button-prev--compare",
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        pagination: {
+          el:'.swiper-pagination--compare',
+          clickable: true,
+        }
+      },
+      780: {
+        slidesPerView: 1,
+      },
+    }
   })
 };
 

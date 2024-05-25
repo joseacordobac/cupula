@@ -9,6 +9,10 @@ function cardProjectSlide(){
           delay: 5000,
           disableOnInteraction: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next--card-project',
+        prevEl: '.swiper-button-prev--card-project',
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
