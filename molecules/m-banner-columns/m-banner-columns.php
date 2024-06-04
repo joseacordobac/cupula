@@ -15,9 +15,8 @@
     <p class="m-banner-columns__description"><?php the_sub_field('decription'); ?></p>
     
     <?php
-      get_template_part(
-        '/atoms/a-btn/a-btn',
-        null,
+    if(get_sub_field('btn_text')):
+      template_part_atoms('atoms/a-btn/a-btn',null,
         array(
           'button_text' => get_sub_field('btn_text'),
           'button_link' => get_sub_field('url_btn'),
@@ -25,6 +24,7 @@
           'icons_path' => get_template_directory_uri() . '/assets/icons/arrow-to-right.svg',
         )
       );
+    endif;
     ?>
   </div>
   <div class="m-banner-columns__img">

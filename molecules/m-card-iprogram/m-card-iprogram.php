@@ -42,7 +42,7 @@ $modal_trigger = isset($args['modal_trigger']) ? $args['modal_trigger'] : '';
         </a>
         <?php 
             $modal_trigger ? $btn_link = '#formulario' : $btn_link = get_permalink();
-            get_template_part('/atoms/a-btn/a-btn', null, 
+            template_part_atoms('atoms/a-btn/a-btn', 
             array(
                     'button_text' => $button_text,
                     'button_link' => $btn_link,

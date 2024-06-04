@@ -40,7 +40,7 @@
             <?php echo $card_desc; ?>
          </p>
          <?php 
-            get_template_part('/atoms/a-btn/a-btn', null, 
+            template_part_atoms('atoms/a-btn/a-btn', 
                array(
                      'button_text' => $btn_text,
                      'button_link' => $btn_link,

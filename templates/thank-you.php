@@ -22,7 +22,7 @@
                     <div class="thank-you__description-text">
                         <?php the_field('description'); ?>
                     </div>
-                    <?php get_template_part('/atoms/a-btn/a-btn', null,
+                    <?php template_part_atoms('atoms/a-btn/a-btn',
                         array(
                             'button_text' => get_field('btn_text'),
                             'button_link' => get_field('url_btn'),

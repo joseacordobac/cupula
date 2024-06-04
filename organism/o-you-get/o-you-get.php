@@ -1,8 +1,6 @@
 <?php
  /* Organism: You get */
 
- wp_enqueue_style('o-you-get');
- //wp_enqueue_script('o-you-get');
 
  $content_class = isset($args['content_class']) ? $args['content_class'] : ''; 
 
@@ -33,7 +31,11 @@
                 'image_size' => $img_size,
                 'internal_icon' => $img_icon,
                 'alt' => $title,
-                'class' => 'o-you-get-img'
+                'class' => 'o-you-get-img',
+                'aspect_ratio' => '1/1',
+                'img_radius' => true,
+                'custom_class' => 'o-you-get-img',
+                'has_video' => get_field('video_link'),
             ));
         } ?>
     </div>
@@ -51,8 +53,8 @@
                 <div class="o-you-get-list__content">
                     <?php
                         get_template_part('/molecules/m-value/m-value', null, array(
-                        'icon' => wp_get_attachment_image_url(get_sub_field('advanteage_icon'), 'thumbnail'),
-                        'title' => get_sub_field('title_advantege'),
+                        'icon' => wp_get_attachment_image_url(get_sub_field('icono'), 'thumbnail'),
+                        'title' => get_sub_field('titulo'),
                         'description' => get_sub_field('description'),
                         'custom_class' => $custom_class,
                     ))
@@ -62,8 +64,7 @@
             <?php
             if($btn_text){?>
             <div class="o-you-get__btn">
-                <?php    get_template_part('/atoms/a-btn/a-btn', null,
-                    array(
+                <?php template_part_atoms('atoms/a-btn/a-btn', array(
                             'button_text' => $btn_text,
                             'button_link' => $btn_link,
                             'btn_type' => 'a-btn--primary',

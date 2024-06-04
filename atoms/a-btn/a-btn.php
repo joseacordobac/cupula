@@ -4,7 +4,7 @@
  * @param array $args
  * @return void
  * @example 
-    get_template_part('/atoms/a-btn/a-btn', null, 
+    template_part_atoms('atoms/a-btn/a-btn', 
         array(
             'button_text' => 'Read More',
             'button_link' => '#',
@@ -16,7 +16,7 @@
     );
  */
 
-wp_enqueue_style('a-btn');
+// wp_enqueue_style('a-btn');
 
 $button_text = isset($args['button_text']) ? $args['button_text'] : '';
 $button_link = isset($args['button_link']) ? $args['button_link'] : '';
