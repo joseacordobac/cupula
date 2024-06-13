@@ -1,0 +1,26 @@
+.a-nav-btn__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: var(--border-radius--regular);
+  background: white;
+  box-shadow: var(--shadow-boxes);
+  padding: 1rem 2rem;
+  transition: 0.35s;
+}
+
+.a-nav-btn__content:hover {
+  background: var(--tertiary-color);
+  padding: 1rem 1.8rem;
+  font-weight: bold;
+  transition: 0.35s;
+}
+
+.a-nav-btn__text {
+  font-size: 1.4rem;
+}
+
+.a-nav-btn {
+  text-decoration: none;
+  color: var(--main-color);
+}

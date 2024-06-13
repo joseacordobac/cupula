@@ -1,0 +1,139 @@
+.main-proyect--content {
+  display: grid;
+  grid-template-columns: 76% 22%;
+  gap: 2rem;
+  max-width: 85%;
+  margin: auto;
+  padding: 10rem 0px;
+}
+
+.main-proyect--gray{
+  background-color: #F5F5F5;
+  display: grid;
+  grid-template-columns: 76% 22%;
+}
+
+.main-proyect--gray__container{
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5rem;
+}
+
+.projects-banner--imagen--video video{
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+}
+
+.projects-banner {
+  border-radius: var(--border-radius--regular);
+  overflow: hidden;
+}
+
+.project-nav {
+  margin: 2rem 0rem;
+}
+
+.project-nav__content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-section{
+  background: white;
+  border-radius: var(--border-radius--regular);
+  padding-bottom: 5rem;
+}
+
+.about-project {
+  max-width: 90%;
+  margin: auto;
+  padding: 4rem 0px;
+}
+
+.main-proyects .a-titles-title {
+  border-bottom: solid var(--secondary-color);
+  display: inline-block;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.about-project__description {
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+  border-bottom: solid 0.1rem gainsboro;
+}
+
+.about-project__spaces {
+  margin-top: 4rem;
+}
+
+.about-project__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.como-llegar {
+  max-width: 95%;
+  margin: auto;
+}
+
+.how-arrive__content {
+  display: grid;
+  grid-template-columns: 55% 43%;
+  gap: 2%;
+}
+
+.how-arrive__map {
+  overflow: hidden;
+}
+
+.main-proyects .a-titles.title--secondary>* {
+  border: none;
+  font-size: 2rem;
+}
+
+.video-proyecto {
+  max-width: 95%;
+  margin: auto;
+}
+
+.video-proyecto__video--video video {
+  width: 100%;
+  border-radius: var(--border-radius--regular);
+  margin: 10rem 0rem;
+}
+
+.apartamento-modelo {
+  max-width: 95%;
+  margin: auto;
+  position: relative;
+}
+
+.main-proyects .o-model-appartment {
+  max-width: 85%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0rem 1rem;
+}
+
+.main-proyects .m-card-model .a-img {
+  height: 25rem;
+}
+
+.main-proyects .m-card-model .a-img__img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.a-btn-info.float-form:nth-child(1){
+  display: none;
+}
+
+.a-btn-top{
+  left: 2rem;
+  right: inherit !important;
+  display: none !important;
+}

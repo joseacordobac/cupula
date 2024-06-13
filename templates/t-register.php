@@ -9,8 +9,8 @@ function register_templates_custom() {
     'formulario',
     'thank-you',
     'entrenate',
-    'single-programs',
-    'empresas'
+    'single-proyectos',
+    'empresas',
   );
 
   foreach($list_nameSpaces_register as $key => $value) {

@@ -19,8 +19,8 @@ if (!function_exists('register_custom_elements')) :
       wp_enqueue_script('w-globals', PATH_STYLE . 'w-globals/w-globals.js', array(), false, true);
       
       /** SWIPER JS */
-      wp_register_style('css-swiper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
-      wp_register_script('js-swiper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array(), null, true);
+      wp_enqueue_style('css-swiper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+      wp_enqueue_script('js-swiper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array(), null, true);
 
       //* GSAP */
       wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js', array(), null, true);
