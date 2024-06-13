@@ -42,7 +42,7 @@
                 <?php endwhile; ?>               
             </ul>
             <?php 
-                template_part_atoms('atoms/a-btn/a-btn', 
+                template_part_atomic('atoms/a-btn/a-btn', 
                 array(
                         'button_text' => $btn_text,
                         'button_link' => $btn_link,

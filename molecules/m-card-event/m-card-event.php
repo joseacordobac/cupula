@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="m-card-btn">
-      <?php template_part_atoms('atoms/a-btn/a-btn', array(
+      <?php template_part_atomic('atoms/a-btn/a-btn', array(
         'button_text' => $btn_text,
         'button_link' => $btn_link,
         'btn_type' => 'a-btn--primary',

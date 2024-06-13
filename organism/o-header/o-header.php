@@ -9,9 +9,9 @@
     <div class="g-content-regular o-header__content">
         <div class="o-header__logo-content"> 
             <?php if(is_page_template('templates/empresas.php')){ ?>
-                <?php template_part_atoms('atoms/a-logo-white/a-logo-white'); ?>
+                <?php template_part_atomic('atoms/a-logo-white/a-logo-white'); ?>
             <?php }else{ ?>
-                <?php template_part_atoms('atoms/a-logo/a-logo'); ?>
+                <?php template_part_atomic('atoms/a-logo/a-logo'); ?>
             <?php } ?>
 
         </div>

@@ -4,7 +4,7 @@
  * @param array $args
  * @return void
  * @example 
-    template_part_atoms('atoms/a-btn/a-btn', 
+    template_part_atomic('atoms/a-btn/a-btn', 
         array(
             'button_text' => 'Read More',
             'button_link' => '#',

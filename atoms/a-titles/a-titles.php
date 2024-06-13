@@ -14,6 +14,7 @@
     $type = isset($args['titles-type']) ? $args['titles-type'] : '';
     $animations = isset($args['animations']) ? $args['animations'] : '';
     $custom_css = isset($args['custom-css']) ? $args['custom-css'] : '';
+    $titles_type = isset($args['titles-type']) ? $args['titles-type'] : '<h3></h3>';
 
     wp_enqueue_style('a-titles');
     // wp_enqueue_script('a-titles');

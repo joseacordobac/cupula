@@ -15,7 +15,7 @@
                     <h3 class="hero-banner__title js-title"><?php the_sub_field('titulo'); ?></h3>
                     <div class="hero-banner__text"><?php the_sub_field('description'); ?></div>
                     <?php 
-                        template_part_atoms('atoms/a-btn/a-btn', 
+                        template_part_atomic('atoms/a-btn/a-btn', 
                         array(
                                 'button_text' => get_sub_field('btn_text'),
                                 'button_link' => get_sub_field('url_btn'),

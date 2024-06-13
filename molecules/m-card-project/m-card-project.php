@@ -58,7 +58,7 @@
         </div>
       </section>
       <footer class="m-card-project__footer">
-        <?php template_part_atoms('atoms/a-btn/a-btn', array(
+        <?php template_part_atomic('atoms/a-btn/a-btn', array(
           'button_text' => get_field('btn_text'),
           'button_link' => $button_link,
           'btn_type' => 'a-btn--primary',

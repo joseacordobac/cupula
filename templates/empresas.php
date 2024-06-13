@@ -20,7 +20,7 @@
                                 <h3 class="hero-banner__title js-title"><?php the_sub_field('title'); ?></h3>
                                 <p class="hero-banner__text"><?php the_sub_field('description'); ?></p>
                                 <?php 
-                                    template_part_atoms('atoms/a-btn/a-btn', 
+                                    template_part_atomic('atoms/a-btn/a-btn', 
                                     array(
                                             'button_text' => get_sub_field('btn_text'),
                                             'button_link' => get_sub_field('url_btn'),
@@ -123,7 +123,7 @@
 
                     <div class="tools_btn">
                         <?php 
-                        template_part_atoms('atoms/a-btn/a-btn', 
+                        template_part_atomic('atoms/a-btn/a-btn', 
                             array(
                                     'button_text' => get_sub_field('btn_text'),
                                     'button_link' => get_sub_field('url_btn'),

@@ -16,7 +16,7 @@
     
     <?php
     if(get_sub_field('btn_text')):
-      template_part_atoms('atoms/a-btn/a-btn',null,
+      template_part_atomic('atoms/a-btn/a-btn',null,
         array(
           'button_text' => get_sub_field('btn_text'),
           'button_link' => get_sub_field('url_btn'),
