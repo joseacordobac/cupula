@@ -137,7 +137,7 @@
                                 'title' => "Ven y conoce nuestro apartamento modelo",
                                 'custom-css' => 'como-llegar__title',
                             )); ?>
-                            <?php template_part_atomic( 'organism/o-model-appartment/o-model-appartment', array('is_slider' => true)); ?>
+                            <!-- <?php //template_part_atomic( 'organism/o-model-appartment/o-model-appartment', array('is_slider' => true)); ?> -->
                         </div>
                     </div>
                 </article>
