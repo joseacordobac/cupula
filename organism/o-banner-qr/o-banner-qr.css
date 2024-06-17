@@ -5,6 +5,22 @@
   background-color: var(--main-color);
 }
 
+.o-banner-qr--secondary{
+  
+  .o-banner-qr__content {
+    background-color: #FFC32B4D;
+  }
+
+  .o-banner-qr__info-title {
+    color: var(--main-color);
+  }
+
+  .o-banner-qr__info-text{
+    color: black;
+  }
+
+}
+
 .o-banner-qr__img {
   position: relative;
   height: 40rem;

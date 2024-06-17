@@ -14,7 +14,7 @@
                             'image_size' => "full",
                             'alt' => "main banner",
                             'class' => "projects-banner--imagen",
-                            // 'aspect_ratio' => aspect ratio
+                            'aspect_ratio' => "16/9",
                             'img_radius' => 'banner-img--radius',
                             'has_video' => get_field('video_'),
                     )); ?>
@@ -67,7 +67,7 @@
                                     'custom-css' => 'about-project__title',
                                 )); ?>
         
-                                <p class="about-project__description"><?php the_field('description'); ?></p> 
+                                <p class="about-project__description"><?php the_field('description_about_project'); ?></p> 
                             </div>
                             
                             <div class="about-project__spaces">
@@ -99,6 +99,13 @@
                                     'title' => get_field('title_map'),
                                     'custom-css' => 'como-llegar__title',
                                 )); ?>
+                                <?php template_part_atomic('atoms/a-btn-places/a-btn-places', 
+                                        array(
+                                        'waze' => get_field('waze'), 
+                                        'google_maps' => get_field('google_maps')
+                                        )
+                                    ); 
+                                ?>
                             </div>
                             <div class="how-arrive__content">
                                 <div class="how-arrive__map">
@@ -109,12 +116,14 @@
                                         'title' => get_field('title_elements'),
                                         'custom-css' => 'title--secondary',
                                     )); ?>
+                                    <ul class="how-arrive__list">
                                     <?php while(have_rows('options_list')): the_row();
                                         template_part_atomic('atoms/a-list/a-list', array(
                                             'item_list' => get_sub_field('places'),
                                             'custom_class' => 'a-list--primary',
                                         ));
                                     endwhile; ?>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -137,18 +146,50 @@
                                 'title' => "Ven y conoce nuestro apartamento modelo",
                                 'custom-css' => 'como-llegar__title',
                             )); ?>
-                            <!-- <?php //template_part_atomic( 'organism/o-model-appartment/o-model-appartment', array('is_slider' => true)); ?> -->
+                            <?php template_part_atomic( 'organism/o-model-appartment/o-model-appartment', array('is_slider' => true)); ?>
                         </div>
                     </div>
                 </article>
         
                 <aside class="proyect-aside">
                     <section class="project-contact">
-        
+                            
                     </section>
                 </aside>
             </div>
         </div>
+
+        <section id="testimonios" class="new-realities">
+            <div class="new-realities__content">
+                <?php while( have_rows('new_realities') ) : the_row(); ?>
+                <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                    array(
+                        'title'         => get_sub_field('titulo_de_seccion'),
+                        'titles-type'   => 'a-titles--main',
+                        'animations'    => 'js-title-typing',
+                        'custom-css'    => 'g-content-middle'
+                        )
+                    ); 
+                ?>
+                <?php template_part_atomic('/organism/o-testimonials/o-testimonials',
+                    array(
+                        'repater_name'      => 'agregar_testimonsio',
+                        'img_id'            => 'img_testimonial',
+                        'alt'               => 'name',
+                        'name_testimonial'  => 'name',
+                        'testimonial'       => 'testimonial',
+                        'custom_class'      => '',
+                        'custom_class_card' => ''
+                    )
+                ); ?>
+                <?php endwhile; ?>
+            </div>
+        </section>
+
+        <section id="banner-impact" class="banner-impact">
+            <?php template_part_atomic( 'organism/o-banner-qr/o-banner-qr', array('custom_class' => 'o-banner-qr--secondary')); ?>
+        </section>
+
     </main>
 
 <?php get_footer(); ?>

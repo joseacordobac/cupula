@@ -16,7 +16,7 @@
     
     <?php
     if(get_sub_field('btn_text')):
-      template_part_atomic('atoms/a-btn/a-btn',null,
+      template_part_atomic('atoms/a-btn/a-btn',
         array(
           'button_text' => get_sub_field('btn_text'),
           'button_link' => get_sub_field('url_btn'),
@@ -30,7 +30,7 @@
   <div class="m-banner-columns__img">
     
     <?php 
-    get_template_part('/atoms/a-img/a-img', null,
+    template_part_atomic('/atoms/a-img/a-img',
       array(
             'image_id' => get_sub_field('main_img'),
             'image_size' => 'large',
@@ -44,7 +44,7 @@
     if ($info_btn) {
       echo '<div class="m-banner-columns__content-info m-banner-columns--absolute">';
 
-        get_template_part('/atoms/a-btn-info/a-btn-info',null,
+      template_part_atomic('/atoms/a-btn-info/a-btn-info',
           array(
             'custom_class' => '',
             'target' => true

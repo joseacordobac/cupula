@@ -1,0 +1,27 @@
+.a-btn-places {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a-btn-places-waze {
+  background: #0085ff29;
+  padding: 10px 12px;
+  border-radius: 5rem;
+}
+
+.a-btn-places-maps {
+  background: #0085ff29;
+  padding: 7px 16px;
+  border-radius: 5rem;
+}
+
+.a-btn-places-waze-img {
+  width: 3.4rem;
+}
+
+.a-btn-places-maps-img {
+  width: 2.4rem;
+}

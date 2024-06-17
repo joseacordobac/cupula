@@ -32,13 +32,12 @@
           <?php the_field('phone'); ?>
         </p>
       </div>
-      <div class="m-card-model__places">
-        <a href="<?php the_field('waze'); ?>" class="m-card-model__places-waze" target="_blank">
-          <img class="m-card-model__places-waze-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/waze.svg" alt="waze-logo">
-        </a>
-        <a href="<?php the_field('google_maps'); ?>" class="m-card-model__places-maps" target="_blank">
-          <img class="m-card-model__places-maps-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/google-maps.svg" alt="google-maps-logo">
-        </a>
-      </div>
+      <?php template_part_atomic('atoms/a-btn-places/a-btn-places', 
+            array(
+              'waze' => get_field('waze'), 
+              'google_maps' => get_field('google_maps')
+              )
+            ); 
+      ?>
     </section>
 </article>
