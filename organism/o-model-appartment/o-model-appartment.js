@@ -4,8 +4,8 @@ const swiperAppartments = (getSlider) => {
     spaceBetween: 30,
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next--project',
-      prevEl: '.swiper-button-prev--project',
+      nextEl: '.swiper-button-next--swiper-button-next',
+      prevEl: '.swiper-button-prev--swiper-button-next',
     },
     pagination: {
       el: '.swiper-pagination--content-project',

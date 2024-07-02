@@ -3,8 +3,9 @@
     position: relative;
 }
 
-.a-titles.a-titles--main{
+.a-titles.a-titles--main .a-titles-title{
     text-align: center;
+    border-bottom: transparent;
 }
 
 .a-titles.a-titles--main .a-titles-title::after {

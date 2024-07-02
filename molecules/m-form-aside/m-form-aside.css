@@ -2,6 +2,14 @@
   position: fixed;
   top: 10rem;
   z-index: 5;
+  opacity: 1;
+  transition: 0.35s;
+}
+
+.m-form-aside--index{
+  z-index:-1;
+  opacity: 0;
+  transition: 0.35s;
 }
 
 .m-form-aside__content {
@@ -93,3 +101,27 @@
   width: 3rem;
   height: 4rem;
 }
+
+.et-db #et-boc .et_pb_module .forminator-ui.forminator-custom-form[data-design=default], .forminator-ui.forminator-custom-form[data-design=default]{
+  margin: 0px !important;
+}
+
+.m-form-aside__btn-text {
+  position: relative;
+  width: 100% !important;
+  border-radius: 25px !important;
+}
+
+.m-form-aside__btn-text::after {
+  position: absolute;
+  content: url(../../assets/img/icon-wtss.svg);
+  left: -3px;
+  top: -3px;
+  bottom: 0px;
+  transform: scale(0.4);
+}
+
+.m-form-aside .bnt-floats{
+  gap: 1rem;
+}
+

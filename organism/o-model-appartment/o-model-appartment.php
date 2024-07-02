@@ -24,7 +24,7 @@
         endif;
 
         if($proyectos->have_posts() && $is_slider):
-          echo '<div class="o-model-appartment__slider"><div class="swiper-wrapper">';
+          echo '<div class="o-model-appartment__slider"><div class="o-model-appartment__swiper swiper-wrapper">';
             while($proyectos->have_posts()):
               $proyectos->the_post();
               echo '<div class="swiper-slide">';

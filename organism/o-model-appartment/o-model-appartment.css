@@ -2,12 +2,27 @@
   margin: 5rem 0px;
 }
 
+.o-model-appartment__content-slider{
+  overflow: hidden;
+  padding: 1rem 2rem;
+}
+
 .o-model-appartment__content {
   display: grid;
   grid-template-columns: 48% 48%;
   gap: 3rem;
   max-width: 75%;
   margin: auto;
+}
+
+.o-model-appartment .swiper-button-next--swiper-button-next{
+  left: 5rem;
+  transform: rotate(180deg);
+}
+
+.o-model-appartment .swiper-button-prev--swiper-button-next{
+  left: inherit;
+  right: 5rem;
 }
 
 @media(max-width:780px){

@@ -54,6 +54,7 @@
 }
 
 .main-proyects .a-titles-title {
+  border-bottom: var(--quinary-color) solid 2px;
   display: inline-block;
   color: var(--main-color);
   margin-bottom: 2rem;
@@ -136,7 +137,6 @@
 .main-proyects .o-model-appartment {
   max-width: 85%;
   margin: auto;
-  overflow: hidden;
   padding: 0rem 1rem;
 }
 

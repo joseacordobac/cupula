@@ -24,17 +24,16 @@
       <span class="m-form-aside__time-value">menos de 1 minuto</span>
     </div>
     <div class="m-form-aside__form">
-      <input type="text" name="" class="m-form-aside__form-input" placeholder="nombre">
-      <input type="email" name="" class="m-form-aside__form-input" placeholder="email">
-      <input type="text" name="" class="m-form-aside__form-input" placeholder="Celular">
-      <div class="m-form-aside__btn">
+      <?php echo do_shortcode('[forminator_form id="988"]'); ?>
+      <!-- <div class="m-form-aside__btn">
         <a href="#" class="m-form-aside__btn-wtss">
           <img class="m-form-aside__btn-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-wtss.svg" />
           <span class="m-form-aside__btn-text">INICIAR COVERSACIÓN</span>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
+ 
   <div class="bnt-floats">
     <?php 
     template_part_atomic('atoms/a-btn-info/a-btn-info',

@@ -10,9 +10,6 @@ const starMainSwipper = () =>{
     nextEl: '.swiper-button-next--bannerfull',
     prevEl: '.swiper-button-prev--bannerfull',
   },
-  autoplay: {
-      delay: 10000,
-  },
   pagination: {
           el: '.swiper-pagination--bannerfull', 
           clickable: true,  
