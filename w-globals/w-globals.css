@@ -124,6 +124,15 @@ span.swiper-pagination-bullet {
     overflow: hidden;
 }
 
+@media(min-width: 1440px){
+    .g-content-regular,
+    .g-content-5X,
+    .o-stadistics,
+    .g-content-middle{
+        max-width: 1250px;
+    }
+}
+
 @media(max-width: 768px){
     
     :root{    

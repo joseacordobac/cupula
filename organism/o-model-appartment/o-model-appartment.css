@@ -30,4 +30,16 @@
     grid-template-columns: 100%;
     max-width: 90%;
   }
+
+  .o-model-appartment__content-slider{
+    padding: 0rem;
+  }
+
+  .o-model-appartment .swiper-button-prev--swiper-button-next{
+    right: -1rem;
+  }
+
+  .o-model-appartment .swiper-button-next--swiper-button-next{
+    left: -1rem;
+  }
 }

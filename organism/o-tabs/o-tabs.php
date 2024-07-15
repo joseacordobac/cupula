@@ -54,7 +54,7 @@
                                 array(
                                     'image_id' => get_sub_field('logo'),
                                     'image_size' => 'medium',
-                                    'alt' => 'betek',
+                                    'alt' => 'cupula',
                                     'class' => 'tools-img',
                                 ));
                             endif;
@@ -123,7 +123,7 @@
                             array(
                                 'image_id' => get_sub_field('logo'),
                                 'image_size' => 'medium',
-                                'alt' => 'betek',
+                                'alt' => 'cupula',
                                 'class' => 'tools-img',
                             ));
                         endif;

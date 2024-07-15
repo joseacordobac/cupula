@@ -29,7 +29,7 @@
         <a href="#" class="m-form-aside__btn-wtss">
           <img class="m-form-aside__btn-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-wtss.svg" />
           <span class="m-form-aside__btn-text">INICIAR COVERSACIÓN</span>
-        </a>
+        </a>  
       </div> -->
     </div>
   </div>

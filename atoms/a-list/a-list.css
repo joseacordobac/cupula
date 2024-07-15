@@ -11,3 +11,14 @@
     width: 4rem;
     height: 4rem;
   }
+
+  @media(max-width: 780px){
+    .a-list{
+        font-size: 1.4rem;
+    }
+
+    .a-list__img{
+        width: 3rem;
+        height: 3rem;
+    }
+  }

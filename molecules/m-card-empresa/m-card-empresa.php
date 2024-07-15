@@ -25,7 +25,7 @@
             array(
                   'image_id' => $imagen_id,
                   'image_size' => 'large',
-                  'alt' => 'betek',
+                  'alt' => 'cupula',
                   'class' => 'o-you-get-img',
                   'aspect_ratio' => '1/1'
             ));

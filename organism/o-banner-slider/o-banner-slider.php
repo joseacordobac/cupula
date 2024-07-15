@@ -31,7 +31,7 @@
                         array(
                             'image_id' => get_sub_field('imagen'),
                             'image_size' => 'large',
-                            'alt' => 'betek',
+                            'alt' => 'cupula',
                             'class' => 'o-you-get-img',
                             'aspect_ratio' => '1/1'
                         ));

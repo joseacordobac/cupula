@@ -17,7 +17,7 @@
             <?php 
                 $image_html = wp_get_attachment_image( get_sub_field($id_name), $image_size, false, array(
                     'class' => 'm-logo-card__img',
-                    'alt' => 'empresas a trabajado con Betek',
+                    'alt' => 'empresas a trabajado con cupula',
                 ) );
                 echo $image_html; 
             ?>   

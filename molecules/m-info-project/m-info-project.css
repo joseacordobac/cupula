@@ -20,3 +20,11 @@
 .m-info-project__texts-subtitle {
   font-size: 1.8rem;
 }
+
+@media(max-width: 768px){
+  .m-info-project{
+    flex-direction: column;
+  }
+
+  
+}
