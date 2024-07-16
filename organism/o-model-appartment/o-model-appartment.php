@@ -13,7 +13,7 @@
   <div class="o-model-appartment">
     <div class="<?php echo $is_slider ? 'o-model-appartment__content-slider' : 'o-model-appartment__content'; ?>">
       <?php 
-        $args = u_args_pt('apartamentos');
+        $args = u_args_pt('proyectos');
         $proyectos = new WP_Query($args);
         
         if($proyectos->have_posts() && !$is_slider):
@@ -27,7 +27,7 @@
           echo '<div class="o-model-appartment__slider"><div class="o-model-appartment__swiper swiper-wrapper">';
             while($proyectos->have_posts()):
               $proyectos->the_post();
-              echo '<div class="swiper-slide">';
+              echo '<div class="swiper-slide">'; 
                 template_part_atomic('/molecules/m-card-model/m-card-model');
               echo '</div>';
             endwhile;

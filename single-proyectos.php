@@ -90,7 +90,7 @@
                         </section>
         
                         <div class="cotiza-you-apartment">
-        
+                            <?php template_part_atomic('organism/o-dinamic-quote/o-dinamic-quote'); ?>
                         </div>
         
                         <div class="como-llegar">

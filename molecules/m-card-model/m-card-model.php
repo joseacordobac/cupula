@@ -4,10 +4,9 @@
  * @file
  * @brief
  */
-  wp_enqueue_style('m-card-model');
 
   $horizontal = isset($args['horizontal']) ? 'm-card-model--horizontal' : '';
-  $thumbnail_id = get_post_thumbnail_id();
+  $thumbnail_id = get_field('img_reference');
   
 ?>
 
@@ -15,14 +14,14 @@
     <?php 
       get_template_part( 'atoms/a-img/a-img', null, array(
         'image_id' => $thumbnail_id,
-        'alt' => get_the_title(),
+        'alt' => get_field('sales_sale_name'),
         'img_radius' => true
       ))
     ?>
     <section class="m-card-model__body">
       <div class="m-card-model__body-text">
         <h3 class="m-card-model__body-city"><?php the_field('city'); ?></h3>
-        <h2 class="m-card-model__body-title"><?php the_title(); ?></h2>
+        <h2 class="m-card-model__body-title"><?php get_field('sales_sale_name'); ?></h2>
         <p class="m-card-model__body-data">
           <img class="m-card-model__icon" src="<?php echo get_stylesheet_directory_uri() . '/assets/icons/call.svg'; ?>" />
           <?php the_field('adress'); ?>
