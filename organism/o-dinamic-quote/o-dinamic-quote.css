@@ -1,0 +1,100 @@
+.cotiza-you-apartment {
+  background-color: #ffedbf;
+  padding: 2rem 0rem;
+}
+
+.o-dinamic-quote {
+  max-width: 85%;
+  margin: auto;
+}
+
+.o-dinamic-quote__steps {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.o-dinamic-quote__steps-element{
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-between;
+  color: var(--main-color);
+  align-items: center;
+  gap: 1rem;
+}
+
+.o-dinamic-quote__steps-num {
+  background: var(--main-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.o-dinamic-quote__map {
+  width: 100%;
+  position: relative;
+  border-radius: 50px;
+}
+
+.o-dinamic-quote__map-img {
+  width: 100%;
+}
+
+.o-dinamic-quote__map-img {
+  width: 100%;
+  /* width: 748px; */
+}
+
+.o-dinamic-quote__map-tower {
+  background: #ffffff9a;
+  color: var(--main-color);
+  font-size: 1.4rem;
+  border-radius: 25px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  text-transform: uppercase;
+  width: 14rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.o-dinamic-quote__map-tower--1 {
+  top: 53%;
+  transform: rotate(332deg);
+  left: 2%;
+}
+
+.o-dinamic-quote__map-tower--2 {
+  top: 38%;
+  left: 20%;
+  transform: rotate(333deg);
+}
+
+.o-dinamic-quote__map-tower--3 {
+  right: 43%;
+  top: 22%;
+  transform: rotate(334deg);
+  background-color: #ECD92599;
+}
+
+.o-dinamic-quote__map-tower--4 {
+  left: 56%;
+  transform: rotate(333deg);
+  top: 8%;
+  background-color: #ECD92599;
+}
+
+.o-dinamic-quote__map-tower--5 {
+  right: -1%;
+  top: 26%;
+  transform: rotate(64deg);
+}
+
