@@ -4,6 +4,7 @@
   gap: 2rem;
 }
 
+
 .m-info-project__texts {
   display: flex;
   flex-direction: column;
@@ -28,5 +29,18 @@
 
   .m-info-project__texts .a-btn{
     display: none;
+  }
+
+  
+  .m-info-project__img{
+    width: 100%;
+  }
+
+  .m-info-project__img-icon {
+    width: 100%;
+  }
+
+  .m-info-project__texts-title{
+    font-size: 2rem;
   }
 }

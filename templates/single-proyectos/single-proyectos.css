@@ -242,4 +242,14 @@
   .cotiza-you-apartment {
     display: none;
   }
+
+  .title-content {
+    flex-direction: column;
+    align-items: inherit;
+    gap: 0;
+  }
+
+  .title-content .a-btn-places {
+    justify-content: flex-start;
+  }
 }
