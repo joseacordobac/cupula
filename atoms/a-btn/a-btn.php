@@ -4,16 +4,6 @@
  * @param array $args
  * @return void
  * @example 
-    template_part_atomic('atoms/a-btn/a-btn', 
-        array(
-            'button_text' => 'Read More',
-            'button_link' => '#',
-            'btn_type' => 'a-btn--primary',
-            'custom_css' => 'g-with-100',
-            'target' => '_blank',
-            'icons_path' => get_template_directory_uri().'/assets/icons'
-        );
-    );
  */
 
 // wp_enqueue_style('a-btn');

@@ -164,8 +164,35 @@
 }
 
 @media(max-width: 780px){
+
+  .o-header{
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+  }
+
+  .o-header__mobile-line{
+    background-color: var(--main-color);
+  }
+
+  .o-header:has(.has-show) {
+    background-color: var(--main-color);
+  }
+
+  .has-show .o-header__mobile-line{
+    background-color: white;
+  }
+
+  .o-header--js-active{
+    background-color: var(--main-color);
+  }
+
   .main-proyect--content{
     grid-template-columns: 100%;
+  }
+
+  .projects-banner{
+    border-radius: 0px;
   }
 
   .project-nav__content{
@@ -178,8 +205,8 @@
   }
   
   .main-proyect--content{
-    padding: 4rem 0px;
-    max-width: 92%;
+    padding: 0rem 0px;
+    max-width: 100%;
   }
 
   .main-proyect--gray{
@@ -211,4 +238,8 @@
     max-width: 100%;
   }
 
+  /* info */
+  .cotiza-you-apartment {
+    display: none;
+  }
 }

@@ -22,9 +22,11 @@
 }
 
 @media(max-width: 768px){
-  .m-info-project{
-    flex-direction: column;
+  .m-info-project__texts-subtitle {
+    display: none;
   }
 
-  
+  .m-info-project__texts .a-btn{
+    display: none;
+  }
 }
