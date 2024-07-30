@@ -43,6 +43,13 @@
                             "btn_link" => get_field('btn_link_project'),
                         )); ?>
                     </div>
+                    <div class="project-logo__gallery">
+                        <?php template_part_atomic('organism/o-gallery-slider/o-gallery-slider', array(
+                            'repeater' => 'gallery-list',
+                            'img_id' => 'gallery-id-img',
+                            'custom_class' => 'o-gallery-slider--project'
+                        )); ?>
+                    </div>
                 </section>
     
             </article>
@@ -50,7 +57,7 @@
             <aside class="proyect-aside">
                 <?php template_part_atomic('molecules/m-form-aside/m-form-aside', array(
                     'asesor_name' => 'Natalia Serna',
-                    'asesor_picture' => get_stylesheet_directory_uri().'/assets/img/asesora.svg',
+                    'asesor_picture' => get_stylesheet_directory_uri().'/assets/img/asesora.jpg',
                 )); ?>
             </aside>
         </div>
@@ -93,7 +100,7 @@
                             <?php template_part_atomic('organism/o-dinamic-quote/o-dinamic-quote'); ?>
                         </div>
         
-                        <div class="como-llegar">
+                        <div class="como-llegar" id="como-llegar">
                             <div class="title-content">
                                 <?php template_part_atomic('atoms/a-titles/a-titles', array(
                                     'title' => get_field('title_map'),
@@ -146,7 +153,13 @@
                                 'title' => "Ven y conoce nuestro apartamento modelo",
                                 'custom-css' => 'como-llegar__title',
                             )); ?>
-                            <?php template_part_atomic( 'organism/o-model-appartment/o-model-appartment', array('is_slider' => true)); ?>
+                            <?php template_part_atomic( 'organism/o-model-appartment/o-model-appartment', 
+                                array(
+                                    'is_slider' => true,
+                                    'is_horizontal' => true
+                                    )
+                                ); 
+                            ?>
                         </div>
                     </div>
                 </article>

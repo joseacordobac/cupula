@@ -31,8 +31,11 @@
   color: var(--main-color);
 }
 
-.m-form-aside__asesor-pictur {
-  width: 6rem;
+.m-form-aside__asesor-picture {
+  width: 9rem;
+  border-radius: 50%;
+  height: 9rem;
+  object-fit: cover;
 }
 
 .m-form-aside__name-online {

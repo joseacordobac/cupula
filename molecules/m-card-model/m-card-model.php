@@ -1,16 +1,13 @@
 <?php 
 
 /**
- * @file
- * @brief
  */
 
   $horizontal = isset($args['horizontal']) ? 'm-card-model--horizontal' : '';
   $thumbnail_id = get_field('img_reference');
-  
 ?>
 
-<article class="m-card-model <?php $horizontal; ?>">
+<article class="m-card-model <?php echo $horizontal; ?>">
     <?php 
       get_template_part( 'atoms/a-img/a-img', null, array(
         'image_id' => $thumbnail_id,

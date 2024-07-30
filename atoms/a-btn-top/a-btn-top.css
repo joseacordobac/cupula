@@ -1,12 +1,16 @@
 .a-btn-top {
   background: var(--main-color);
   display: inline-block;
-  padding: 1.1rem 1.5rem;
+  padding: 1rem 1.4rem;
   border-radius: 5rem;
   position: fixed;
-  bottom: 5%;
+  bottom: 3%;
   z-index: 1;
   right: 9rem;
+}
+
+.a-btn-top__arrow-top{
+  width: 1.8rem;
 }
 
 @media(max-width: 780px){

@@ -26,6 +26,11 @@
 }
 
 @media(max-width:780px){
+  
+  .main-proyects .o-model-appartment{
+    margin-top: 1rem;
+  }
+
   .o-model-appartment__content{
     grid-template-columns: 100%;
     max-width: 90%;

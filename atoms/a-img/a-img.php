@@ -21,7 +21,6 @@
    
  $image_id = isset($args['image_id']) ? $args['image_id'] : '';
  $image_size = isset($args['image_size']) ? $args['image_size'] : 'large';
- $img_alt = isset($args['alt']) ? $args['alt'] : '';
  $custom_class = isset($args['class']) ? $args['class'] : '';
  $aspect_ratio = isset($args['aspect_ratio']) ? $args['aspect_ratio'] : '';
  $img_radius = isset($args['img_radius']) ? 'a-img__img--rounded' : '';
@@ -30,6 +29,10 @@
  $autoplay = isset($args['autoplay']) ? 'autoplay' : false;
 
  $has_modal = isset($args['has_modal']) ? $args['has_modal'] : false;
+ $alt_text = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+
+ $img_alt = isset($args['alt']) ? $args['alt'] : $alt_text;
+
 
  $img_path = wp_get_attachment_image($image_id, $image_size);
 

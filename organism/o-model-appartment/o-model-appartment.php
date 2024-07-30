@@ -6,6 +6,7 @@
    */
    
    $is_slider = isset($args['is_slider']) ? true : false;
+   $is_horizontal = isset($args['is_horizontal']) ? true : false;
    
    wp_enqueue_style('o-model-appartment');
   ?>
@@ -19,7 +20,7 @@
         if($proyectos->have_posts() && !$is_slider):
           while($proyectos->have_posts()):
             $proyectos->the_post();
-            template_part_atomic('/molecules/m-card-model/m-card-model');
+            template_part_atomic('/molecules/m-card-model/m-card-model', array('horizontal' => $is_horizontal));
           endwhile;
         endif;
 
@@ -28,7 +29,7 @@
             while($proyectos->have_posts()):
               $proyectos->the_post();
               echo '<div class="swiper-slide">'; 
-                template_part_atomic('/molecules/m-card-model/m-card-model');
+                template_part_atomic('/molecules/m-card-model/m-card-model', array('horizontal' => $is_horizontal));
               echo '</div>';
             endwhile;
           echo '</div>';

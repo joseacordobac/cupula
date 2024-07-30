@@ -1,8 +1,6 @@
 <?php 
 
 /**
- * @package redaxo\theme\rexdev
- *
  * @internal
  */
   
@@ -13,7 +11,7 @@
 <div class="m-form-aside">
   <div class="m-form-aside__content">
     <div class="m-form-aside__asesor">
-      <img src="<?php echo $asesor_picture; ?>" alt="name" class="m-form-aside__asesor-pictur">
+      <img src="<?php echo $asesor_picture; ?>" alt="name" class="m-form-aside__asesor-picture">
       <div class="m-form-aside__name">
         <h4 class="m-form-aside__name-text"><?php echo $asesor_name; ?></h4>
         <span class="m-form-aside__name-online">En línea</span>
