@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="o-modal-slider o-modal-slider--open">
+<div class="o-modal-slider">
   <div class="o-modal-slider__content">
     <span class="o-modal-slider__close">X</span>
     <div class="o-modal-slider__slid-component">
