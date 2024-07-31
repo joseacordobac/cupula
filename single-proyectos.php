@@ -53,13 +53,15 @@ wp_enqueue_style('single-proyectos');
                 </div>
                 <div class="project-logo__gallery">
                     <?php
-                    // if(wp_is_mobile()):
+                    if(wp_is_mobile()):
                     template_part_atomic('organism/o-gallery-slider/o-gallery-slider', array(
                         'repeater' => 'gallery-list',
                         'img_id' => 'gallery-id-img',
                         'custom_class' => 'o-gallery-slider--project'
                     ));
-                    // endif;
+                    else:
+                        template_part_atomic('organism/o-modal-slider/o-modal-slider');
+                    endif;
                     ?>
                 </div>
             </section>

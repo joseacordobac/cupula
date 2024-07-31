@@ -6,9 +6,9 @@
  */
 ?>
 
-<dialog class="o-modal-slider" open>
+<div class="o-modal-slider o-modal-slider--open">
   <div class="o-modal-slider__content">
-    <div class="o-modal-slider__close">X</div>
+    <span class="o-modal-slider__close">X</span>
     <div class="o-modal-slider__slid-component">
       <?php template_part_atomic('organism/o-gallery-slider/o-gallery-slider', array(
         'repeater' => 'gallery-list',
@@ -17,4 +17,4 @@
       ));  ?>
     </div>
   </div>
-</dialog>
+    </div>

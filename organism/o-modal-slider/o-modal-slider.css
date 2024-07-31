@@ -1,4 +1,39 @@
-.o-modal-slider{
-  position: fixed;
+.o-modal-slider {
+  display: none;
   top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background: #00000091;
+  z-index: 999;
+  border: none;
+}
+
+.o-modal-slider--open{
+  display: flex;
+  position: fixed;
+}
+
+.o-modal-slider__close {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  top: 17px;
+  z-index: 5;
+  background: var(--main-color);
+  display: inline-block;
+  padding: 0.8rem 2.2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.o-modal-slider__content {
+  max-width: 80%;
+  margin: auto;
+}
+
+.o-modal-slider__content .o-gallery-slider__item {
+  height: 70vh;
 }
