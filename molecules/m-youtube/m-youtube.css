@@ -1,0 +1,8 @@
+.m-youtube iframe {
+  width: 100%;
+}
+
+.m-youtube {
+  border-radius: 25px;
+  overflow: hidden;
+}
