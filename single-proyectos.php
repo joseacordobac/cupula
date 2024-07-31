@@ -6,13 +6,27 @@ wp_enqueue_style('single-proyectos');
 <main class="main-proyects">
     <div class="main-proyect--content">
         <article class="proyect-head">
-
+            <?php if(!wp_is_mobile()): ?>
             <section class="project-video">
                 <?php template_part_atomic('molecules/m-youtube/m-youtube', array(
                     'embed' => get_field('video_embed'),
                 ));
                 ?>
             </section>
+            <?php else: ?> 
+            <section class="projects-banner">
+                <?php template_part_atomic('/atoms/a-img/a-img',
+                    array(
+                        'image_id' => get_field('imagen_principal'),
+                        'image_size' => "full",
+                        'alt' => "main banner",
+                        'class' => "projects-banner--imagen",
+                        'aspect_ratio' => "16/9",
+                        'img_radius' => 'banner-img--radius',
+                        'has_video' => get_field('video_'),
+                )); ?>
+            </section>
+            <?php endif; ?>
 
             <section class="project-nav">
                 <div class="project-nav__content">

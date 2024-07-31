@@ -1,5 +1,5 @@
 .o-gallery-slider__item{
-  height: 25rem;
+  height: 15rem;
 }
 
 .o-modal-slider {
@@ -15,4 +15,8 @@
   height: 100%;
   max-width: 80%;
   margin: auto;
+}
+
+.o-gallery-slider__item .a-img__img--rounded{
+  border-radius: 1.2rem;
 }
