@@ -1,11 +1,23 @@
 const swiperGallery = (getGallerySwiper) => {
 
   const gallerySwiper = new Swiper(getGallerySwiper, {
-      spaceBetween: 30,
+      spaceBetween: 10,
       centeredSlides: true,
       loop: true,
       grabCursor: true,
       slidesPerView: 2,
+      loopAddBlankSlides: true,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+        },
+        780: {
+          slidesPerView: 2,
+        },
+      },
       navigation: {
         nextEl: '.swiper-button-next--gallery',
         prevEl: '.swiper-button-prev--gallery',
@@ -20,8 +32,10 @@ const swiperGallery = (getGallerySwiper) => {
 
 
 window.addEventListener('DOMContentLoaded', ()=>{
-  const getGallerySwiper = document.querySelector('.o-gallery-slider__swiper');
+  const getGallerySwiper = document.querySelectorAll('.o-gallery-slider__swiper');
   if(getGallerySwiper){
-    swiperGallery(getGallerySwiper);
+    getGallerySwiper.forEach((gallery)=>{
+      swiperGallery(gallery);
+    })
   }
 })

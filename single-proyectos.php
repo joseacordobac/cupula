@@ -44,11 +44,15 @@
                         )); ?>
                     </div>
                     <div class="project-logo__gallery">
-                        <?php template_part_atomic('organism/o-gallery-slider/o-gallery-slider', array(
-                            'repeater' => 'gallery-list',
-                            'img_id' => 'gallery-id-img',
-                            'custom_class' => 'o-gallery-slider--project'
-                        )); ?>
+                        <?php 
+                        // if(wp_is_mobile()):
+                            template_part_atomic('organism/o-gallery-slider/o-gallery-slider', array(
+                                'repeater' => 'gallery-list',
+                                'img_id' => 'gallery-id-img',
+                                'custom_class' => 'o-gallery-slider--project'
+                            )); 
+                        // endif;
+                        ?>
                     </div>
                 </section>
     
@@ -202,6 +206,9 @@
         <section id="banner-impact" class="banner-impact">
             <?php template_part_atomic( 'organism/o-banner-qr/o-banner-qr', array('custom_class' => 'o-banner-qr--secondary')); ?>
         </section>
+                
+        <!-- organism/o-modal-slider -->
+         <?php //template_part_atomic('organism/o-modal-slider/o-modal-slider'); ?>
 
     </main>
 

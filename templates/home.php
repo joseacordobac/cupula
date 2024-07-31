@@ -19,7 +19,7 @@ wp_enqueue_style('home');
 
 <main class="main">        
 
-    <?php get_template_part('organism/o-bannerfull-slider/o-bannerfull-slider', null, 
+    <?php template_part_atomic('organism/o-bannerfull-slider/o-bannerfull-slider', 
         array(
             'info_btn' => true
         )); 
@@ -28,7 +28,7 @@ wp_enqueue_style('home');
     <section id="proyectos" class="projects">
             
         <div class="g-content-regular trainning__content">
-            <?php get_template_part('/atoms/a-titles/a-titles', null, 
+            <?php template_part_atomic('/atoms/a-titles/a-titles', 
                 array(
                     'title'         => 'Proyecto en venta',
                     'titles-type'   => 'a-titles--main',                                )
@@ -46,7 +46,7 @@ wp_enqueue_style('home');
                     if($proyectos->have_posts()):
                         while($proyectos->have_posts()):
                             $proyectos->the_post();
-                            get_template_part('/molecules/m-card-project/m-card-project');
+                            template_part_atomic('/molecules/m-card-project/m-card-project');
                         endwhile;
                     endif;
 
@@ -55,31 +55,31 @@ wp_enqueue_style('home');
             </div>
         </div>
         <div class="swiper-pagination swiper-pagination--content-project"></div>
-        <?php get_template_part('atoms/a-arrows-slide/a-arrows-slide', null, array('slide_class' => 'project' ));   ?>
+        <?php template_part_atomic('atoms/a-arrows-slide/a-arrows-slide', array('slide_class' => 'project' ));   ?>
 
     </section>
 
     <section id="confiar" class="reazons-trust">
         <div class="reazons-trust__content">
-            <?php get_template_part('organism/o-stadistics/o-stadistics'); ?>
+            <?php template_part_atomic('organism/o-stadistics/o-stadistics'); ?>
         </div>
     </section>
 
     <section id="banner-impact" class="banner-impact">
-        <?php get_template_part( 'organism/o-banner-qr/o-banner-qr'); ?>
+        <?php template_part_atomic( 'organism/o-banner-qr/o-banner-qr'); ?>
     </section>
 
     <section id="model-appartment" class="model-appartment">
         <div class="model-appartment__content">
             <div class="g-content-regular model-appartment-title">
-                <?php get_template_part('/atoms/a-titles/a-titles', null, 
+                <?php template_part_atomic('/atoms/a-titles/a-titles', 
                     array(
                         'title'         => 'Ven y conoce nuestro apartamento modelo',
                         'titles-type'   => 'a-titles--main',                                )
                     ); 
                 ?>
             </div>
-            <?php get_template_part( 'organism/o-model-appartment/o-model-appartment'); ?>
+            <?php template_part_atomic( 'organism/o-model-appartment/o-model-appartment'); ?>
         </div>
     </section>
 

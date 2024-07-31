@@ -1,0 +1,18 @@
+.o-gallery-slider__item{
+  height: 25rem;
+}
+
+.o-modal-slider {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-modal-slider__content {
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+}

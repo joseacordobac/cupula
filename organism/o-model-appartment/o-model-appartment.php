@@ -7,7 +7,7 @@
    
    $is_slider = isset($args['is_slider']) ? true : false;
    $is_horizontal = isset($args['is_horizontal']) ? true : false;
-   
+
    wp_enqueue_style('o-model-appartment');
   ?>
 

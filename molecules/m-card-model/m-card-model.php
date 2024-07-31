@@ -3,7 +3,7 @@
 /**
  */
 
-  $horizontal = isset($args['horizontal']) ? 'm-card-model--horizontal' : '';
+  $horizontal = $args['horizontal'] ? 'm-card-model--horizontal' : '';
   $thumbnail_id = get_field('img_reference');
 ?>
 
