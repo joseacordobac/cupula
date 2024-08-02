@@ -10,10 +10,6 @@ html {
   font-size: 10px;
 }
 
-body {
-  background: red;
-}
-
 :root {
   --font-titles: "Poppins", sans-serif;
   --font-text: "Poppins", sans-serif;
