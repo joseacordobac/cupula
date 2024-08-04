@@ -117,4 +117,58 @@
     </div>
 </section>
 
+<section id="espacios-cupula">
+    <div class="container">
+        <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Conoce los espacios de vida CUPULA',
+                    'titles-type'   => 'a-titles--main',                                )
+                ); 
+            ?>
+        <div class="content-espacios-cupula">
+            <?php while (have_rows('espacios_cupula')): the_row();
+            ?>
+
+            <div class="item-espacios-cupula">
+                <div class="video-espacios-cupula">
+                    <?php the_sub_field('video_espacios'); ?>
+                </div>
+                <div class="text-espacios-cupula">
+                    <h5><?php the_sub_field('titulo_espacio_1'); ?></h5>
+                    <h5><?php the_sub_field('titulo_espacio_2'); ?></h5>
+                    <p><?php the_sub_field('contenido_espacios'); ?></p>
+                </div>
+
+            </div>
+
+            <?php endwhile; ?>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="nuestros-aliados">
+    <div class="container">
+        <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Nuestros aliados',
+                    'titles-type'   => 'a-titles--main',                                )
+                ); 
+            ?>
+        <div class="content-nuestros-aliados">
+            <ul class="item-logo">
+                <?php while (have_rows('nuestros_aliados')): the_row();
+            $imagen = get_sub_field('logo');
+            ?>
+
+
+                <li><img src="<?php echo $imagen['url']; ?>" alt="logo"></li>
+
+
+                <?php endwhile; ?>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
