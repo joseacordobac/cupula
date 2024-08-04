@@ -163,3 +163,8 @@ span.swiper-pagination-bullet {
     max-width: 95%;
   }
 }
+
+.container {
+  width: 82%;
+  margin: 0 auto;
+}

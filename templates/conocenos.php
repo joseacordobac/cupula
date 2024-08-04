@@ -33,4 +33,36 @@
 
 </section>
 
+<section id="second-section-conocenos">
+    <div class="container">
+        <?php
+       $conocenos_descripcion = get_field('descripcion_conocenos');
+       if( $conocenos_descripcion ): ?>
+        <div class="content-second-section-conocenos">
+            <div class="video-second-section-conocenos">
+                <?php echo $conocenos_descripcion['video']; ?>
+            </div>
+            <div class="text-second-section-conocenos">
+                <h3><?php echo $conocenos_descripcion['titulo']; ?></h3>
+                <p><?php echo $conocenos_descripcion['descripcion']; ?></p>
+                <div class="content-redes-descripcion">
+                    <?php 
+
+                        get_template_part('/atoms/a-btn-info/a-btn-info', null, 
+                            array(
+                                'custom_class' => '',
+                                'target' => true
+                            )
+                        );
+                        ?>
+                </div>
+
+            </div>
+        </div>
+        <?php endif; ?>
+
+    </div>
+
+</section>
+
 <?php get_footer(); ?>
