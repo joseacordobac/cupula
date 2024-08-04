@@ -51,7 +51,7 @@
 .text-second-section-conocenos h3 span {
   color: #14387f;
 }
-iframe {
+section#second-section-conocenos iframe {
   width: 100%;
   height: 500px;
   border-radius: 35px;
@@ -164,4 +164,16 @@ section#second-section-conocenos {
 }
 section#nuestra-historia {
   padding-top: 6%;
+}
+.content-video-nuestra-historia {
+  text-align: center;
+  margin-top: 7%;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 70%;
+}
+section#nuestra-historia iframe {
+  width: 100%;
+  height: 650px;
+  border-radius: 40px;
 }
