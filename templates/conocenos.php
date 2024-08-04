@@ -20,47 +20,17 @@
  
  ?>
 
-<main class="main">
-    <?php get_template_part('organism/o-bannerfull-slider/o-bannerfull-slider'); ?>
-    
-    <section class="build-dreams">
-        <?php template_part_organism('organism/o-you-get/o-you-get', array(
-            'title' => get_field('titulo'),
-            'custom_class' => 'o-you-get--conocenos',
-            'img_path' => get_field('imagen'),
-            'img_size' => 'large',
-            'content_name' => 'informacion',
-        )); ?>
-    </section>
-
-    <section id="alidos" class="alians">
-        <div class="alians__content">
-
-            <?php while( have_rows('alinced') ) : the_row(); ?>
-                <?php get_template_part('/atoms/a-titles/a-titles', null, 
-                    array(
-                        'title'         => get_sub_field('titulo_de_seccion'),
-                        'titles-type'   => 'a-titles--main',
-                        'animations'    => 'js-title-typing',
-                        'custom-css'    => 'g-content-middle'
-                        )
-                    ); 
-                ?>
-                
-                <?php get_template_part('/molecules/m-logo-card/m-logo-card', null, 
-                        array(
-                            'repeater'   => 'aliance_list',
-                            'id_name'    => 'logo'
-                        )); 
-                    ?> 
-                </div>
-            <?php endwhile; ?>
-            
+<section id="banner-conocenos">
+    <div class="content-banner-transversal">
+        <div class="titulo-banner-transversal">
+            <h1 class="">Cónocenos</h1>
         </div>
-    </section>
-    
-</main>
-  
+        <div class="img-banner-transversal" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php get_footer(); ?>
-
-
