@@ -65,4 +65,56 @@
 
 </section>
 
+<section id="conoce-nuestro-equipo">
+    <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Conoce a nuestro equipo',
+                    'titles-type'   => 'a-titles--main',                                )
+                ); 
+            ?>
+
+    <div class="content-conoce-nuestro-equipo_swiper swiper-content">
+        <div class="swiper-wrapper">
+            <?php while (have_rows('conoce_nuestro_equipo')): the_row();
+            $imagen = get_sub_field('imagen_equipo');
+            ?>
+            <div class="swiper-slide nuestro-equipo__slide">
+                <div class="item-control-nuestro-equipo">
+                    <div class="img-nuestro-equipo" style="background-image: url(<?php echo $imagen['url']; ?>);">
+                        <span><?php the_sub_field('titulo_principal'); ?></span>
+
+                    </div>
+                    <div class="text-nuestro-equipo">
+                        <div class="content-izq-nuestro-equipo">
+                            <h4><?php the_sub_field('titulo_1'); ?></h4>
+                            <p><?php the_sub_field('contenido_1'); ?></p>
+                        </div>
+                        <div class="content-dere-nuestro-equipo">
+                            <h4><?php the_sub_field('titulo_2'); ?></h4>
+                            <p><?php the_sub_field('contenido_2'); ?></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; ?>
+        </div>
+        <div class="swiper-pagination--testimonials"></div>
+    </div>
+</section>
+
+<section id="nuestra-historia">
+    <div class="container">
+        <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Nuestra historia',
+                    'titles-type'   => 'a-titles--main',                                )
+                ); 
+            ?>
+        <div class="content-video-nuestra-historia">
+
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
