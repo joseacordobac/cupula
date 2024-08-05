@@ -230,7 +230,7 @@ section#espacios-cupula {
   padding-top: 10px;
 }
 section#nuestros-aliados {
-  padding: 5% 0;
+  padding: 7% 0;
 }
 .content-nuestros-aliados {
   padding-top: 5%;
@@ -256,4 +256,209 @@ ul.item-logo li img {
   height: 100% !important;
   width: 120px;
   object-fit: contain;
+}
+
+/*------------------------TIMELINE--------------------------*/
+/*------------------------TIMELINE--------------------------*/
+.timeline-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.timeline-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#prevBtn {
+  transform: rotate(180deg);
+}
+button {
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.years {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  width: 65%;
+  justify-content: center;
+  gap: 12%;
+  position: relative;
+  padding-bottom: 4%;
+}
+.years:before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 2px;
+  background: #14387f;
+  top: 60px;
+  left: 7%;
+  right: 0;
+}
+
+.year {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #14387f;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+.year:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #14387f;
+  top: 45px;
+  left: 40%;
+  right: 0;
+  border-radius: 50%;
+}
+.year.active:before {
+  border: 4px solid #ffc32b;
+  top: 40px;
+}
+
+.timeline-content .content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.timeline-content .content.active {
+  display: block;
+  opacity: 1;
+}
+.content {
+  width: 77%;
+  margin: 0 auto;
+}
+.content-main-timeline {
+  display: flex;
+}
+.text-trayectoria {
+  width: 53%;
+  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  padding: 15px 15px;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0 4%;
+  padding-left: 7%;
+}
+.img-trayectoria {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  min-height: 370px;
+  border-radius: 40px;
+  margin-right: -34px;
+  z-index: 1;
+}
+section#nuestra-trayectoria {
+  padding-bottom: 6%;
+}
+.text-trayectoria h3 {
+  color: #ffc32b;
+  font-size: 30px;
+  line-height: 25px;
+}
+.text-trayectoria h4 {
+  color: #14387f;
+  font-size: 25px;
+  padding-bottom: 8%;
+}
+.text-trayectoria p {
+  color: #14387f;
+  font-size: 18px;
+}
+.text-trayectoria ul li {
+  color: #14387f;
+  font-size: 17px;
+  text-align: left;
+}
+.text-trayectoria ul {
+  padding-top: 1%;
+  padding-left: 6%;
+}
+
+section#preguntas-frecuentes {
+  background: #f5f5f5;
+  padding: 6% 0;
+}
+.accordion {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+.content-preguntas-frecuentes {
+  padding-top: 5%;
+}
+.accordion-header {
+  border: none;
+  padding: 20px 35px;
+  padding-right: 75px;
+  width: 100%;
+  text-align: left;
+  color: #37393f;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+.accordion-header:before {
+  content: url(https://cupula.movemospruebas.com/wp-content/uploads/2024/08/rowacordeon.svg);
+  position: absolute;
+  width: 30px;
+  right: 30px;
+  top: 40%;
+}
+button.accordion-header span {
+  font-weight: 400;
+  display: block;
+}
+button.accordion-header.active:before {
+  transform: rotate(270deg);
+}
+
+.accordion-header:hover {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 500px !important;
+  padding: 41px !important;
+  padding-top: 0 !important;
+}
+button.accordion-header.active span {
+  display: none;
 }
