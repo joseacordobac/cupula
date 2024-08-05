@@ -23,7 +23,7 @@
 <section id="banner-conocenos">
     <div class="content-banner-transversal">
         <div class="titulo-banner-transversal">
-            <h1 class="">Cónocenos</h1>
+            <h1 class="">Conócenos</h1>
         </div>
         <div class="img-banner-transversal" style="background-image: url(<?php the_post_thumbnail_url(); ?>);">
 
