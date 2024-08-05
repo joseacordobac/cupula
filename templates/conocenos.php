@@ -224,4 +224,33 @@
     </div>
 </section>
 
+<section id="preguntas-frecuentes">
+    <div class="container">
+        <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Conoce más de nosotros',
+                    'titles-type'   => 'a-titles--main',)
+                ); 
+            ?>
+        <div class="content-preguntas-frecuentes">
+            <div class="accordion">
+                <?php while (have_rows('conoce_mas_de_nosotros')): the_row();
+            ?>
+                <div class="accordion-item">
+                    <button class="accordion-header"><?php the_sub_field('titulo'); ?>
+                        <span><?php the_sub_field('texto_inicial'); ?></span></button>
+                    <div class="accordion-content">
+                        <p><?php the_sub_field('texto_completo'); ?></p>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>

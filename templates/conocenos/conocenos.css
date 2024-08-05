@@ -396,3 +396,69 @@ section#nuestra-trayectoria {
   padding-top: 1%;
   padding-left: 6%;
 }
+
+section#preguntas-frecuentes {
+  background: #f5f5f5;
+  padding: 6% 0;
+}
+.accordion {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+.content-preguntas-frecuentes {
+  padding-top: 5%;
+}
+.accordion-header {
+  border: none;
+  padding: 20px 35px;
+  padding-right: 75px;
+  width: 100%;
+  text-align: left;
+  color: #37393f;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+.accordion-header:before {
+  content: url(https://cupula.movemospruebas.com/wp-content/uploads/2024/08/rowacordeon.svg);
+  position: absolute;
+  width: 30px;
+  right: 30px;
+  top: 40%;
+}
+button.accordion-header span {
+  font-weight: 400;
+  display: block;
+}
+button.accordion-header.active:before {
+  transform: rotate(270deg);
+}
+
+.accordion-header:hover {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 500px !important;
+  padding: 41px !important;
+  padding-top: 0 !important;
+}
+button.accordion-header.active span {
+  display: none;
+}
