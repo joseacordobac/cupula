@@ -171,4 +171,57 @@
     </div>
 </section>
 
+<section id="nuestra-trayectoria">
+    <div class="container">
+        <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Nuestra trayectoria',
+                    'titles-type'   => 'a-titles--main',                                )
+                ); 
+            ?>
+        <div class="timeline-container">
+            <div class="timeline-nav">
+                <button id="prevBtn"><img
+                        src="https://cupula.movemospruebas.com/wp-content/themes/movemosmarcas/assets/icons/arrow-purple.svg"
+                        alt="row-left"></button>
+                <div class="years">
+                    <?php while (have_rows('nuestra_trayectoria')): the_row();
+            ?>
+                    <span class="year" data-year="<?php the_sub_field('ano'); ?>"><?php the_sub_field('ano'); ?></span>
+
+                    <?php endwhile; ?>
+
+                </div>
+                <button id="nextBtn"><img
+                        src="https://cupula.movemospruebas.com/wp-content/themes/movemosmarcas/assets/icons/arrow-purple.svg"
+                        alt="row-right"></button>
+            </div>
+            <div class="timeline-content">
+                <?php while (have_rows('nuestra_trayectoria')): the_row();
+                 $imagen = get_sub_field('imagen_trayectoria');
+            ?>
+                <div class="content" data-year="<?php the_sub_field('ano'); ?>">
+                    <div class="content-main-timeline">
+                        <div class="img-trayectoria" style="background-image: url(<?php echo $imagen['url']; ?>);">
+
+                        </div>
+                        <div class="text-trayectoria">
+                            <h3><?php the_sub_field('titulo_proyecto'); ?></h3>
+                            <h4><?php the_sub_field('ano'); ?></h4>
+                            <p><strong>Ciudad:</strong> <?php the_sub_field('ciudad'); ?></p>
+                            <p><strong>Área:</strong> <?php the_sub_field('area'); ?></p>
+                            <p><strong>Servicios contratados: </strong> </p>
+                            <?php the_sub_field('servicios_contratados'); ?>
+                        </div>
+                    </div>
+
+                </div>
+
+                <?php endwhile; ?>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
