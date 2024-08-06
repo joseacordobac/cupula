@@ -5,6 +5,28 @@ const environment = {
 
 const domain = window.location.origin;
 const route = domain + environment.nameSpace;
+//step three
+const onColorArea = () => {
+  const getArea = document.querySelectorAll('.o-dinamic-floor-st')
+
+  if(getArea){
+    getArea.forEach((area) => {
+      
+      area.addEventListener('mouseover', (event) => {
+        const mouseCurrent = event.currentTarget
+        const areas = mouseCurrent.getAttribute('data-area')
+        mouseCurrent.classList.add(`has-default`)
+      })
+
+      area.addEventListener('mouseout', event =>{
+        const mouseCurrent = event.currentTarget
+        const areas = mouseCurrent.getAttribute('data-area')
+        mouseCurrent.classList.remove(`has-default`)
+      })
+
+    })
+  }
+}
 
 //step two
 const floorListHTML = (data) => {
@@ -68,12 +90,12 @@ const fetchTaxonomyAPI = async () => {
   loadDataCategory(data)
 }
 
-
-
 window.addEventListener('load', ()=>{
   const contentInformation = document.querySelector('.o-dinamic-quote__svg');
 
   if(contentInformation){
     fetchTaxonomyAPI();
   }
+
+  onColorArea()
 })

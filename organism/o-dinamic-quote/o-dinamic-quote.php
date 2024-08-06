@@ -50,6 +50,7 @@
           <div class="o-dinamic-quote__build-info"></div>
         </div>
       </div>
+
     </div>
 
     <div class="o-dinamic-quote__floor">
@@ -63,6 +64,12 @@
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="o-dinamic-quote__area">
+      <div class="o-dinamic-quote__area-content">
+          <?php template_part_atomic('organism/o-dinamic-quote/floor'); ?>
       </div>
     </div>
 
