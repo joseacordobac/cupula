@@ -55,3 +55,4 @@ function template_part_organism($template_name, $args = array()) {
     
     get_template_part($template_name, null, $args);
 }
+
