@@ -462,3 +462,315 @@ button.accordion-header.active:before {
 button.accordion-header.active span {
   display: none;
 }
+
+@media (max-width: 1440px) {
+  .container {
+    width: 85%;
+  }
+  .text-nuestro-equipo p {
+    font-size: 10px;
+  }
+  .content-video-nuestra-historia {
+    width: 75%;
+  }
+  .text-trayectoria h3 {
+    font-size: 28px;
+    line-height: 25px;
+    text-align: left;
+  }
+  .text-nuestro-equipo h4 {
+    color: #14387f;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1280px) {
+  .img-banner-transversal {
+    width: 65%;
+    min-height: 450px;
+  }
+  .years:before {
+    width: 89%;
+    height: 2px;
+    top: 60px;
+    left: 5%;
+    right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .img-banner-transversal {
+    min-height: 400px;
+  }
+  .content-second-section-conocenos {
+    flex-direction: column-reverse;
+  }
+  .video-second-section-conocenos {
+    width: 100%;
+  }
+  .text-second-section-conocenos {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+  }
+  .img-nuestro-equipo {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 35px;
+  }
+  .content-video-nuestra-historia {
+    width: 95%;
+  }
+  .item-espacios-cupula {
+    width: 80%;
+    display: flex;
+  }
+  section#espacios-cupula {
+    padding: 6% 0;
+    padding-top: 35%;
+    margin-top: -240px;
+  }
+  ul.item-logo li {
+    height: 65px;
+    border-radius: 13px;
+    padding: 0px 21px;
+    width: 30%;
+  }
+  .years {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    width: 65%;
+    scroll-behavior: smooth;
+    justify-content: center;
+    gap: 0%;
+    padding-bottom: 4%;
+  }
+  .content-main-timeline {
+    flex-direction: column;
+  }
+  .years:before {
+    width: 71%;
+    height: 2px;
+    top: 60px;
+    left: 14%;
+    right: 0;
+  }
+  .img-trayectoria {
+    width: 100%;
+    min-height: 270px;
+    border-radius: 40px;
+    margin-right: 0px;
+    z-index: 1;
+  }
+  .text-trayectoria {
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 5% 4%;
+    padding-left: 7%;
+    margin-top: -37px;
+    padding-top: 12%;
+  }
+  .accordion {
+    max-width: 95%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .text-nuestro-equipo h4 {
+    color: #14387f;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-second-section-conocenos h3 {
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 5%;
+  }
+  .text-second-section-conocenos p {
+    font-size: 14px;
+  }
+  section#second-section-conocenos iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 35px;
+  }
+  .content-conoce-nuestro-equipo_swiper {
+    padding-top: 11%;
+  }
+  .img-nuestro-equipo span {
+    top: 0;
+    left: 17%;
+  }
+  .text-nuestro-equipo p {
+    font-size: 8px;
+  }
+  .content-izq-nuestro-equipo:before {
+    width: 1px;
+    height: 50px;
+    background: #888888;
+    right: -10px;
+    top: -3px;
+  }
+  .content-video-nuestra-historia {
+    padding-top: 10%;
+  }
+  section#nuestra-historia iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+  }
+  section#espacios-cupula {
+    padding: 6% 0;
+    padding-top: 72%;
+    margin-top: -240px;
+  }
+  .content-espacios-cupula {
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 10px;
+    row-gap: 18px;
+    padding-top: 15%;
+    justify-content: center;
+  }
+  .item-espacios-cupula {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .video-espacios-cupula {
+    width: 100%;
+  }
+  .text-espacios-cupula {
+    width: 100%;
+    border-radius: 30px;
+    margin-left: 0;
+    margin-bottom: 7px;
+    margin-top: -22px;
+    z-index: 1;
+    padding: 10% 5%;
+    padding: 10% 5%;
+  }
+  .video-espacios-cupula iframe {
+    width: 100%;
+    height: 238px;
+    border-radius: 30px 30px 10px 10px;
+  }
+  .content-nuestros-aliados {
+    padding-top: 14%;
+    padding-bottom: 15%;
+  }
+  ul.item-logo li {
+    height: 65px;
+    border-radius: 13px;
+    padding: 0px 21px;
+    width: 45%;
+  }
+  .years {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    justify-content: center;
+    gap: 0%;
+    padding-bottom: 15%;
+  }
+  .container {
+    width: 90%;
+  }
+  .timeline-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-flow: wrap;
+    position: relative;
+  }
+  #prevBtn {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+  }
+  .years:before {
+    width: 74%;
+    height: 2px;
+    top: 60px;
+    left: 14%;
+    right: 0;
+  }
+  button#nextBtn {
+    bottom: -35px;
+    right: 0;
+    position: absolute;
+  }
+  .year {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .text-trayectoria {
+    padding-top: 20%;
+  }
+  .img-trayectoria {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 40px;
+  }
+  .text-trayectoria h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+  }
+  .text-trayectoria h4 {
+    color: #14387f;
+    font-size: 18px;
+    padding-bottom: 8%;
+  }
+  .text-trayectoria p {
+    color: #14387f;
+    font-size: 13px;
+  }
+  .text-trayectoria ul li {
+    color: #14387f;
+    font-size: 13px;
+    text-align: left;
+  }
+  .accordion-header {
+    border: none;
+    padding: 20px 35px;
+    padding-right: 75px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+  }
+  button.accordion-header span {
+    font-weight: 400;
+    display: block;
+    font-size: 10px;
+  }
+  .accordion-content p {
+    font-size: 10px;
+  }
+  .accordion-header:hover {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+  }
+  .accordion-header:before {
+    width: 20px;
+    right: 30px;
+    top: 40%;
+  }
+  section#preguntas-frecuentes {
+    padding: 10% 0;
+  }
+}

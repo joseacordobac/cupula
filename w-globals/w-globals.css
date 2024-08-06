@@ -168,3 +168,23 @@ span.swiper-pagination-bullet {
   width: 82%;
   margin: 0 auto;
 }
+
+@media (max-width: 500px) {
+  .titulo-banner-transversal {
+    width: 70% !important;
+    display: flex !important;
+  }
+  .img-banner-transversal {
+    min-height: 140px !important;
+    width: 100% !important;
+  }
+  .titulo-banner-transversal h1 {
+    font-size: 17px !important;
+  }
+  .titulo-banner-transversal h1:before {
+    width: 88px !important;
+    height: 2px !important;
+    bottom: 0 !important;
+    left: 0 !important;
+  }
+}
