@@ -11,6 +11,7 @@ function register_templates_custom() {
     'entrenate',
     'single-proyectos',
     'empresas',
+    'blog',
   );
 
   foreach($list_nameSpaces_register as $key => $value) {
@@ -19,4 +20,3 @@ function register_templates_custom() {
 } 
 
 add_action('wp_enqueue_scripts', 'register_templates_custom');
-

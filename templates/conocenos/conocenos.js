@@ -9,9 +9,9 @@ const testimonialSwiper = () => {
     spaceBetween: 50,
     slidesPerView: 2,
     centeredSlides: true,
-    pagination: {
-      el: ".swiper-pagination--testimonials",
-      clickable: true,
+    navigation: {
+      nextEl: ".swiper-button-next--paginations",
+      prevEl: ".swiper-button-prev--paginations",
     },
     autoplay: {
       delay: 2000,
@@ -30,7 +30,7 @@ const testimonialSwiper = () => {
         },
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         autoplay: {
           delay: 100000,
         },

@@ -99,7 +99,7 @@
             </div>
             <?php endwhile; ?>
         </div>
-        <div class="swiper-pagination--testimonials"></div>
+        <?php template_part_atomic('atoms/a-arrows-slide/a-arrows-slide', array('slide_class' => 'paginations' ));   ?>
     </div>
 </section>
 
