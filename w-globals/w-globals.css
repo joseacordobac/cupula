@@ -204,9 +204,317 @@ span.swiper-pagination-bullet {
   margin: 0 auto;
 }
 
+section#main-single {
+  padding-top: 12%;
+}
+.content-main-single {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 4%;
+}
+ul.post-categories {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+ul.post-categories li a {
+  text-decoration: none;
+  border: 1px solid #c4c4c4;
+  color: #c4c4c4;
+  font-size: 15px;
+  padding: 6px 20px;
+  transition: 0.5s;
+}
+ul.post-categories li a:hover {
+  background: #ffc32b;
+  color: #fff;
+}
+.control-form-sidebar h4 {
+  color: #14387f;
+  font-size: 30px;
+  padding-bottom: 10%;
+}
+.a-btn-info:nth-child(1) {
+  display: none;
+}
+.content-redes-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 15%;
+}
+.a-btn-info__content {
+  -webkit-box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75) !important;
+  padding: 25px 15px !important;
+  border-radius: 50px !important;
+  width: 85% !important;
+}
+.a-btn-info__link {
+  font-size: 25px !important;
+  text-decoration: none;
+  font-weight: 500;
+  color: #14387f !important;
+}
+
+.content-img-single {
+  width: 100%;
+  min-height: 450px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  margin-bottom: 4%;
+}
+main#content-single {
+  width: 70%;
+}
+aside#sidebar-single {
+  width: 37%;
+  border-left: 1px solid #c4c4c4;
+  padding-left: 3%;
+}
+ul.control-categoria {
+  list-style: none;
+}
+ul.control-categoria li:nth-child(1) {
+  display: inline-block;
+}
+ul.control-categoria li {
+  color: #fff;
+  background: #14387f;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  display: none;
+}
+main#content-single h3 {
+  color: #222222;
+  font-size: 30px;
+  line-height: 27px;
+  padding-top: 3%;
+}
+.content-calendar-date-single {
+  display: flex;
+}
+.content-calendar-date-single img {
+  max-width: 15px;
+}
+.content-calendar-date-single span {
+  position: relative;
+  color: #777777;
+  display: block;
+  padding: 18px 0;
+  font-size: 14px;
+  padding-left: 1%;
+}
+.content-img-destacada {
+  min-height: 370px;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+section#ultimas-noticias {
+  padding: 4% 0;
+}
+
+a.contenedor-entrada-blog {
+  display: flex;
+  text-decoration: none;
+}
+.content-img-post-blog {
+  width: 40%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  min-height: 265px;
+}
+.content-text-blog {
+  width: 60%;
+  background: #fff;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  padding: 4% 5%;
+}
+ul.control-categoria {
+  list-style: none;
+}
+ul.control-categoria li {
+  color: #fff;
+  background: #14387f;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  display: none;
+}
+ul.control-categoria li:nth-child(1) {
+  display: inline-block;
+}
+.content-text-blog h3 {
+  color: #222222;
+  font-size: 25px;
+  line-height: 27px;
+  padding-top: 3%;
+}
+.content-text-blog span {
+  position: relative;
+  color: #777777;
+  display: block;
+  padding: 15px 0;
+  font-size: 12px;
+  padding-left: 3%;
+}
+.content-calendar-date {
+  display: flex;
+}
+.content-calendar-date img {
+  max-width: 11px;
+}
+.content-text-blog p {
+  color: #555555;
+  font-size: 15px;
+}
+
+.content-posts-second {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 3%;
+  flex-flow: wrap;
+  padding-top: 5%;
+  margin-left: 5%;
+  row-gap: 50px;
+}
+.contenedor-entrada-blog.second {
+  width: 30%;
+}
+.content-img-post-blog.second {
+  width: 100%;
+  z-index: 1;
+}
+.content-text-blog.second {
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  padding: 5% 8%;
+  padding-top: 13%;
+  margin-top: -27px;
+}
+a.contenedor-entrada-blog.second {
+  flex-direction: column;
+}
+section#related-posts {
+  padding: 5% 0;
+}
+@media (max-width: 1550px) {
+  .a-btn-info__link {
+    font-size: 20px !important;
+  }
+  .a-btn-info__content {
+    padding: 17px 15px !important;
+    border-radius: 50px !important;
+    width: 75% !important;
+  }
+  .content-posts-second {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 3%;
+    flex-flow: wrap;
+    padding-top: 5%;
+    margin-left: 0%;
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 875px) {
+  ul.post-categories li a {
+    font-size: 11px;
+    padding: 6px 20px;
+    transition: 0.5s;
+  }
+  .a-btn-info__content {
+    padding: 17px 15px !important;
+    border-radius: 50px !important;
+    width: 100% !important;
+  }
+  .a-btn-info__link {
+    font-size: 15px !important;
+  }
+  .contenedor-entrada-blog.second {
+    width: 100%;
+  }
+  .content-text-blog.second {
+    padding: 5% 8%;
+    padding-top: 8%;
+    margin-top: -28px;
+  }
+}
 @media (max-width: 500px) {
   .container {
     width: 90%;
+  }
+  .content-form {
+    width: 100%;
+    border-left: none;
+    padding-left: 3%;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 15%;
+    padding-top: 5%;
+  }
+
+  .content-text-blog.second {
+    padding: 5% 8%;
+    padding-top: 18%;
+    margin-top: -28px;
+  }
+  .content-main-single {
+    flex-direction: column;
+    width: 100%;
+  }
+  main#content-single {
+    width: 100%;
+  }
+  .content-img-single {
+    width: 100%;
+    min-height: 250px;
+  }
+  main#content-single h3 {
+    color: #222222;
+    font-size: 25px;
+    line-height: 26px;
+    padding-top: 5%;
+  }
+  main#content-single p {
+    font-size: 16px;
+  }
+  aside#sidebar-single {
+    width: 100%;
+    border-left: none;
+    padding-left: 0%;
+    padding-top: 5%;
+  }
+  aside#sidebar-single .content-form {
+    padding-left: 0%;
+  }
+  aside#sidebar-single .control-form-sidebar h4 {
+    font-size: 26px;
+  }
+  .content-img-destacada {
+    min-height: 200px;
+    width: 100%;
+    margin-top: 0%;
+  }
+  section#related-posts {
+    padding: 15% 0;
+  }
+  section#related-posts .content-posts-second {
+    padding-top: 15%;
   }
 }
 @media (max-width: 1440px) {
