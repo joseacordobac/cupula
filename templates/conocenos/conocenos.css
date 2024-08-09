@@ -1,37 +1,3 @@
-.img-banner-transversal {
-  width: 65%;
-  min-height: 500px;
-  background-position: center;
-  background-size: cover;
-}
-.titulo-banner-transversal {
-  width: 50%;
-}
-.titulo-banner-transversal {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titulo-banner-transversal h1 {
-  color: #14387f;
-  font-size: 50px;
-  font-weight: bold;
-  position: relative;
-}
-.titulo-banner-transversal h1:before {
-  content: "";
-  position: absolute;
-  width: 290px;
-  height: 2px;
-  background: #ffc32b;
-  bottom: 0;
-  left: 0;
-}
-.content-banner-transversal {
-  display: flex;
-}
 .content-second-section-conocenos {
   display: flex;
   gap: 5%;

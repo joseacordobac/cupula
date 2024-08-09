@@ -135,6 +135,41 @@ span.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.img-banner-transversal {
+  width: 65%;
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.titulo-banner-transversal {
+  width: 50%;
+}
+.titulo-banner-transversal {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-banner-transversal h1 {
+  color: #14387f;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+}
+.titulo-banner-transversal h1:before {
+  content: "";
+  position: absolute;
+  width: 290px;
+  height: 2px;
+  background: #ffc32b;
+  bottom: 0;
+  left: 0;
+}
+.content-banner-transversal {
+  display: flex;
+}
+
 @media (min-width: 1440px) {
   .g-content-regular,
   .g-content-5X,
@@ -167,6 +202,17 @@ span.swiper-pagination-bullet {
 .container {
   width: 82%;
   margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 85%;
+  }
 }
 
 @media (max-width: 500px) {
