@@ -144,11 +144,14 @@ get_template_part('/atoms/a-btn-info/a-btn-info', null,
 
 
             <?php
+
+$excluded_category_id = get_cat_ID('Destacados');
                                 $args = array(
                                 'post_type' => 'post',
                                 'post_status' => 'publish',
                                 'posts_per_page' => 6,
-                                'paged' => $current_page
+                                'paged' => $current_page,
+                                'category__not_in' => array($excluded_category_id)
                                 
                                     );
                     
