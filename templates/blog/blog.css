@@ -47,6 +47,7 @@ span.page-numbers.current {
   border-radius: 4px;
   background: #14387f;
 }
+
 @media (max-width: 1550px) {
   .content-destacados-form {
     width: 100%;

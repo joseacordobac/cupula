@@ -27,11 +27,12 @@ get_header();
                 </div>
                 <p><?php the_content(); ?></p>
             </main>
-            <aside id="sidebar-single">
-                <div class="content-form">
-                    <div class="control-form-sidebar">
-                        <h4>Navega por temas de tu interés</h4>
-                        <?php
+
+            <div class="content-form">
+                <div class="control-form-sidebar">
+
+                    <h4>Navega por temas de tu interés</h4>
+                    <?php
                         $categories = get_categories();
                         if (!empty($categories)) {
                             echo '<ul class="post-categories">';
@@ -48,8 +49,8 @@ get_header();
                         }
                         ?>
 
-                        <div class="content-redes-sidebar">
-                            <?php 
+                    <!-- <div class="content-redes-sidebar">
+                        <?php 
                             get_template_part('/atoms/a-btn-info/a-btn-info', null, 
                                 array(
                                     'custom_class' => '',
@@ -57,11 +58,15 @@ get_header();
                                 )
                             );
                             ?>
-                        </div>
+                    </div> -->
+                    <?php template_part_atomic('molecules/m-form-aside/m-form-aside', array(
+                'asesor_name' => 'Natalia Serna',
+                'asesor_picture' => get_stylesheet_directory_uri() . '/assets/img/asesora.jpg',
+            )); ?>
 
-                    </div>
                 </div>
-            </aside>
+            </div>
+
         </div>
 
     </div>

@@ -8,6 +8,8 @@
   wp_enqueue_style('blog');
 
   $current_page = isset($_GET['current_page']) ? $_GET['current_page'] : 1;
+  $get_category = isset($_GET['cat']) ? $_GET['cat'] : false;
+  $search = isset($_GET['buscar']) ? $_GET['buscar'] : false;
 
 
   function excerpt($limit) {
@@ -98,7 +100,13 @@
 
             </div>
             <div class="content-form">
+
                 <div class="control-form-sidebar">
+                    <form action="" method="get">
+                        <input type="text" placeholder="Buscador" name="buscar" value="<?php echo $search; ?>">
+                        <button type="submit"> Buscar </button>
+                    </form>
+
                     <h4>Navega por temas de tu interés</h4>
                     <?php
 // Obtener todas las categorías
@@ -109,7 +117,7 @@ if ( !empty($categories) ) {
     foreach ( $categories as $category ) {
         // Mostrar el nombre de la categoría con un enlace a la página de la categoría
         echo '<li>';
-        echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">';
+        echo '<a href="' . get_the_permalink() .  '?cat=' . $category->slug .  ' ">';
         echo esc_html( $category->name );
         echo '</a>';
         echo '</li>';
@@ -145,17 +153,20 @@ get_template_part('/atoms/a-btn-info/a-btn-info', null,
 
             <?php
 
-$excluded_category_id = get_cat_ID('Destacados');
-                                $args = array(
-                                'post_type' => 'post',
-                                'post_status' => 'publish',
-                                'posts_per_page' => 6,
-                                'paged' => $current_page,
-                                'category__not_in' => array($excluded_category_id)
-                                
-                                    );
-                    
-                                $entradas = new WP_Query($args);
+            $excluded_category_id = get_cat_ID('Destacados');
+            $args = array(
+            's' => $search,
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'posts_per_page' => 6,
+            'paged' => $current_page,
+            'category__not_in' => array($excluded_category_id),
+            
+                );
+            if ($get_category) {
+                $args['tax_query'] = array( array ( 'taxonomy' => 'category', 'field' => 'slug', 'terms' => $get_category) );
+            }
+            $entradas = new WP_Query($args);
                                     ?>
 
             <?php if ($entradas->have_posts()) : ?>
