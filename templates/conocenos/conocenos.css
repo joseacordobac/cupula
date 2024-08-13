@@ -132,7 +132,11 @@ section#conoce-nuestro-equipo {
   left: 52%;
   top: 107.2%;
 }
-
+section#nuestra-historia iframe {
+  width: 100%;
+  height: 610px;
+  border-radius: 40px;
+}
 @media (max-width: 1550px) {
   .text-nuestro-equipo h4 {
     font-size: 18px;
@@ -187,11 +191,7 @@ section#nuestra-historia {
   margin-top: 5%;
   width: 70%;
 }
-section#nuestra-historia iframe {
-  width: 100%;
-  height: 610px;
-  border-radius: 40px;
-}
+
 section#espacios-cupula .a-titles-title {
   color: #fff;
 }
