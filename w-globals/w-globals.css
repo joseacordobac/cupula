@@ -239,8 +239,8 @@ ul.post-categories li a:hover {
   font-size: 30px;
   padding-bottom: 10%;
 }
-.single-post .a-btn-info:nth-child(1),
-.page-template-blog .a-btn-info:nth-child(1) {
+.single-post .a-btn-info:nth-child(2),
+.page-template-blog .a-btn-info:nth-child(2) {
   display: none;
 }
 .content-redes-sidebar {
