@@ -665,10 +665,11 @@ button.accordion-header.active span {
   }
   .video-espacios-cupula {
     width: 100%;
+    z-index: 10;
   }
   .text-espacios-cupula {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
     margin-left: 0;
     margin-bottom: 7px;
     margin-top: -22px;
@@ -678,7 +679,7 @@ button.accordion-header.active span {
   }
   .video-espacios-cupula iframe {
     width: 100%;
-    height: 238px;
+    height: 198px;
     border-radius: 30px 30px 10px 10px;
   }
   .content-nuestros-aliados {
