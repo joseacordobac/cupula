@@ -445,6 +445,18 @@ section#related-posts {
   opacity: 1;
   transition: 0.35s;
 }
+button.forminator-button.forminator-button-submit.m-form-aside__btn-text {
+  font-size: 21px !important;
+  padding: 21px 0 !important;
+  padding-left: 35px !important;
+  border-radius: 40px !important;
+}
+.m-form-aside__btn-text::after {
+  left: 13px;
+  top: 6px;
+  bottom: 0;
+  transform: scale(0.7);
+}
 @media (max-width: 1550px) {
   .single-post .a-btn-info__link,
   .page-template-blog .a-btn-info__link {
