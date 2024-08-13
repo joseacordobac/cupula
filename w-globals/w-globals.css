@@ -166,6 +166,9 @@ span.swiper-pagination-bullet {
   bottom: 0;
   left: 0;
 }
+.template-blog .titulo-banner-transversal h1:before {
+  width: 113px;
+}
 .content-banner-transversal {
   display: flex;
 }
@@ -295,7 +298,7 @@ ul.control-categoria li {
   display: none;
 }
 main#content-single h3 {
-  color: #222222;
+  color: #14387f;
   font-size: 30px;
   line-height: 27px;
   padding-top: 3%;
@@ -360,7 +363,7 @@ ul.control-categoria li:nth-child(1) {
   display: inline-block;
 }
 .content-text-blog h3 {
-  color: #222222;
+  color: #14387f;
   font-size: 25px;
   line-height: 27px;
   padding-top: 3%;
