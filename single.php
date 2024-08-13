@@ -74,7 +74,7 @@ get_header();
 
 
 <?php 
-$image = get_field('imagen_destacada_blog', 1092);
+$image = get_field('imagen_destacada_blog', 1094);
 if( !empty( $image ) ): ?>
 <section id="img-destacada">
     <div class="container">
