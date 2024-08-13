@@ -452,10 +452,10 @@ button.forminator-button.forminator-button-submit.m-form-aside__btn-text {
   border-radius: 40px !important;
 }
 .m-form-aside__btn-text::after {
-  left: 13px;
-  top: 6px;
+  left: 13px !important;
+  top: 6px !important;
   bottom: 0;
-  transform: scale(0.7);
+  transform: scale(0.7) !important;
 }
 @media (max-width: 1550px) {
   .single-post .a-btn-info__link,
