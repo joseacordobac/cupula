@@ -211,7 +211,7 @@ section#main-single {
   padding-top: 12%;
 }
 .content-main-single {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   gap: 4%;
@@ -318,10 +318,10 @@ main#content-single h3 {
   padding-left: 1%;
 }
 .content-img-destacada {
-  min-height: 370px;
+  min-height: 400px;
   background-position: center;
   background-size: cover;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 10%;
 }
