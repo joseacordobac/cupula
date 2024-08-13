@@ -224,8 +224,8 @@ ul.post-categories {
 }
 ul.post-categories li a {
   text-decoration: none;
-  border: 1px solid #c4c4c4;
-  color: #c4c4c4;
+  border: 1px solid #505050;
+  color: #505050;
   font-size: 15px;
   padding: 6px 20px;
   transition: 0.5s;
@@ -431,6 +431,7 @@ section#related-posts {
   padding: 8px 20px;
   border-radius: 3px;
   font-size: 12px;
+  cursor: pointer;
 }
 .content-form {
   width: 37%;
