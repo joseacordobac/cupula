@@ -140,6 +140,15 @@ section#conoce-nuestro-equipo {
   .text-nuestro-equipo p {
     font-size: 16px;
   }
+  section#second-section-conocenos iframe {
+    height: 334px;
+  }
+  section#nuestra-historia iframe {
+    height: 492px;
+  }
+  .video-espacios-cupula iframe {
+    height: 169px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -149,6 +158,12 @@ section#conoce-nuestro-equipo {
   .img-nuestro-equipo span {
     top: 0;
     left: 30%;
+  }
+  section#second-section-conocenos iframe {
+    height: 308px;
+  }
+  .video-espacios-cupula iframe {
+    height: 160px;
   }
 }
 
