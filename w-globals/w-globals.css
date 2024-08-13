@@ -480,6 +480,15 @@ button.forminator-button.forminator-button-submit.m-form-aside__btn-text {
   }
 }
 
+@media (max-width: 1366px) {
+  .m-form-aside__btn-text::after {
+    left: 8px !important;
+    top: 6px !important;
+    bottom: 0;
+    transform: scale(0.5) !important;
+  }
+}
+
 @media (max-width: 875px) {
   ul.post-categories li a {
     font-size: 11px;
