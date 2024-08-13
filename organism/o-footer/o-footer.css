@@ -69,6 +69,9 @@
   .footer {
     padding: 54px 0px 40px;
   }
+  .amo-button-holder {
+    display: none;
+  }
 
   .o-footer__section {
     display: block;
