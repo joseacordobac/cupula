@@ -17,7 +17,7 @@ wp_enqueue_style('home');
 
 ?>
 
-<main class="main">        
+<main class="main">
 
     <?php template_part_atomic('organism/o-bannerfull-slider/o-bannerfull-slider', 
         array(
@@ -26,7 +26,7 @@ wp_enqueue_style('home');
     ?>
 
     <section id="proyectos" class="projects">
-            
+
         <div class="g-content-regular trainning__content">
             <?php template_part_atomic('/atoms/a-titles/a-titles', 
                 array(
@@ -97,7 +97,7 @@ wp_enqueue_style('home');
             <?php get_template_part('/organism/o-compare/o-compare'); ?>
         </div>
     </section>
-        
+
     <section id="testimonios" class="new-realities">
         <div class="new-realities__content">
             <?php while( have_rows('new_realities') ) : the_row(); ?>
@@ -126,5 +126,35 @@ wp_enqueue_style('home');
     </section>
 
 </main>
+
+
+<section id="preguntas-frecuentes">
+    <div class="container">
+        <?php template_part_atomic('/atoms/a-titles/a-titles', 
+                array(
+                    'title'         => 'Conoce más de nosotros',
+                    'titles-type'   => 'a-titles--main',)
+                ); 
+            ?>
+        <div class="content-preguntas-frecuentes">
+            <div class="accordion">
+                <?php while (have_rows('conoce_mas_de_nosotros', 208)): the_row();
+            ?>
+                <div class="accordion-item">
+                    <button class="accordion-header"><?php the_sub_field('titulo'); ?>
+                        <span><?php the_sub_field('texto_inicial'); ?></span></button>
+                    <div class="accordion-content">
+                        <p><?php the_sub_field('texto_completo'); ?></p>
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

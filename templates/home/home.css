@@ -1,85 +1,192 @@
 /* project */
 .projects {
-    margin: 6rem 0px;
-    position: relative;
+  margin: 6rem 0px;
+  position: relative;
 }
 
 .content-project {
-    max-width: 73%;
-    margin: auto;
-    margin-top: 4.5rem;
-    position: relative;
+  max-width: 73%;
+  margin: auto;
+  margin-top: 4.5rem;
+  position: relative;
 }
 
-.swiper-project{
-    overflow: hidden;
-    padding: 1rem 2rem;
+.swiper-project {
+  overflow: hidden;
+  padding: 1rem 2rem;
 }
 
 .swiper-button-next--project {
-    right: 12rem;
+  right: 12rem;
 }
 
 .swiper-button-prev--project {
-    transform: rotate(180deg);
-    left: 11rem;
+  transform: rotate(180deg);
+  left: 11rem;
 }
 
 .swiper-pagination--content-project {
-    position: absolute;
-    top: 3rem;
-    display: none;
+  position: absolute;
+  top: 3rem;
+  display: none;
 }
 
 .card-experiencie .a-titles-title {
-    text-align: center;
-    color: var(--main-color);
+  text-align: center;
+  color: var(--main-color);
 }
 
 .model-appartment {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
 }
 
 .card-experiencie {
-    position: relative;
-    padding: 4rem;
-    padding-bottom: 1rem;
-    box-shadow: var(--shadow-boxes);
-    max-width: 75%;
-    border-radius: var(--border-radius--regular);
-    margin: 6rem auto 12rem auto;
+  position: relative;
+  padding: 4rem;
+  padding-bottom: 1rem;
+  box-shadow: var(--shadow-boxes);
+  max-width: 75%;
+  border-radius: var(--border-radius--regular);
+  margin: 6rem auto 12rem auto;
 }
 
-  
+@media (max-width: 768px) {
+  .content-project {
+    max-width: 100%;
+  }
 
-@media(max-width: 768px){
-    .content-project{
-        max-width: 100%;
-    }
-    
-    .card-experiencie{
-        margin-top: 4rem;
-        max-width: 94%;
-        padding: 1rem;
-        margin-bottom: 5rem;
-    }
-    
-    .swiper-button-next--project{
-        display: none;
-    }
+  .card-experiencie {
+    margin-top: 4rem;
+    max-width: 94%;
+    padding: 1rem;
+    margin-bottom: 5rem;
+  }
 
-    .swiper-button-prev--project{
-        display: none;
-    }
+  .swiper-button-next--project {
+    display: none;
+  }
 
-    .swiper-pagination--project{
-        display: block;
-    }
+  .swiper-button-prev--project {
+    display: none;
+  }
 
-    .swiper-pagination--content-project {
-        position: relative !important;
-        top: 0rem !important;
-        display: block;
-    }
+  .swiper-pagination--project {
+    display: block;
+  }
+
+  .swiper-pagination--content-project {
+    position: relative !important;
+    top: 0rem !important;
+    display: block;
+  }
+}
+
+/*PREGUNTAS FRECUENTES*/
+
+section#preguntas-frecuentes {
+  background: #f5f5f5;
+  padding: 6% 0;
+}
+.accordion {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+.content-preguntas-frecuentes {
+  padding-top: 5%;
+}
+.accordion-header {
+  border: none;
+  padding: 20px 35px;
+  padding-right: 75px;
+  width: 100%;
+  text-align: left;
+  color: #37393f;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+.accordion-header:before {
+  content: url(https://cupula.movemospruebas.com/wp-content/uploads/2024/08/rowacordeon.svg);
+  position: absolute;
+  width: 30px;
+  right: 30px;
+  top: 40%;
+}
+button.accordion-header span {
+  font-weight: 400;
+  display: block;
+}
+button.accordion-header.active:before {
+  transform: rotate(270deg);
+}
+
+.accordion-header:hover {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 500px !important;
+  padding: 41px !important;
+  padding-top: 0 !important;
+}
+button.accordion-header.active span {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .accordion {
+    max-width: 95%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .accordion-header {
+    border: none;
+    padding: 20px 35px;
+    padding-right: 75px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+  }
+  button.accordion-header span {
+    font-weight: 400;
+    display: block;
+    font-size: 10px;
+  }
+  .accordion-content p {
+    font-size: 10px;
+  }
+  .accordion-header:hover {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+  }
+  .accordion-header:before {
+    width: 20px;
+    right: 30px;
+    top: 40%;
+  }
+  section#preguntas-frecuentes {
+    padding: 10% 0;
+  }
 }

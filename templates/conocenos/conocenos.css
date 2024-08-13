@@ -717,8 +717,8 @@ button.accordion-header.active span {
   #prevBtn {
     transform: rotate(180deg);
     position: absolute;
-    bottom: -35px;
-    left: 0;
+    bottom: -39px;
+    left: 100px;
   }
   .years:before {
     width: 74%;
@@ -728,8 +728,8 @@ button.accordion-header.active span {
     right: 0;
   }
   button#nextBtn {
-    bottom: -35px;
-    right: 0;
+    bottom: -44px;
+    right: 100px;
     position: absolute;
   }
   .year {
