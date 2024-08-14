@@ -5,7 +5,79 @@ const environment = {
 
 const domain = window.location.origin;
 const route = domain + environment.nameSpace;
+
+//Swiper
+const swiperFunction = () =>{
+  const swiper = new Swiper('.o-dinamic-quote__distribution-slide ', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+}
+
+
 //step three
+const htmlSliderDeparment = (data) => {
+
+  const insertHTML = document.querySelector('.js-dinamic-quote__inner')
+  let aparmentInfo = ''
+
+  if(insertHTML){
+    data.forEach(({fields}) => {    
+      const { aparment_value, apartamento, areas, planes} = fields
+
+      planes.forEach(({ data,  plane_img}) => {
+        console.log(plane_img, data)
+
+          aparmentInfo += `<div class="swiper-slide"><div class="o-dinamic-quote__slide-container"><div class="o-dinamic-quote__img-content"><img class="o-dinamic-quote__img" src="${plane_img}"></div>`
+              
+              aparmentInfo += `<div class="o-dinamic-quote__info-content"><h3 class="o-dinamic-quote__info-title">${aparment_value}</h3><p class="o-dinamic-quote__info-description">${apartamento}</p>`
+              data.forEach(({ aparment_characteristic}) => {
+                aparmentInfo += `<li class="o-dinamic-quote__list">${aparment_characteristic}</li>`
+              })
+
+            aparmentInfo += `</div>`
+          aparmentInfo += `</div>`
+        aparmentInfo += `</div>`
+      })
+
+    })
+  }
+
+  insertHTML.innerHTML = aparmentInfo 
+  swiperFunction()
+}
+
+
+const getDeparment = async(idSection, idFloor) => {  
+  const getFloors = await fetch(`${route}/apartment?id_section=${idSection}&id_filter=${idFloor}`)
+  const data = await getFloors.json()
+  htmlSliderDeparment(data)
+}
+
+//select department section
+const onAreaClick = async(idFloor) => {
+  
+  const getArea = document.querySelectorAll('.o-dinamic-floor-st')
+
+  if(getArea){
+    getArea.forEach((area) => {
+      area.addEventListener('click', (event) => {
+        const clickCurrent = event.currentTarget
+        const idSection = clickCurrent.getAttribute('data-area')
+         getDeparment(idSection, idFloor)
+      })
+    })
+  }
+
+}
+
 const onColorArea = () => {
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
 
@@ -36,14 +108,15 @@ const floorListHTML = (data) => {
 
   data.forEach((floor) => {
     const { name, slug, id } = floor
-    htmlToInner += `<li class="o-dinamic-quote__floor-el o-dinamic-quote__floor--${slug}" data-floor="${id}">${name}</li>`
+    htmlToInner += `<li onclick="onAreaClick(${id})" class="o-dinamic-quote__floor-el o-dinamic-quote__floor--${slug}" data-floor="${id}">${name}</li>`
   })
-
+  
   getToInner.innerHTML = htmlToInner
+  
 }
 
-const getAllFloors = async(id) => {
-  const getFloors = await fetch(`${route}/filters?id_parent=${id}`)
+const getAllFloors = async(idTower) => {
+  const getFloors = await fetch(`${route}/filters?id_parent=${idTower}`)
   const data = await getFloors.json()
   floorListHTML(data)
 }
@@ -98,4 +171,5 @@ window.addEventListener('load', ()=>{
   }
 
   onColorArea()
+
 })

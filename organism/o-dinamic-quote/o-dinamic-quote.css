@@ -1,3 +1,8 @@
+:root{
+  --step-height: 500px;
+}
+
+
 .cotiza-you-apartment {
   background-color: #ffedbf;
   padding: 2rem 0rem;
@@ -173,6 +178,12 @@
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.35s;
+}
+
+.o-dinamic-quote__floor-el:hover{
+  background-color: #ECD925;
+  transition: 0.35s;
 }
 
 .o-dinamic-quote-floor{
@@ -190,4 +201,29 @@
   fill: transparent;
   cursor: pointer;
   transition: 0.35s;
+}
+
+.o-dinamic-quote__distribution{
+  height: var(--step-height);
+  background-color: white;
+  border-radius: 25px;
+}
+
+.o-dinamic-quote__distribution-slide {
+  height: 100%;
+}
+
+/* step three */
+.o-dinamic-quote__slide-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  max-width: 90%;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+}
+
+.o-dinamic-quote__img {
+  width: 100%;
 }

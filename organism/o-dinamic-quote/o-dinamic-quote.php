@@ -73,6 +73,17 @@
       </div>
     </div>
 
+    <div class="o-dinamic-quote__distribution">
+      <div class="o-dinamic-quote__distribution-slide swiper-container">
+        <div class="swiper-wrapper js-dinamic-quote__inner">
+
+        </div>
+      </div>
+      <div class="o-dinamic-quote__btn">
+        <input type="submit" class="o-dinamic__btn-submit" value="COTIZAR APARTAMENTO"> 
+      </div>
+    </div>
+
   </div>
 
 </div>

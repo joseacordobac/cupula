@@ -15,9 +15,9 @@
 	.st9{fill:none;stroke:#225D38;stroke-width:0.2;stroke-miterlimit:10;}
 	.st10{fill:#1D5C39;}
 </style>
-<polygon class="st3 o-dinamic-floor-st o-dinamic-quote-floor__56" data-area="56.80" points="307.61,21.89 307.61,75.86 282.17,75.86 282.17,101.25 184.07,101.25 184.07,61.52 207.1,61.83 
+<polygon class="st3 o-dinamic-floor-st o-dinamic-quote-floor__56" data-area="4" points="307.61,21.89 307.61,75.86 282.17,75.86 282.17,101.25 184.07,101.25 184.07,61.52 207.1,61.83 
 	207.1,25.35 289.6,25.66 289.72,21.71 "/>
-<polygon class="st3 o-dinamic-floor-st o-dinamic-quote-floor__56" data-area="56.80" points="310.6,21.89 310.6,75.86 336.04,75.86 336.04,101.25 434.14,101.25 434.14,61.52 411.1,61.83 
+<polygon class="st3 o-dinamic-floor-st o-dinamic-quote-floor__56" data-area="5" points="310.6,21.89 310.6,75.86 336.04,75.86 336.04,101.25 434.14,101.25 434.14,61.52 411.1,61.83 
 	411.1,25.35 328.6,25.66 328.49,21.71 "/>
 <g>
 	<g>
@@ -54,18 +54,18 @@
 	</g>
 	<polygon class="st8" points="309.75,205.21 294.93,220.02 324.09,220.02 	"/>
 </g>
-<polygon class="st4 o-dinamic-floor-st o-dinamic-quote-floor__59" data-area="59.45" points="449.84,120.03 449.66,159.46 435.72,159.33 435.92,200.94 378.82,201.08 378.62,192.33 350.96,192.58 
+<polygon class="st4 o-dinamic-floor-st o-dinamic-quote-floor__59" data-area="8" points="449.84,120.03 449.66,159.46 435.72,159.33 435.92,200.94 378.82,201.08 378.62,192.33 350.96,192.58 
 	350.96,180.87 330.23,180.83 330.23,120.18 "/>
-<polygon class="st4 o-dinamic-floor-st o-dinamic-quote-floor__59" data-area="59.45" points="167.02,120.03 167.2,159.46 181.13,159.33 180.94,200.94 238.04,201.08 238.24,192.33 265.89,192.58 
+<polygon class="st4 o-dinamic-floor-st o-dinamic-quote-floor__59" data-area="1" points="167.02,120.03 167.2,159.46 181.13,159.33 180.94,200.94 238.04,201.08 238.24,192.33 265.89,192.58 
 	265.89,180.87 286.63,180.83 286.63,120.18 "/>
 <polyline class="st9" points="228.71,143.87 228.71,169.24 230.16,169.24 230.16,143.87 "/>
-<polygon class="st7 o-dinamic-floor-st o-dinamic-quote-floor__70" data-area="70.50" points="485.59,117.52 599.23,117.52 599.23,159.37 584.67,159.37 584.44,197.59 523.05,197.59 522.95,196.12 
+<polygon class="st7 o-dinamic-floor-st o-dinamic-quote-floor__70" data-area="7" points="485.59,117.52 599.23,117.52 599.23,159.37 584.67,159.37 584.44,197.59 523.05,197.59 522.95,196.12 
 	475.24,196.94 475.24,194.16 474.84,127.92 485.59,128.07 "/>
-<polygon class="st6 o-dinamic-floor-st o-dinamic-quote-floor__75" data-area="75.95" points="14.5,111.81 133.84,111.81 133.84,122.88 146.92,122.88 146.82,201.3 90.7,201.3 90.7,198.87 
+<polygon class="st6 o-dinamic-floor-st o-dinamic-quote-floor__75" data-area="2" points="14.5,111.81 133.84,111.81 133.84,122.88 146.92,122.88 146.82,201.3 90.7,201.3 90.7,198.87 
 	27.38,198.87 27.38,158.17 14.5,158.17 "/>
-<polygon class="st5 o-dinamic-floor-st o-dinamic-quote-floor__63" data-area="63.10" points="486.5,100.55 486.2,111.3 600.86,111.04 600.86,73.65 585.53,73.51 585.53,32.12 528.73,32.35 
+<polygon class="st5 o-dinamic-floor-st o-dinamic-quote-floor__63" data-area="6" points="486.5,100.55 486.2,111.3 600.86,111.04 600.86,73.65 585.53,73.51 585.53,32.12 528.73,32.35 
 	528.88,37.29 501.07,37.29 501.07,43.33 484.63,43.37 484.93,100.55 "/>
-<polygon class="st5 o-dinamic-floor-st o-dinamic-quote-floor__63" data-area="63.10" points="130.56,100.55 130.87,111.3 16.21,111.04 16.21,73.65 31.54,73.51 31.54,32.12 88.33,32.35 
+<polygon class="st5 o-dinamic-floor-st o-dinamic-quote-floor__63" data-area="3" points="130.56,100.55 130.87,111.3 16.21,111.04 16.21,73.65 31.54,73.51 31.54,32.12 88.33,32.35 
 	88.18,37.29 115.99,37.29 115.99,43.33 132.44,43.37 132.14,100.55 "/>
 <g>
 	<polyline class="st9" points="289.6,21.89 289.6,53.77 291.07,53.77 291.07,21.89 289.6,21.89 	"/>
