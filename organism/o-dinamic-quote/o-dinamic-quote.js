@@ -14,6 +14,18 @@ let selectedInformation = {
   balcony: null,
 }
 
+/** activate - tabs */
+const activateTabs = (elementClass) => {
+
+  const getTabs = document.querySelector(elementClass)
+  const getAllActive = document.querySelectorAll('.o-dinamic-quote__section--active')
+  getAllActive.forEach(active =>  active.classList.remove('o-dinamic-quote__section--active'))
+
+  if(getTabs){
+    getTabs.classList.add('o-dinamic-quote__section--active')
+  }
+}
+
 //Swiper
 const swiperFunction = () =>{
   const swiper = new Swiper('.o-dinamic-quote__distribution-slide ', {
@@ -75,6 +87,7 @@ const getDeparment = async(idSection, idFloor) => {
 const onAreaClick = async(idFloor) => {
   
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
+  activateTabs('.o-dinamic-quote__area')
 
   if(getArea){
     getArea.forEach((area) => {
@@ -82,6 +95,7 @@ const onAreaClick = async(idFloor) => {
         const clickCurrent = event.currentTarget
         const idSection = clickCurrent.getAttribute('data-area')
          getDeparment(idSection, idFloor)
+         activateTabs('.o-dinamic-quote__distribution')
       })
     })
   }
@@ -154,6 +168,7 @@ const loadDataCategory = async(data) => {
     }
     if(event.type === 'click'){
       await getAllFloors(filterTower[0].id)
+      activateTabs('.o-dinamic-quote__floor')
     }
   }
 
@@ -172,6 +187,9 @@ const fetchTaxonomyAPI = async () => {
   const data = await response.json()
   loadDataCategory(data)
 }
+
+
+
 
 window.addEventListener('load', ()=>{
   const contentInformation = document.querySelector('.o-dinamic-quote__svg');

@@ -29,6 +29,7 @@
   align-items: center;
   gap: 1rem;
   opacity: 0.5;
+  position: relative;
 }
 
 .o-dinamic-quote__steps-element--active{
@@ -136,18 +137,20 @@
 }
 
 /**navigation */
-/* .o-dinamic-quote__sections {
+.o-dinamic-quote__sections {
   display: flex;
 }
 
 .o-dinamic-quote__sections>div{
   width: 0%;
+  transition: 0.35s;
   overflow: hidden;
 }
 
 .o-dinamic-quote__sections .o-dinamic-quote__section--active{
   width: 100%;
-} */
+  transition: 0.35s;
+}
 
 /* STEP TWO */
 .o-dinamic-quote__floor-content {
