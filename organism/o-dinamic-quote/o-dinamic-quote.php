@@ -15,7 +15,7 @@
     )); ?>
 
     <ul class="o-dinamic-quote__steps">
-      <li class="o-dinamic-quote__steps-element">
+      <li class="o-dinamic-quote__steps-element o-dinamic-quote__steps-element--active">
         <span class="o-dinamic-quote__steps-num">1.</span> Elige Torre
       </li>
       <li class="o-dinamic-quote__steps-element">
@@ -31,7 +31,7 @@
 
     <div class="o-dinamic-quote__sections">
 
-      <div class="o-dinamic-quote__map">
+      <div class="o-dinamic-quote__map o-dinamic-quote__section--active">
         <img src="<?php echo get_template_directory_uri() . '/organism/o-dinamic-quote/img/vista-proyecto.png'; ?>" alt="" class="o-dinamic-quote__map-img">
         <div class="o-dinamic-quote__svg">
           <svg class="o-dinamic-quote__svg-img" width="907" height="564" viewBox="0 0 907 564" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,40 +51,64 @@
         </div>
       </div>
 
-    </div>
+      <div class="o-dinamic-quote__floor">
+        <div class="o-dinamic-quote__floor-content">
+          <div class="o-dinamic-quote__floor-options">
 
-    <div class="o-dinamic-quote__floor">
-      <div class="o-dinamic-quote__floor-content">
-        <div class="o-dinamic-quote__floor-options">
-          
-          <div class="o-dinamic-quote__floor-contain">
-            <h4 class="o-dinamic-quote__floor-title">Elige piso</h4>
-            <ul class="o-dinamic-quote__floor-list">
-              
-            </ul>
+            <div class="o-dinamic-quote__floor-contain">
+              <h4 class="o-dinamic-quote__floor-title">Elige piso</h4>
+              <ul class="o-dinamic-quote__floor-list">
+
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="o-dinamic-quote__area">
-      <div class="o-dinamic-quote__area-content">
+      <div class="o-dinamic-quote__area">
+        <div class="o-dinamic-quote__area-content">
           <?php template_part_atomic('organism/o-dinamic-quote/floor'); ?>
-      </div>
-    </div>
-
-    <div class="o-dinamic-quote__distribution">
-      <div class="o-dinamic-quote__distribution-slide swiper-container">
-        <div class="swiper-wrapper js-dinamic-quote__inner">
-
         </div>
       </div>
-      <div class="o-dinamic-quote__btn">
-        <input type="submit" class="o-dinamic__btn-submit" value="COTIZAR APARTAMENTO"> 
+
+      <div class="o-dinamic-quote__distribution">
+        <div class="o-dinamic-quote__distribution-slide swiper-container">
+          <div class="swiper-wrapper js-dinamic-quote__inner">
+
+          </div>
+        </div>
+        <div class="o-dinamic-quote__btn">
+          <p class="o-dinamic__btn-submit">COTIZAR APARTAMENTO</p>
+        </div>
       </div>
+
+      <div class="o-dinamic-quote__cardspay">
+        <div class="o-dinamic-quote__cardpay-title">
+          <h4 class="o-dinamic-quote__cardpay-title-text">Cotiza tu apartamento ideal</h4>
+          <div class="o-dinamic-quote__sub-title">
+            <h5 class="o-dinamic-quote__sub-title-text">Así puedes pagar tu apartamento</h5>
+            <div class="o-dinami-quote__sub-title-info"></div>
+          </div>
+          <div class="o-dinamic-quote__cardspay-content">
+            <article class="o-dimamic-quote__card-nums">
+              <header class="o-dinamic-quote__card-num">
+                <span class="o-dinamic-quote__card-num__number">1.</span>
+                <h5 class="o-dinamic-quote_card-num__title">Separa con</h5>
+                <h6 class="o-dinamic-quote_card-num__title-sub">$5.000.000</h6>
+              </header>
+              <div class="o-dinamic-quote__card-body">
+                <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="o-dinamic-quote__cardpay-btn">
+          <input type="submit" class="o-dinamic-quote__cardpay-submit" value="COTIZA AQUÍ TU PLAN DE PAGOS  DETALLADO">
+        </div>
+      </div>
+
     </div>
 
   </div>
 
-</div>
 </div>

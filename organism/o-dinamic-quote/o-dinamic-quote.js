@@ -5,6 +5,14 @@ const environment = {
 
 const domain = window.location.origin;
 const route = domain + environment.nameSpace;
+let selectedInformation = {
+  tower: null,
+  area: null,
+  apartment: null,
+  rooms: null,
+  bathrooms: null,
+  balcony: null,
+}
 
 //Swiper
 const swiperFunction = () =>{
@@ -33,16 +41,18 @@ const htmlSliderDeparment = (data) => {
       const { aparment_value, apartamento, areas, planes} = fields
 
       planes.forEach(({ data,  plane_img}) => {
-        console.log(plane_img, data)
 
           aparmentInfo += `<div class="swiper-slide"><div class="o-dinamic-quote__slide-container"><div class="o-dinamic-quote__img-content"><img class="o-dinamic-quote__img" src="${plane_img}"></div>`
               
-              aparmentInfo += `<div class="o-dinamic-quote__info-content"><h3 class="o-dinamic-quote__info-title">${aparment_value}</h3><p class="o-dinamic-quote__info-description">${apartamento}</p>`
-              data.forEach(({ aparment_characteristic}) => {
-                aparmentInfo += `<li class="o-dinamic-quote__list">${aparment_characteristic}</li>`
-              })
+              aparmentInfo += `<div class="o-dinamic-quote__info-content"><h4 class="o-dinamic-quote__info-subtitle">Apartamento</h4><h3 class="o-dinamic-quote__info-title">${areas}</h3><ul class="o-dinamic-quote__list-container">`
+              
+              if(data.length > 0){
+                data.forEach(({ aparment_characteristic}) => {
+                  aparmentInfo += `<li class="o-dinamic-quote__list">${aparment_characteristic}</li>`
+                })
+              }
 
-            aparmentInfo += `</div>`
+            aparmentInfo += `</ul></div>`
           aparmentInfo += `</div>`
         aparmentInfo += `</div>`
       })

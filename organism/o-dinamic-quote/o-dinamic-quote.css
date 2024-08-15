@@ -1,10 +1,10 @@
 :root{
-  --step-height: 500px;
+  --step-height: 560px;
 }
 
 
 .cotiza-you-apartment {
-  background-color: #ffedbf;
+  background-color: rgba(255, 195, 43, 0.3);
   padding: 2rem 0rem;
 }
 
@@ -28,12 +28,17 @@
   color: var(--main-color);
   align-items: center;
   gap: 1rem;
+  opacity: 0.5;
+}
+
+.o-dinamic-quote__steps-element--active{
+  opacity: 1;
 }
 
 .o-dinamic-quote__steps-num {
   background: var(--main-color);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 25px;
   font-weight: bold;
 }
@@ -42,6 +47,7 @@
   width: 100%;
   position: relative;
   border-radius: 50px;
+  height: var(--step-height);
 }
 
 .o-dinamic-quote__map-img {
@@ -110,10 +116,18 @@
   border-radius: 2rem;
 }
 
-.o-dinamic-quote__info-title {
+.o-dinamic-quote__info-subtitle {
   font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.o-dinamic-quote__info-title {
+  font-size: 3rem;
   color: var(--main-color);
   text-transform: uppercase;
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
 
 .o-dinamic-quote__info-description {
@@ -121,6 +135,19 @@
   font-size: 1.4rem;
 }
 
+/**navigation */
+/* .o-dinamic-quote__sections {
+  display: flex;
+}
+
+.o-dinamic-quote__sections>div{
+  width: 0%;
+  overflow: hidden;
+}
+
+.o-dinamic-quote__sections .o-dinamic-quote__section--active{
+  width: 100%;
+} */
 
 /* STEP TWO */
 .o-dinamic-quote__floor-content {
@@ -130,6 +157,7 @@
   background-size: cover;
   border-radius: 2.5rem;
   position: relative;
+  height: var(--step-height);
 }
 
 .o-dinamic-quote__floor-options {
@@ -161,6 +189,18 @@
   font-size: 1.8rem;
 }
 
+.o-dinamic-quote__list-container {
+  list-style: none;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.o-dinamic-quote__list {
+  border-left: solid 0.2rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
 .o-dinamic-quote__floor-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -186,6 +226,10 @@
   transition: 0.35s;
 }
 
+.o-dinamic-quote__area-content{
+  height: var(--step-height);
+}
+
 .o-dinamic-quote-floor{
   background-color: white;
   width: 100%;
@@ -195,6 +239,8 @@
 
 .o-dinamic-quote-floor svg{
   width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 .o-dinamic-floor-st {
@@ -207,6 +253,7 @@
   height: var(--step-height);
   background-color: white;
   border-radius: 25px;
+  overflow: hidden;
 }
 
 .o-dinamic-quote__distribution-slide {
@@ -216,7 +263,8 @@
 /* step three */
 .o-dinamic-quote__slide-container {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 69% 29%;
+  gap: 2%;
   align-items: center;
   max-width: 90%;
   justify-content: center;
@@ -227,3 +275,29 @@
 .o-dinamic-quote__img {
   width: 100%;
 }
+
+.o-dinamic__btn-submit {
+  background: var(--secondary-color);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.o-dinamic-quote__btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -10rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/** Step four */
+.o-dinamic-quote__cardspay{
+  height: var(--step-height);
+}
+
