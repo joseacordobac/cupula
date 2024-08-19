@@ -76,6 +76,11 @@
           <div class="swiper-wrapper js-dinamic-quote__inner">
 
           </div>
+          <div class="o-dinamic-quote__distribution-slider">
+            <?php template_part_atomic('atoms/a-arrows-slide/a-arrows-slide', array(
+              'slide_class' => 'distribution-ap',
+            )); ?>
+          </div>
         </div>
         <div class="o-dinamic-quote__btn">
           <p class="o-dinamic__btn-submit">COTIZAR APARTAMENTO</p>

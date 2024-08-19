@@ -62,8 +62,8 @@ const swiperFunction = () =>{
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next--distribution-ap',
+        prevEl: '.swiper-button-prev--distribution-ap',
     },
 });
 }

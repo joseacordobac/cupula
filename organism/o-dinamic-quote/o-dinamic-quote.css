@@ -271,7 +271,7 @@
   grid-template-columns: 69% 29%;
   gap: 2%;
   align-items: center;
-  max-width: 90%;
+  max-width: 85%;
   justify-content: center;
   margin: auto;
   height: 100%;
@@ -299,6 +299,22 @@
   top: -10rem;
   z-index: 2;
   cursor: pointer;
+}
+
+.o-dinamic-quote__distribution-slider{
+  position: relative;
+}
+
+.swiper-button-prev--distribution-ap.a-arrows-slide {
+  top: -250px;
+  transform: rotate(180deg);
+  left: 14px;
+}
+
+
+.swiper-button-next--distribution-ap.a-arrows-slide {
+  top: -250px;
+  right: 14px;
 }
 
 /** Step four */
