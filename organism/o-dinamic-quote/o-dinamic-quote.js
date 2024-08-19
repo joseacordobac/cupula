@@ -255,6 +255,7 @@ const showCotization = (data) => {
 /** Information for modal */
 const openModalCotization = () => {
   const getBtn = document.querySelector('.o-dinamic-quote__cardpay-submit')
+  const getHtMLForm = document.querySelector('.aparment-infomation')
 
   let dataToInsertInHTML = `<ul class="o-dinamic-quote__insert">`
     dataToInsertInHTML += `<li>Apartamento: ${dataSelected.apartamento}</li>`
@@ -264,9 +265,7 @@ const openModalCotization = () => {
     dataToInsertInHTML += `<li>Plano: ${dataSelected.distribución.plane_img}</li>`
   dataToInsertInHTML += `</ul>` 
 
-  getBtn.addEventListener('click', ()=>{
-    openDialog()
-  })
+  getHtMLForm.innerHTML = dataToInsertInHTML
 
 }
 

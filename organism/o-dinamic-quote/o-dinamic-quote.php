@@ -135,7 +135,7 @@
 <?php template_part_atomic(
   'organism/o-modal-form/o-modal-form', 
   array(
-    'form_short_code' => '[forminator_form id="1045"]',
+    'form_short_code' => '[forminator_form id="1204"]',
     'custom_class' => 'o-dinamic-quote__modal',
     'trigger_modal' => '.js-btn-trigger'
  )); ?>
