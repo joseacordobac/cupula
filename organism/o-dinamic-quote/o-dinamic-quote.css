@@ -150,6 +150,7 @@
 .o-dinamic-quote__sections .o-dinamic-quote__section--active{
   width: 100%;
   transition: 0.35s;
+  justify-content: space-evenly;
 }
 
 /* STEP TWO */
@@ -304,3 +305,110 @@
   height: var(--step-height);
 }
 
+.o-dinamic-quote__sub-title {
+  margin-bottom: 40px;
+}
+
+.o-dinamic-quote__cardpay-title {
+  text-align: center;
+}
+
+.o-dinamic-quote__cardspay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.o-dinamic-quote__sub-title-text {
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
+.o-dinami-quote__sub-title-info {
+  text-align: center;
+  color: var(--main-color);
+}
+
+.o-dinamic-quote__cardspay-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.o-dimamic-quote__card-nums {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 12px;
+}
+
+.o-dialog-form-card--first {
+  background: rgba(255, 195, 43, 0.3);
+  border: solid 1px rgba(255, 195, 43);
+}
+
+.o-dialog-form-card--second {
+  background-color: rgba(20, 56, 127, 0.3);
+  border: solid 1px rgba(20, 56, 127);
+  padding: 40px 22px;
+}
+
+.o-dialog-form-card--third {
+  background: rgba(37, 211, 102, 0.3);
+  border: solid 1px rgba(37, 211, 10);
+}
+
+.o-dinamic-quote__card-num__number {
+  background: var(--main-color);
+  width: fit-content;
+  color: white;
+  padding: 6px 10px;
+  font-size: 17px;
+  border-radius: 55px;
+  font-weight: bold;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0px;
+  max-height: 40px;
+}
+
+.o-dinamic-quote__card-num {
+  display: grid;
+  grid-template-columns: 23% 69%;
+  gap: 0% 3%;
+}
+
+.o-dinamic-quote_card-num__title {
+  text-align: left;
+  color: var(--main-color);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.o-dinamic-quote_card-num__title-sub {
+  font-size: 15px;
+  color: var(--main-color);
+  text-align: left;
+  font-family: 'Poppins';
+}
+
+.o-dinamic-quote__card-body {
+  font-size: 12px;
+}
+
+.o-dinamic-quote__cardpay-btn {
+  max-width: 99%;
+  margin: 0px auto;
+}
+
+.o-dinamic-quote__cardpay-submit {
+  width: fit-content;
+  background: var(--secondary-color);
+  padding: 12px 20px;
+  border-radius: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}

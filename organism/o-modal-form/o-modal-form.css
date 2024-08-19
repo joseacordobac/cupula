@@ -1,0 +1,73 @@
+.o-modal-form {
+  display: none;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background: #00000091;
+  z-index: 999;
+  border: none;
+}
+
+.o-modal-form--open{
+  display: flex;
+  position: fixed;
+}
+
+.o-modal-form__close {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  top: 5px;
+  right: 5px;
+  z-index: 5;
+  background: var(--main-color);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.o-modal-form__imagen{
+  width: 100%;
+  background-image: url(../../assets/img/form-asesor.webp);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.o-modal-form__slid-component {
+  background: var(--main-color);
+  grid-template-columns: 50% 50%;
+  display: grid;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+}
+
+.o-modal-form__content {
+  max-width: 80%;
+  margin: auto;
+  width: 70vw;
+}
+
+.o-modal-form__content .o-gallery-form__item {
+  height: 70vh;
+}
+
+.aparment-infomation {
+  display: none;
+}
+
+.o-modal-form__formulary {
+  padding: 25px;
+  max-width: 95%;
+  margin: auto;
+}
+
+.o-modal-form__title {
+  font-size: 18px;
+  color: white;
+}

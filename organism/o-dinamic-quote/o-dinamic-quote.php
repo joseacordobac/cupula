@@ -84,17 +84,36 @@
 
       <div class="o-dinamic-quote__cardspay">
         <div class="o-dinamic-quote__cardpay-title">
-          <h4 class="o-dinamic-quote__cardpay-title-text">Cotiza tu apartamento ideal</h4>
           <div class="o-dinamic-quote__sub-title">
             <h5 class="o-dinamic-quote__sub-title-text">Así puedes pagar tu apartamento</h5>
             <div class="o-dinami-quote__sub-title-info"></div>
           </div>
           <div class="o-dinamic-quote__cardspay-content">
-            <article class="o-dimamic-quote__card-nums">
+            <article class="o-dimamic-quote__card-nums o-dialog-form-card--first">
               <header class="o-dinamic-quote__card-num">
                 <span class="o-dinamic-quote__card-num__number">1.</span>
                 <h5 class="o-dinamic-quote_card-num__title">Separa con</h5>
-                <h6 class="o-dinamic-quote_card-num__title-sub">$5.000.000</h6>
+                <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
+              </header>
+              <div class="o-dinamic-quote__card-body">
+                <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
+              </div>
+            </article>
+            <article class="o-dimamic-quote__card-nums o-dialog-form-card--second">
+              <header class="o-dinamic-quote__card-num">
+                <span class="o-dinamic-quote__card-num__number">2.</span>
+                <h5 class="o-dinamic-quote_card-num__title">46 cuotas</h5>
+                <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
+              </header>
+              <div class="o-dinamic-quote__card-body">
+                <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
+              </div>
+            </article>
+            <article class="o-dimamic-quote__card-nums o-dialog-form-card--third">
+              <header class="o-dinamic-quote__card-num">
+                <span class="o-dinamic-quote__card-num__number">3.</span>
+                <h5 class="o-dinamic-quote_card-num__title">Paga el restante</h5>
+                <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
               </header>
               <div class="o-dinamic-quote__card-body">
                 <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
@@ -103,7 +122,7 @@
           </div>
         </div>
         <div class="o-dinamic-quote__cardpay-btn">
-          <input type="submit" class="o-dinamic-quote__cardpay-submit" value="COTIZA AQUÍ TU PLAN DE PAGOS  DETALLADO">
+          <p class="o-dinamic-quote__cardpay-submit js-btn-trigger">COTIZA AQUÍ TU PLAN DE PAGOS  DETALLADO</p>
         </div>
       </div>
 
@@ -112,3 +131,11 @@
   </div>
 
 </div>
+
+<?php template_part_atomic(
+  'organism/o-modal-form/o-modal-form', 
+  array(
+    'form_short_code' => '[forminator_form id="1045"]',
+    'custom_class' => 'o-dinamic-quote__modal',
+    'trigger_modal' => '.js-btn-trigger'
+ )); ?>

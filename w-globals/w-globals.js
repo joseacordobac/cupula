@@ -26,6 +26,10 @@ const swiperToSlide = (swiperProgram, swiper) => {
     })
 }
 
+const stringNumDecimal = (num) => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 window.addEventListener('load', () => {
-    // leningStart();
+    
 })

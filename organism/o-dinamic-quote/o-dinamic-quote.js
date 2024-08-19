@@ -5,13 +5,8 @@ const environment = {
 
 const domain = window.location.origin;
 const route = domain + environment.nameSpace;
-let selectedInformation = {
-  tower: null,
-  area: null,
-  apartment: null,
-  rooms: null,
-  bathrooms: null,
-  balcony: null,
+let dataSelected = {
+  tower: '',
 }
 
 /** activate - tabs */
@@ -50,11 +45,10 @@ const htmlSliderDeparment = (data) => {
 
   if(insertHTML){
     data.forEach(({fields}) => {    
-      const { aparment_value, apartamento, areas, planes} = fields
+      const { areas, planes} = fields
+      planes.forEach(({ data,  plane_img}, index) => {
 
-      planes.forEach(({ data,  plane_img}) => {
-
-          aparmentInfo += `<div class="swiper-slide"><div class="o-dinamic-quote__slide-container"><div class="o-dinamic-quote__img-content"><img class="o-dinamic-quote__img" src="${plane_img}"></div>`
+          aparmentInfo += `<div class="swiper-slide" data-index="${index}"><div class="o-dinamic-quote__slide-container"><div class="o-dinamic-quote__img-content"><img class="o-dinamic-quote__img" src="${plane_img}"></div>`
               
               aparmentInfo += `<div class="o-dinamic-quote__info-content"><h4 class="o-dinamic-quote__info-subtitle">Apartamento</h4><h3 class="o-dinamic-quote__info-title">${areas}</h3><ul class="o-dinamic-quote__list-container">`
               
@@ -74,21 +68,24 @@ const htmlSliderDeparment = (data) => {
 
   insertHTML.innerHTML = aparmentInfo 
   swiperFunction()
+  showCotization(data[0].fields)
 }
 
 
 const getDeparment = async(idSection, idFloor) => {  
+
   const getFloors = await fetch(`${route}/apartment?id_section=${idSection}&id_filter=${idFloor}`)
   const data = await getFloors.json()
   htmlSliderDeparment(data)
 }
 
 //select department section
-const onAreaClick = async(idFloor) => {
-  
+const onAreaClick = async(idFloor, nameFloor) => {
+
+  dataSelected.piso = nameFloor
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
   activateTabs('.o-dinamic-quote__area')
-
+  
   if(getArea){
     getArea.forEach((area) => {
       area.addEventListener('click', (event) => {
@@ -129,10 +126,10 @@ const floorListHTML = (data) => {
 
   let htmlToInner = '';
   const getToInner = document.querySelector('.o-dinamic-quote__floor-list')
-
+  
   data.forEach((floor) => {
     const { name, slug, id } = floor
-    htmlToInner += `<li onclick="onAreaClick(${id})" class="o-dinamic-quote__floor-el o-dinamic-quote__floor--${slug}" data-floor="${id}">${name}</li>`
+    htmlToInner += `<li onclick="onAreaClick(${id}, '${name}')" class="o-dinamic-quote__floor-el o-dinamic-quote__floor--${slug}" data-floor="${id}">${name}</li>`
   })
   
   getToInner.innerHTML = htmlToInner
@@ -147,8 +144,10 @@ const getAllFloors = async(idTower) => {
 
 //step one
 const renderDataHtml = (filtered) => {
+
   const getToInner = document.querySelector('.o-dinamic-quote__build-info')
   const { name, description } = filtered
+  dataSelected.tower = name
 
   if(getToInner){
     getToInner.innerHTML = `<div class="o-dinamic-quote__info"><h3 class="o-dinamic-quote__info-title">${name}</h3><p class="o-dinamic-quote__info-description">${description}</p></div>`
@@ -156,7 +155,10 @@ const renderDataHtml = (filtered) => {
 
 }
 
+
 const loadDataCategory = async(data) => {
+
+ //save selected info
   const listTowers = document.querySelectorAll('.o-dinamic-quote__tower--04, .o-dinamic-quote__tower--03');
 
   const addEventListenerFunction = async (event) => {
@@ -181,6 +183,7 @@ const loadDataCategory = async(data) => {
 
 }
 
+/** Fetches taxonomy API data based on the default parent ID and loads the category data.*/
 const fetchTaxonomyAPI = async () => {
   const { defaultParent } = environment
   const response = await fetch(`${route}/filters?id_parent=${defaultParent}`)
@@ -189,6 +192,83 @@ const fetchTaxonomyAPI = async () => {
 }
 
 
+
+/** Insert information in card */
+const insertDataCard = (cardContent, type) => {
+  const getCardContent = document.querySelector(cardContent)
+  const getToInner = getCardContent.querySelector('.o-dinamic-quote_card-num__title-sub')
+  const numData = stringNumDecimal(dataSelected.datosPagos[type])
+  getToInner.innerHTML = `$${numData}`
+}
+
+/** Insert information in modal */
+const insertSelectedInfo = () => {
+  
+  const getToInner = document.querySelector('.o-dinami-quote__sub-title-info')
+
+  let getToInnerHtml = `<p class="o-dinamic-quote__sub-info">${dataSelected.torre} / ${dataSelected.area} M2</p><p class="o-dinamic-quote__sub-info">`
+    dataSelected.distribución.data.forEach((plane) => {
+      getToInnerHtml += `${plane.aparment_characteristic}`
+    })
+  getToInnerHtml += `</p></div>`
+  getToInner.innerHTML = getToInnerHtml
+}
+
+/** show cotization and get info dataSelected */
+const showCotization = (data) => {
+
+  const getQuoter = document.querySelector('.o-dinamic__btn-submit')
+  
+  if(getQuoter){
+    getQuoter.addEventListener('click', ()=>{
+    
+      const getIndexSlide = document.querySelector('.swiper-slide-active')
+      const slideIndex = getIndexSlide.getAttribute('data-swiper-slide-index')
+
+      activateTabs('.o-dinamic-quote__cardspay')
+      dataSelected = {
+        'torre' : dataSelected.tower,
+        'valor' : data.aparment_value,
+        'apartamento' : data.apartamento,
+        'piso' : dataSelected.piso,
+        'area' : data.areas,
+        'distribución' : data.planes[slideIndex],
+        'datosPagos': data.datos_generales
+      }
+      
+      const hiddenStep = document.querySelector('.o-dinamic-quote__steps')
+      hiddenStep.style.display = 'none'
+
+      insertSelectedInfo()
+    
+      insertDataCard('.o-dialog-form-card--first', 'separa')
+      insertDataCard('.o-dialog-form-card--second', 'paga_restante')
+      insertDataCard('.o-dialog-form-card--third', 'valor_cuota')
+
+      openModalCotization()
+    })
+
+  }
+
+}
+
+/** Information for modal */
+const openModalCotization = () => {
+  const getBtn = document.querySelector('.o-dinamic-quote__cardpay-submit')
+
+  let dataToInsertInHTML = `<ul class="o-dinamic-quote__insert">`
+    dataToInsertInHTML += `<li>Apartamento: ${dataSelected.apartamento}</li>`
+    dataToInsertInHTML += `<li>Area: ${dataSelected.area}</li>`
+    dataToInsertInHTML += `<li>Piso: ${dataSelected.piso}</li>`
+    dataToInsertInHTML += `<li>Torre: ${dataSelected.torre}</li>`
+    dataToInsertInHTML += `<li>Plano: ${dataSelected.distribución.plane_img}</li>`
+  dataToInsertInHTML += `</ul>` 
+
+  getBtn.addEventListener('click', ()=>{
+    openDialog()
+  })
+
+}
 
 
 window.addEventListener('load', ()=>{
