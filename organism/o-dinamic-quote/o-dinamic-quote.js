@@ -82,7 +82,7 @@ const htmlSliderDeparment = (data) => {
 
           aparmentInfo += `<div class="swiper-slide" data-index="${index}"><div class="o-dinamic-quote__slide-container"><div class="o-dinamic-quote__img-content"><img class="o-dinamic-quote__img" src="${plane_img}"></div>`
               
-              aparmentInfo += `<div class="o-dinamic-quote__info-content"><h4 class="o-dinamic-quote__info-subtitle">Apartamento</h4><h3 class="o-dinamic-quote__info-title">${areas}</h3><ul class="o-dinamic-quote__list-container">`
+              aparmentInfo += `<div class="o-dinamic-quote__info-content"><h4 class="o-dinamic-quote__info-subtitle">Apartamento</h4><h3 class="o-dinamic-quote__info-title">${areas} M2</h3><ul class="o-dinamic-quote__list-container">`
               
               if(data.length > 0){
                 data.forEach(({ aparment_characteristic}) => {
