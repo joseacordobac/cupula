@@ -21,3 +21,11 @@ button.forminator-button.forminator-button-submit {
   background-color: #14387f !important;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .titulo-banner-transversal h1 {
+    font-size: 13px !important;
+  }
+  .titulo-banner-transversal h1:before {
+    width: 100% !important;
+  }
+}
