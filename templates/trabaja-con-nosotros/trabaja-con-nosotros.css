@@ -10,3 +10,14 @@
 section#content-form {
   padding-top: 5%;
 }
+button.forminator-button.forminator-button-submit {
+  background: #ffaa0a !important;
+  border-radius: 30px !important;
+  padding: 11px 18px !important;
+}
+
+.forminator-ui#forminator-module-1259.forminator-design--default
+  .forminator-button-upload {
+  background-color: #14387f !important;
+  color: #ffffff;
+}
