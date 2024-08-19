@@ -15,16 +15,16 @@
     )); ?>
 
     <ul class="o-dinamic-quote__steps">
-      <li class="o-dinamic-quote__steps-element o-dinamic-quote__steps-element--active">
+      <li class="o-dinamic-quote__steps-element o-dinamic-quote__steps-element--active" id="step-1">
         <span class="o-dinamic-quote__steps-num">1.</span> Elige Torre
       </li>
-      <li class="o-dinamic-quote__steps-element">
+      <li class="o-dinamic-quote__steps-element" id="step-2">
         <span class="o-dinamic-quote__steps-num">2.</span> Elige Piso
       </li>
-      <li class="o-dinamic-quote__steps-element">
+      <li class="o-dinamic-quote__steps-element" id="step-3">
         <span class="o-dinamic-quote__steps-num">3.</span> Elige Área
       </li>
-      <li class="o-dinamic-quote__steps-element">
+      <li class="o-dinamic-quote__steps-element" id="step-4">
         <span class="o-dinamic-quote__steps-num">4.</span> Elige Distribución
       </li>
     </ul>

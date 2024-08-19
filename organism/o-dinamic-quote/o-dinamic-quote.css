@@ -30,6 +30,7 @@
   gap: 1rem;
   opacity: 0.5;
   position: relative;
+  cursor: pointer;
 }
 
 .o-dinamic-quote__steps-element--active{
@@ -371,7 +372,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 0px;
   max-height: 40px;
 }
 

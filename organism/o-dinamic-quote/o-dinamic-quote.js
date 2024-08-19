@@ -21,6 +21,38 @@ const activateTabs = (elementClass) => {
   }
 }
 
+/** num tabs */
+const numTabs = () => {
+  const getNumTabs = document.querySelectorAll('.o-dinamic-quote__steps-element')
+
+  if(getNumTabs){
+    getNumTabs.forEach(element =>{
+      element.addEventListener('click', (event) => {
+        
+        /** delete class active */
+        getNumTabs.forEach(tab => tab.classList.remove('o-dinamic-quote__steps-element--active'))
+        const currentElement = event.currentTarget
+        currentElement.classList.add('o-dinamic-quote__steps-element--active')
+          
+        currentElement.id === 'step-1' ? activateTabs('.o-dinamic-quote__map') : ''
+        currentElement.id === 'step-2' ? activateTabs('.o-dinamic-quote__floor') : ''
+        currentElement.id === 'step-3' ? activateTabs('.o-dinamic-quote__area') : ''
+        currentElement.id === 'step-4' ? activateTabs('.o-dinamic-quote__distribution') : ''
+
+      })
+    })
+  }
+
+}
+
+const numTabActive = (step) => {
+  const getNumTabs = document.querySelectorAll('.o-dinamic-quote__steps-element')
+  getNumTabs.forEach(tab => tab.classList.remove('o-dinamic-quote__steps-element--active'))
+  const getNumTab = document.querySelector(`#${step}`)
+  getNumTab.classList.add('o-dinamic-quote__steps-element--active')
+}
+
+
 //Swiper
 const swiperFunction = () =>{
   const swiper = new Swiper('.o-dinamic-quote__distribution-slide ', {
@@ -85,6 +117,7 @@ const onAreaClick = async(idFloor, nameFloor) => {
   dataSelected.piso = nameFloor
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
   activateTabs('.o-dinamic-quote__area')
+  numTabActive('step-3')
   
   if(getArea){
     getArea.forEach((area) => {
@@ -93,6 +126,7 @@ const onAreaClick = async(idFloor, nameFloor) => {
         const idSection = clickCurrent.getAttribute('data-area')
          getDeparment(idSection, idFloor)
          activateTabs('.o-dinamic-quote__distribution')
+         numTabActive('step-4')
       })
     })
   }
@@ -171,6 +205,7 @@ const loadDataCategory = async(data) => {
     if(event.type === 'click'){
       await getAllFloors(filterTower[0].id)
       activateTabs('.o-dinamic-quote__floor')
+      numTabActive('step-2')
     }
   }
 
@@ -226,6 +261,7 @@ const showCotization = (data) => {
       const slideIndex = getIndexSlide.getAttribute('data-swiper-slide-index')
 
       activateTabs('.o-dinamic-quote__cardspay')
+      numTabActive('step-3')
       dataSelected = {
         'torre' : dataSelected.tower,
         'valor' : data.aparment_value,
@@ -255,17 +291,10 @@ const showCotization = (data) => {
 /** Information for modal */
 const openModalCotization = () => {
   const getBtn = document.querySelector('.o-dinamic-quote__cardpay-submit')
-  const getHtMLForm = document.querySelector('.aparment-infomation')
+  const textarea = document.querySelector('.aparment-infomation textarea')
 
-  let dataToInsertInHTML = `<ul class="o-dinamic-quote__insert">`
-    dataToInsertInHTML += `<li>Apartamento: ${dataSelected.apartamento}</li>`
-    dataToInsertInHTML += `<li>Area: ${dataSelected.area}</li>`
-    dataToInsertInHTML += `<li>Piso: ${dataSelected.piso}</li>`
-    dataToInsertInHTML += `<li>Torre: ${dataSelected.torre}</li>`
-    dataToInsertInHTML += `<li>Plano: ${dataSelected.distribución.plane_img}</li>`
-  dataToInsertInHTML += `</ul>` 
-
-  getHtMLForm.innerHTML = dataToInsertInHTML
+  const textAreaInfor = `Apartamento: ${dataSelected.apartamento}\n Area: ${dataSelected.area}\n Piso: ${dataSelected.piso}\n Torre: ${dataSelected.torre}\n Plano: ${dataSelected.distribución.plane_img}`
+  textarea.value = textAreaInfor
 
 }
 
@@ -278,5 +307,5 @@ window.addEventListener('load', ()=>{
   }
 
   onColorArea()
-
+  numTabs()
 })
