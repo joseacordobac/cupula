@@ -84,5 +84,13 @@
   .o-modal-form__slid-component{
     grid-template-columns: 100%;
   }
-  
+
+  .o-modal-form__formulary{
+    max-width: 100%;
+  }
+
+  .o-modal-form__content{
+    max-width: 95%;
+    width: 100vw;
+  }
 }
