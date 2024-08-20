@@ -114,6 +114,8 @@ const getDeparment = async(idSection, idFloor) => {
 //select department section
 const onAreaClick = async(idFloor, nameFloor) => {
 
+  console.log(idFloor)
+
   dataSelected.piso = nameFloor
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
   activateTabs('.o-dinamic-quote__area')

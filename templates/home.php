@@ -105,7 +105,6 @@ wp_enqueue_style('home');
                 array(
                     'title'         => get_sub_field('titulo_de_seccion'),
                     'titles-type'   => 'a-titles--main',
-                    'animations'    => 'js-title-typing',
                     'custom-css'    => 'g-content-middle'
                     )
                 ); 

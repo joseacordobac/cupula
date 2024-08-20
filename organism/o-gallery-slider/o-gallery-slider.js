@@ -7,15 +7,18 @@ const swiperGallery = (getGallerySwiper) => {
       grabCursor: true,
       slidesPerView: 2,
       loopAddBlankSlides: true,
-      autoplay: {
-        delay: 3000,
-      },
       breakpoints: {
         0: {
           slidesPerView: 2,
+          autoplay: {
+            delay: 3000,
+          },
         },
         780: {
           slidesPerView: 2,
+          autoplay: {
+            delay: 3000,
+          },
         },
       },
       navigation: {

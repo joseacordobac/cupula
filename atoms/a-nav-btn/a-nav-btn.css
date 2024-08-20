@@ -9,6 +9,10 @@
   transition: 0.35s;
 }
 
+.a-nav-btn__icon{
+  max-height: 35px;
+}
+
 .a-nav-btn__content:hover {
   background: var(--tertiary-color);
   padding: 1rem 1.8rem;

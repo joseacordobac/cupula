@@ -25,6 +25,10 @@
   right: 5rem;
 }
 
+.o-model-appartment .swiper-pagination--content-project{
+  display: none;
+}
+
 @media(max-width:780px){
   
   .main-proyects .o-model-appartment{
@@ -46,5 +50,18 @@
 
   .o-model-appartment .swiper-button-next--swiper-button-next{
     left: -1rem;
+  }
+
+  .o-model-appartment .swiper-pagination--content-project{
+    display: block;
+  }
+
+  .o-model-appartment .button-prev__icon,
+  .o-model-appartment .button-next__icon{
+    display: none;
+  }
+
+  .swiper-pagination--content-project {
+    text-align: center;
   }
 }

@@ -252,7 +252,7 @@ button.forminator-button.forminator-button-submit.m-form-aside__btn-text{
   }
 
   .main-proyect--gray__container{
-    max-width: 91%;
+    max-width: 99%;
   }
 
   .how-arrive__content{
@@ -274,11 +274,6 @@ button.forminator-button.forminator-button-submit.m-form-aside__btn-text{
 
   .main-proyects .o-model-appartment{
     max-width: 100%;
-  }
-
-  /* info */
-  .cotiza-you-apartment {
-    display: none;
   }
 
   .title-content {

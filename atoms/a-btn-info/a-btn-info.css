@@ -34,6 +34,10 @@
   font-weight: 500;
 }
 
+.a-btn-info--2 {
+  display: none;
+}
+
 @media (max-width: 780px) {
   .a-btn-info {
     display: none;

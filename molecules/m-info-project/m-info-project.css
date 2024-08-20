@@ -23,6 +23,11 @@
 }
 
 @media(max-width: 768px){
+  .m-info-project{
+    max-width: 90%;
+    margin: auto;
+  }
+    
   .m-info-project__texts-subtitle {
     display: none;
   }
@@ -33,11 +38,16 @@
 
   
   .m-info-project__img{
-    width: 100%;
+    width: 35%;
   }
 
   .m-info-project__img-icon {
     width: 100%;
+    height: 150px;
+  }
+
+  .m-info-project__texts{
+    width: 75%;
   }
 
   .m-info-project__texts-title{

@@ -5,3 +5,9 @@
 .o-gallery-slider__item .a-img__img--rounded{
   border-radius: 1.2rem;
 }
+
+@media(max-width: 780px){
+  .o-gallery-slider__item{
+    height: 25rem;
+  }
+}

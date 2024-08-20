@@ -71,3 +71,18 @@
   font-size: 18px;
   color: white;
 }
+
+@media(min-width: 1380px) {
+  .o-modal-form__content {
+    max-width: 1300px;
+    width: auto;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .o-modal-form__slid-component{
+    grid-template-columns: 100%;
+  }
+  
+}

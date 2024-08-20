@@ -36,6 +36,7 @@
           template_part_atomic('atoms/a-arrows-slide/a-arrows-slide', array('slide_class' => 'swiper-button-next' ));
           echo '</div>';
         endif;
+        echo '<div class="swiper-pagination--content-project"></div>';
         wp_reset_postdata();
       ?>
 
