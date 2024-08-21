@@ -21,6 +21,11 @@ button.forminator-button.forminator-button-submit {
   background-color: #14387f !important;
   color: #ffffff;
 }
+.forminator-ui#forminator-module-1259.forminator-design--default
+  .forminator-label {
+  color: #777771;
+  font-family: "Poppins";
+}
 @media (max-width: 500px) {
   .titulo-banner-transversal h1 {
     font-size: 13px !important;
