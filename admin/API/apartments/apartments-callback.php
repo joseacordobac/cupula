@@ -5,7 +5,6 @@ class AparmentCallBack
   public function call_back( WP_REST_Request $request ){
 
     $id_filter = $request->get_param('id_filter');
-    $id_section = $request->get_param('id_section');
 
     $args = array(
         'post_type' => 'apartamentos', 
@@ -15,11 +14,6 @@ class AparmentCallBack
                 'taxonomy' => 'filtro', 
                 'field'    => 'term_id',  
                 'terms'    => $id_filter, 
-            ),
-            array(
-                'taxonomy' => 'seccion', 
-                'field'    => 'slug',    
-                'terms'    => $id_section, 
             ),
         ),
         'posts_per_page' => -1,

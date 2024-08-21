@@ -9,6 +9,8 @@ let dataSelected = {
   tower: '',
 }
 
+let GETdataPositions = ''
+
 /** activate - tabs */
 const activateTabs = (elementClass) => {
 
@@ -104,54 +106,74 @@ const htmlSliderDeparment = (data) => {
 }
 
 
-const getDeparment = async(idSection, idFloor) => {  
-
-  const getFloors = await fetch(`${route}/apartment?id_section=${idSection}&id_filter=${idFloor}`)
+const getDeparment = async(idSection) => {  
+  const getFloors = await fetch(`${route}/apartment?id_filter=${idSection}`)
   const data = await getFloors.json()
   htmlSliderDeparment(data)
+}
+
+/** get terms posciones  */
+const fetchPositions = async (id) => {
+  const response = await fetch(`${route}/filters?id_parent=${id}`)
+  const data = await response.json()
+  return data
 }
 
 //select department section
 const onAreaClick = async(idFloor, nameFloor) => {
 
-  console.log(idFloor)
+  const dataPosition = await fetchPositions(idFloor)
+  GETdataPositions = dataPosition
 
   dataSelected.piso = nameFloor
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
   activateTabs('.o-dinamic-quote__area')
   numTabActive('step-3')
+  onColorArea()
   
   if(getArea){
     getArea.forEach((area) => {
       area.addEventListener('click', (event) => {
+
         const clickCurrent = event.currentTarget
-        const idSection = clickCurrent.getAttribute('data-area')
-         getDeparment(idSection, idFloor)
-         activateTabs('.o-dinamic-quote__distribution')
-         numTabActive('step-4')
+        const nameSection = clickCurrent.getAttribute('data-area')
+        const filterSection = dataPosition.filter( el => el.name === nameSection)
+        
+        getDeparment(filterSection[0].id)
+        activateTabs('.o-dinamic-quote__distribution')
+        numTabActive('step-4')
+
       })
     })
   }
 
 }
 
+
+
 const onColorArea = () => {
   const getArea = document.querySelectorAll('.o-dinamic-floor-st')
+  
 
   if(getArea){
     getArea.forEach((area) => {
       
       area.addEventListener('mouseover', (event) => {
         const mouseCurrent = event.currentTarget
-        const areas = mouseCurrent.getAttribute('data-area')
+        const nameSection = mouseCurrent.getAttribute('data-area')
+        const filterSection = GETdataPositions.filter( el => el.name === nameSection)
+
+        const getAllDefault = document.querySelectorAll('.has-default')
+        getAllDefault.forEach( e => e.classList.remove('has-default'))
+
+        const getTitleSection = document.querySelector('.o-dinamic-quote__area-title')
+        const description = filterSection[0].description.replace(/(\r\n|\n|\r)/g, "<br>");
+
+        getTitleSection.innerHTML = `<h3>${description}</h3>`
+
         mouseCurrent.classList.add(`has-default`)
       })
 
-      area.addEventListener('mouseout', event =>{
-        const mouseCurrent = event.currentTarget
-        const areas = mouseCurrent.getAttribute('data-area')
-        mouseCurrent.classList.remove(`has-default`)
-      })
 
     })
   }
@@ -308,6 +330,5 @@ window.addEventListener('load', ()=>{
     fetchTaxonomyAPI();
   }
 
-  onColorArea()
   numTabs()
 })

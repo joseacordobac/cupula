@@ -14,5 +14,4 @@ new CustomPostType('Apartamentos', 'apartamento', array('filtro', 'seccion'), 'a
 // new CustomTaxonomy(name, true, rewrite, register name, array(tipo de publicación));
 new CustomTaxonomy('Estado', true, 'estado', 'estado', array('proyectos'));
 new CustomTaxonomy('filtro', true, 'filtro', 'filtro', array('apartamentos'));
-new CustomTaxonomy('sección', true, 'seccion', 'seccion', array('apartamentos'));
 
