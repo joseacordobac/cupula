@@ -8,11 +8,10 @@ function register_templates_custom() {
     'conocenos',
     'formulario',
     'thank-you',
-    'entrenate',
     'single-proyectos',
+    'single',
     'empresas',
     'blog',
-    'trabaja-con-nosotros',
   );
 
   foreach($list_nameSpaces_register as $key => $value) {

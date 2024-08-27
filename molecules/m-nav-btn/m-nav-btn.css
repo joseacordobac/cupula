@@ -1,4 +1,4 @@
-.m-nav {
+.m-nav-btn {
     display: flex;
     gap: 17px;
     list-style: none;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.m-nav a {
+.m-nav-btn a {
     text-decoration: none;
     font-size: var(--size-medium);
     color: var(--main-color);
@@ -51,7 +51,7 @@
 }
 
 @media(max-width: 768px){
-    .m-nav {
+    .m-nav-btn {
         flex-direction: column;
         width: 100vw;
         justify-content: flex-start;
@@ -67,7 +67,7 @@
         transition: all 0.5s ease-in-out;
     }
 
-    .has-show .m-nav {
+    .has-show .m-nav-btn {
         max-height: 500px;
         padding: 36px 20px;
     }
