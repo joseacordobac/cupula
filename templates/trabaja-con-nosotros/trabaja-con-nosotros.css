@@ -37,9 +37,17 @@ div#forminator-field-consent-1_66c659a65d6fb__description p {
 .forminator-guttenberg input {
   border-radius: 7px !important;
 }
+section#content-form {
+  width: 55%;
+  margin: 0 auto;
+}
 @media (max-width: 500px) {
   .titulo-banner-transversal h1 {
     font-size: 13px !important;
+  }
+  section#content-form {
+    width: 100%;
+    margin: 0 auto;
   }
   .titulo-banner-transversal h1:before {
     width: 100% !important;
