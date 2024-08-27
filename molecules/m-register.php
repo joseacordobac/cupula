@@ -7,7 +7,7 @@ define("PATH_MOLECULES", trailingslashit( get_stylesheet_directory_uri() ).'mole
 function enque_custom_molecules() {
 
   $molecules = array(
-    'm-nav',
+    'm-nav-btn',
     'm-video',
     'm-value',
     'm-card-program',

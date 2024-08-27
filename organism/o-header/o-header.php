@@ -8,15 +8,10 @@
 <header class="o-header" id="o-header">
     <div class="g-content-regular o-header__content">
         <div class="o-header__logo-content"> 
-            <?php if(is_page_template('templates/empresas.php')){ ?>
-                <?php template_part_atomic('atoms/a-logo-white/a-logo-white'); ?>
-            <?php }else{ ?>
-                <?php template_part_atomic('atoms/a-logo/a-logo'); ?>
-            <?php } ?>
-
+            <?php template_part_atomic('atoms/a-logo/a-logo'); ?>
         </div>
         <div class="o-header__nav-content">
-            <?php get_template_part('/molecules/m-nav/m-nav'); ?>
+            <?php template_part_atomic('molecules/m-nav-btn/m-nav-btn'); ?>
             <div class="o-header__mobile-content">
                 <div class="o-header__mobile">
                     <span class="o-header__mobile-line"></span>
@@ -24,6 +19,9 @@
                     <span class="o-header__mobile-line o-header__mobile-line--bottom"></span>
                 </div>
             </div>
+        </div>
+        <div class="o-header-aside-nav">
+            <?php template_part_atomic('molecules/m-main-nav/m-main-nav'); ?>
         </div>
     </div>
 </header>

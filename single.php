@@ -1,7 +1,7 @@
 <?php 
 
 get_header(); 
-
+wp_enqueue_style('single');
 ?>
 
 <section id="main-single">
