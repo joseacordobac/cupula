@@ -8,13 +8,15 @@ wp_enqueue_script('m-nav-btn');
 
 <div class="m-nav-btn"> <?php
 
-wp_nav_menu(array(
-  'theme_location' => 'nav-main',
-  'menu_class' => '', 
-  'container' => 'div',
-  'container_class' => '',
-  'container_id' => ''
-));
+if(wp_mobile()){
+  wp_nav_menu(array(
+    'theme_location' => 'nav-main',
+    'menu_class' => '', 
+    'container' => 'div',
+    'container_class' => '',
+    'container_id' => ''
+  ));
+}
 
 wp_nav_menu(array(
   'theme_location' => 'nav-btn',
