@@ -29,6 +29,11 @@ button.forminator-button.forminator-button-submit {
 div#forminator-field-consent-1_66c659a65d6fb__description p {
   font-family: "Poppins" !important;
 }
+.forminator-ui#forminator-module-1259.forminator-design--default
+  .forminator-label {
+  color: #777771;
+  font-family: "Poppins" !important;
+}
 .forminator-guttenberg input {
   border-radius: 7px !important;
 }
