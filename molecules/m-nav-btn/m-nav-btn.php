@@ -8,7 +8,7 @@ wp_enqueue_script('m-nav-btn');
 
 <div class="m-nav-btn"> <?php
 
-if(wp_mobile()){
+if(wp_is_mobile()){
   wp_nav_menu(array(
     'theme_location' => 'nav-main',
     'menu_class' => '', 
