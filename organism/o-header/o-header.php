@@ -11,7 +11,13 @@
             <?php template_part_atomic('atoms/a-logo/a-logo'); ?>
         </div>
         <div class="o-header__nav-content">
-            <?php template_part_atomic('molecules/m-hamburger/m-hamburger'); ?>
+            <?php 
+            if(!wp_is_mobile()){
+                template_part_atomic('molecules/m-nav-btn/m-nav-btn');
+            }
+            
+            template_part_atomic('molecules/m-hamburger/m-hamburger'); 
+            ?>
         </div>
         <div class="o-header-aside-nav">
             <?php template_part_atomic('molecules/m-main-nav/m-main-nav'); ?>
