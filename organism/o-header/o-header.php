@@ -12,13 +12,7 @@
         </div>
         <div class="o-header__nav-content">
             <?php template_part_atomic('molecules/m-nav-btn/m-nav-btn'); ?>
-            <div class="o-header__mobile-content">
-                <div class="o-header__mobile">
-                    <span class="o-header__mobile-line"></span>
-                    <span class="o-header__mobile-line o-header__mobile-line--center"></span>
-                    <span class="o-header__mobile-line o-header__mobile-line--bottom"></span>
-                </div>
-            </div>
+            <?php template_part_atomic('molecules/m-hamburger/m-hamburger'); ?>
         </div>
         <div class="o-header-aside-nav">
             <?php template_part_atomic('molecules/m-main-nav/m-main-nav'); ?>

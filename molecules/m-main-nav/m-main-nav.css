@@ -32,3 +32,15 @@
 .current-menu-item a {
   color: var(--secondary-color) !important;
 }
+
+.m-main-nav__social {
+  margin-top: 5rem;
+}
+
+.m-main-nav__social .m-socials{
+  justify-content: left;
+}
+
+.m-main-nav__content .m-hamburger__mobile-line{
+  background-color: white;
+}
