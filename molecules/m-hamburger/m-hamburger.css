@@ -49,16 +49,21 @@
 }
 
 @media(max-width:780px){
-  .o-header__mobile-content{
-      display: block;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 80vw;
-      top: -4.5rem;
+
+  .o-header-aside-nav .m-hamburger__mobile{
+    position: absolute;
+    top: 1.4rem;
+    left: 1.9rem;
+    width: 40px;
+    height: 40px;
   }
 
-  .o-header__mobile-line{
+  .m-hamburger__mobile-line{
       background-color: white;
   }
+
+  .m-main-nav__social{
+    margin-top: 3rem;
+  }
+
 }

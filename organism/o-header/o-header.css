@@ -76,12 +76,6 @@
         z-index: 7;
     }
 
-    .o-header__nav-content {
-        position: absolute;
-        bottom: 2px;
-        left: 0px;
-    }
-
     .o-header--js-active .o-header__logo-content{
         padding: 1rem 0rem 0rem 0rem;
     }
@@ -90,7 +84,12 @@
         padding: 1rem 
     }
 
-    .o-header-aside-nav{
-        display: none;
+    .has-show .o-header-aside-nav{
+        width: 100vw;
     }
+
+    .o-header-aside-nav .custom-logo{
+        height: 56px !important;
+    }
+
 }

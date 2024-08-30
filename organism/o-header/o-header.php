@@ -11,7 +11,6 @@
             <?php template_part_atomic('atoms/a-logo/a-logo'); ?>
         </div>
         <div class="o-header__nav-content">
-            <?php template_part_atomic('molecules/m-nav-btn/m-nav-btn'); ?>
             <?php template_part_atomic('molecules/m-hamburger/m-hamburger'); ?>
         </div>
         <div class="o-header-aside-nav">

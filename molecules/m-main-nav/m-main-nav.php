@@ -21,6 +21,10 @@
         'container_id' => 'm-main-nav__container'
       )); ?>
     </div>
+    <?php if(wp_is_mobile()){
+        template_part_atomic('molecules/m-nav-btn/m-nav-btn');
+    } ?>
+
     <div class="m-main-nav__social">
       <?php  template_part_atomic( 'molecules/m-socials/m-socials', array(
               'custom_class' => 'm-main-nav__socials',
