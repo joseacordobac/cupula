@@ -203,11 +203,17 @@ section#nuestra-historia {
 section#espacios-cupula .a-titles-title {
   color: #fff;
 }
-section#espacios-cupula {
+/* section#espacios-cupula {
   padding: 6% 0;
   background: #14387f;
   padding-top: 23%;
   margin-top: -240px;
+} */
+section#espacios-cupula {
+  padding: 6% 0;
+  background: #14387f;
+  padding-top: 3%;
+  margin-top: 150px;
 }
 .content-espacios-cupula {
   display: flex;
@@ -547,11 +553,7 @@ button.accordion-header.active span {
     width: 80%;
     display: flex;
   }
-  section#espacios-cupula {
-    padding: 6% 0;
-    padding-top: 35%;
-    margin-top: -240px;
-  }
+
   ul.item-logo li {
     height: 65px;
     border-radius: 13px;
@@ -655,8 +657,8 @@ button.accordion-header.active span {
   }
   section#espacios-cupula {
     padding: 6% 0;
-    padding-top: 72%;
-    margin-top: -240px;
+    padding-top: 13%;
+    margin-top: 120px;
   }
   .content-espacios-cupula {
     display: flex;
