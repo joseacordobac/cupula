@@ -10,7 +10,7 @@
   padding-top: 1%;
 }
 .text-second-section-conocenos h3 {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 40px;
   margin-bottom: 5%;
   color: #14387f;
@@ -67,7 +67,7 @@ section#second-section-conocenos {
 
 .text-nuestro-equipo h4 {
   color: #14387f;
-  font-size: 23px;
+  font-size: 24px;
 }
 .text-nuestro-equipo {
   display: flex;
@@ -93,7 +93,7 @@ section#second-section-conocenos {
   width: 50%;
 }
 .text-nuestro-equipo p {
-  font-size: 20px;
+  font-size: 16px;
 }
 .nuestro-equipo__slide {
   background: var(--white-color);
