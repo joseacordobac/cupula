@@ -150,11 +150,12 @@ span.swiper-pagination-bullet {
   justify-content: center;
   align-items: center;
   background: rgb(247, 247, 247);
+  padding: 0 7%;
 }
 
 .titulo-banner-transversal h1 {
   color: #14387f;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   position: relative;
 }
@@ -180,6 +181,9 @@ span.swiper-pagination-bullet {
   .o-stadistics,
   .g-content-middle {
     max-width: 1250px;
+  }
+  .titulo-banner-transversal h1 {
+    font-size: 36px;
   }
 }
 
