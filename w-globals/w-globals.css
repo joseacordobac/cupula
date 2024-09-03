@@ -149,6 +149,7 @@ span.swiper-pagination-bullet {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(247, 247, 247);
 }
 
 .titulo-banner-transversal h1 {
