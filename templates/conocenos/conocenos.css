@@ -602,7 +602,11 @@ button.accordion-header.active span {
   }
   .text-nuestro-equipo h4 {
     color: #14387f;
-    font-size: 11px;
+    font-size: 16px;
+  }
+  .content-izq-nuestro-equipo {
+    width: 90%;
+    position: relative;
   }
 }
 
@@ -625,17 +629,21 @@ button.accordion-header.active span {
   }
   .img-nuestro-equipo span {
     top: 0;
-    left: 17%;
+    left: 12%;
+    right: 12%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .text-nuestro-equipo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   .text-nuestro-equipo p {
-    font-size: 8px;
+    font-size: 14px;
   }
   .content-izq-nuestro-equipo:before {
-    width: 1px;
-    height: 50px;
-    background: #888888;
-    right: -10px;
-    top: -3px;
+    display: none;
   }
   .content-video-nuestra-historia {
     padding-top: 10%;
@@ -781,10 +789,11 @@ button.accordion-header.active span {
   button.accordion-header span {
     font-weight: 400;
     display: block;
-    font-size: 10px;
+    font-size: 14px;
+    margin-top: 15px;
   }
   .accordion-content p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .accordion-header:hover {
     background-color: #f5f5f5;
