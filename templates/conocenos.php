@@ -208,9 +208,9 @@
                         <div class="text-trayectoria">
                             <h3><?php the_sub_field('titulo_proyecto'); ?></h3>
                             <h4><?php the_sub_field('ano'); ?></h4>
-                            <p><strong>Ciudad:</strong> <?php the_sub_field('ciudad'); ?></p>
-                            <p><strong>Área:</strong> <?php the_sub_field('area'); ?></p>
-                            <p><strong>Servicios contratados: </strong> </p>
+                            <p><strong>Fecha de inicio de ventas:</strong> <?php the_sub_field('ciudad'); ?></p>
+                            <p><strong>Unidades vendidas:</strong> <?php the_sub_field('area'); ?></p>
+                            <p><strong>Meses para su venta total: </strong> </p>
                             <?php the_sub_field('servicios_contratados'); ?>
                         </div>
                     </div>
