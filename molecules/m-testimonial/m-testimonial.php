@@ -14,21 +14,23 @@ wp_enqueue_script('m-testimonial');
 ?>
 
 <div class="m-testimonial <?php echo $custom_class; ?>">
-    <div class="m-testimonial__content">
-        <div class="m-testimonial-left">
-            <?php 
-                get_template_part('/atoms/a-img/a-img', null,
-                array(
-                    'image_id' => $img_id,
-                    'image_size' => "full",
-                    'alt' => $alt,
-                    'class' => "m-testimonial__image",
-                    'img_radius' => true
-                    // 'has_video' => has video,
-                    // 'autoplay' => autoplay
-                ));
-            ?>
-        </div>
+    <div class="m-testimonial__content <?php echo $img_id ? '' : 'm-testimonial-left--has-img'; ?>">
+        <?php if($img_id != ''): ?>
+            <div class="m-testimonial-left">
+                <?php 
+                    get_template_part('/atoms/a-img/a-img', null,
+                    array(
+                        'image_id' => $img_id,
+                        'image_size' => "full",
+                        'alt' => $alt,
+                        'class' => "m-testimonial__image",
+                        'img_radius' => true
+                        // 'has_video' => has video,
+                        // 'autoplay' => autoplay
+                    ));
+                ?>
+            </div>
+        <?php endif; ?>
         <div class="m-testimonial-info">
             <h4 class="m-testimonial-info__name"><?php echo $name_testimonial; ?></h4>
             <?php 
