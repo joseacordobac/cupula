@@ -93,8 +93,10 @@
   .o-footer__botton-nav-legal {
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
+    padding: 1rem;
   }
-
+  
   .o-footer__botton-nav-legal a {
     font-size: 1.4rem;
   }

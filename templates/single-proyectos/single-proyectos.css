@@ -186,7 +186,6 @@ button.forminator-button.forminator-button-submit.m-form-aside__btn-text{
 @media(max-width: 780px){
 
   .o-header{
-    background-color: transparent;
     position: fixed;
     top: 0px;
   }

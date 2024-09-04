@@ -90,6 +90,11 @@
     padding: 1rem 1rem 3rem 1rem;
   }
 
+  .m-card-project__title-text {
+    font-size: 1.8rem;
+    line-height: 1rem;
+  }
+
   .m-card-project__logo-img{
     width: 10rem;
   }

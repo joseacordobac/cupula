@@ -26,6 +26,8 @@
  $img_radius = isset($args['img_radius']) ? 'a-img__img--rounded' : '';
 
  $has_video = isset($args['has_video']) ? $args['has_video'] : false;
+if(wp_is_mobile() && get_sub_field('video_mobile')) $has_video = get_sub_field('video_mobile');
+
  $autoplay = isset($args['autoplay']) ? 'autoplay' : false;
 
  $has_modal = isset($args['has_modal']) ? $args['has_modal'] : false;
@@ -71,7 +73,6 @@ if($has_modal && $has_video){ ?>
     return; 
 }
 
- 
 if($has_video){
     echo "<div class='a-img__video $custom_class--video'>" . wp_video_shortcode( $video_attr )." $play_icon</div>";
 }else{ ?>

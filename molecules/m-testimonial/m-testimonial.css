@@ -10,6 +10,9 @@
     height: 100%;
 }
 
+.m-testimonial-left--has-img{
+    grid-template-columns: 100%;
+}
 
 .m-testimonial-left {
     height: 100%;
@@ -27,11 +30,15 @@
 }
 
 .m-testimonial-info {
-    padding: 18px 19px 18px 0px;
+    padding: 20px 21px 28px 19px;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 13px;
+}
+
+.m-testimonial-info__possition {
+    font-size: 1rem;
 }
 
 .m-testimonial  .m-testimonial-info__text {
@@ -69,9 +76,5 @@
     .m-testimonial-info {
         padding: 5px 7px 30px;
         width: 95%;
-    }
-
-    .m-testimonial .m-testimonial-info__text{
-        font-size: 1.4rem;
     }
 }
