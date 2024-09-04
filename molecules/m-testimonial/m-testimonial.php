@@ -32,9 +32,10 @@ wp_enqueue_script('m-testimonial');
             </div>
         <?php endif; ?>
         <div class="m-testimonial-info">
-            <h4 class="m-testimonial-info__name"><?php echo $name_testimonial; ?></h4>
-            <?php 
-            echo $possition != '' ? '<h5 class="m-testimonial-info__possition">'.$possition.'</h5>' : ''; ?>
+            <div class="m-testimonial-info__content">
+                <h4 class="m-testimonial-info__name"><?php echo $name_testimonial; ?></h4>
+                <?php echo $possition != '' ? '<h5 class="m-testimonial-info__possition">'.$possition.'</h5>' : ''; ?>
+            </div>
             <p class="m-testimonial-info__text"><?php echo $testimonial; ?></p>
         </div>
     </div>

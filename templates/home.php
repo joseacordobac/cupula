@@ -116,6 +116,7 @@ wp_enqueue_style('home');
                     'alt'               => 'name',
                     'name_testimonial'  => 'name',
                     'testimonial'       => 'testimonial',
+                    'possition'         => 'possition',
                     'custom_class'      => '',
                     'custom_class_card' => ''
                 )

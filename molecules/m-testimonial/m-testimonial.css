@@ -37,6 +37,10 @@
     gap: 13px;
 }
 
+.m-testimonial-info__possition {
+    font-size: 1rem;
+}
+
 .m-testimonial  .m-testimonial-info__text {
     font-family: var(--font-text);
     font-size: var(--size-medium-regular);
