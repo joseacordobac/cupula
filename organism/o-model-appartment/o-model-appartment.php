@@ -14,29 +14,26 @@
   <div class="o-model-appartment">
     <div class="<?php echo $is_slider ? 'o-model-appartment__content-slider' : 'o-model-appartment__content'; ?>">
       <?php 
-        $args = u_args_pt('proyectos');
-        $proyectos = new WP_Query($args);
         
-        if($proyectos->have_posts() && !$is_slider):
-          while($proyectos->have_posts()):
-            $proyectos->the_post();
+        if(have_rows('salas_de_venta') && !$is_slider):
+          while(have_rows('salas_de_venta')):the_row();
             template_part_atomic('/molecules/m-card-model/m-card-model', array('horizontal' => $is_horizontal));
           endwhile;
         endif;
-
-        if($proyectos->have_posts() && $is_slider):
-          echo '<div class="o-model-appartment__slider"><div class="o-model-appartment__swiper swiper-wrapper">';
-            while($proyectos->have_posts()):
-              $proyectos->the_post();
-              echo '<div class="swiper-slide">'; 
-                template_part_atomic('/molecules/m-card-model/m-card-model', array('horizontal' => $is_horizontal));
-              echo '</div>';
-            endwhile;
+        
+        if($is_slider):
+          echo '<div class="o-model-appartment__slider">';
+            echo '<div class="o-model-appartment__swiper swiper-wrapper">';
+              while(have_rows('salas_de_venta')):the_row();
+                echo '<div class="swiper-slide">'; 
+                  template_part_atomic('/molecules/m-card-model/m-card-model', array('horizontal' => $is_horizontal));
+                echo '</div>';
+              endwhile;
+            echo '</div>';
+            template_part_atomic('atoms/a-arrows-slide/a-arrows-slide', array('slide_class' => 'swiper-button-next' ));
           echo '</div>';
-          template_part_atomic('atoms/a-arrows-slide/a-arrows-slide', array('slide_class' => 'swiper-button-next' ));
-          echo '</div>';
+          echo '<div class="swiper-pagination--content-project"></div>';
         endif;
-        echo '<div class="swiper-pagination--content-project"></div>';
         wp_reset_postdata();
       ?>
 
