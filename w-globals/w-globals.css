@@ -149,11 +149,13 @@ span.swiper-pagination-bullet {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(247, 247, 247);
+  padding: 0 7%;
 }
 
 .titulo-banner-transversal h1 {
   color: #14387f;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   position: relative;
 }
@@ -179,6 +181,9 @@ span.swiper-pagination-bullet {
   .o-stadistics,
   .g-content-middle {
     max-width: 1250px;
+  }
+  .titulo-banner-transversal h1 {
+    font-size: 36px;
   }
 }
 
@@ -254,13 +259,13 @@ ul.post-categories li a:hover {
   -webkit-box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 9px -5px rgba(0, 0, 0, 0.75) !important;
-  padding: 25px 15px !important;
+  padding: 16px 15px !important;
   border-radius: 50px !important;
-  width: 85% !important;
+  width: 65% !important;
 }
 .single-post .a-btn-info__link,
 .page-template-blog .a-btn-info__link {
-  font-size: 25px !important;
+  font-size: 18px !important;
   text-decoration: none;
   font-weight: 500;
   color: #14387f !important;
@@ -433,6 +438,12 @@ section#related-posts {
   font-size: 12px;
   cursor: pointer;
 }
+div#forminator-field-consent-1_66d78ad51d4c1__description {
+  font-family: "Poppins" !important;
+}
+div#forminator-field-consent-1_66d78b52cc69e__description p {
+  font-family: "Poppins" !important;
+}
 .content-form {
   width: 37%;
   border-left: 1px solid #c4c4c4;
@@ -446,7 +457,7 @@ section#related-posts {
   transition: 0.35s;
 }
 button.forminator-button.forminator-button-submit.m-form-aside__btn-text {
-  font-size: 21px !important;
+  font-size: 18px !important;
   padding: 21px 0 !important;
   padding-left: 35px !important;
   border-radius: 40px !important;

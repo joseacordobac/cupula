@@ -32,3 +32,35 @@
 .current-menu-item a {
   color: var(--secondary-color) !important;
 }
+
+.m-main-nav__social {
+  margin-top: 5rem;
+}
+
+.m-main-nav__social .m-socials{
+  justify-content: left;
+}
+
+.m-main-nav__content .m-hamburger__mobile-line{
+  background-color: white;
+}
+
+@media(max-width: 780px){
+  .m-nav-btn{
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .m-nav-btn>*{
+    width: 100%;
+  }
+
+  .m-main-nav  .pagos-pse {
+    background: white;
+  }
+
+  .m-main-nav .pagos-pse a{
+    color: var(--main-color);
+  }
+  
+}

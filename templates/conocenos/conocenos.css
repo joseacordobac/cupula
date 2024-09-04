@@ -10,7 +10,7 @@
   padding-top: 1%;
 }
 .text-second-section-conocenos h3 {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 40px;
   margin-bottom: 5%;
   color: #14387f;
@@ -67,7 +67,7 @@ section#second-section-conocenos {
 
 .text-nuestro-equipo h4 {
   color: #14387f;
-  font-size: 23px;
+  font-size: 24px;
 }
 .text-nuestro-equipo {
   display: flex;
@@ -93,7 +93,7 @@ section#second-section-conocenos {
   width: 50%;
 }
 .text-nuestro-equipo p {
-  font-size: 20px;
+  font-size: 16px;
 }
 .nuestro-equipo__slide {
   background: var(--white-color);
@@ -203,11 +203,17 @@ section#nuestra-historia {
 section#espacios-cupula .a-titles-title {
   color: #fff;
 }
-section#espacios-cupula {
+/* section#espacios-cupula {
   padding: 6% 0;
   background: #14387f;
   padding-top: 23%;
   margin-top: -240px;
+} */
+section#espacios-cupula {
+  padding: 6% 0;
+  background: #14387f;
+  padding-top: 3%;
+  margin-top: 150px;
 }
 .content-espacios-cupula {
   display: flex;
@@ -274,6 +280,7 @@ ul.item-logo li img {
   height: 100% !important;
   width: 120px;
   object-fit: contain;
+  filter: grayscale(1);
 }
 
 /*------------------------TIMELINE--------------------------*/
@@ -507,6 +514,12 @@ button.accordion-header.active span {
     font-size: 13px;
   }
 }
+@media (max-width: 1366px) {
+  .years {
+    width: 75%;
+  }
+}
+
 @media (max-width: 1280px) {
   .img-banner-transversal {
     width: 65%;
@@ -547,11 +560,7 @@ button.accordion-header.active span {
     width: 80%;
     display: flex;
   }
-  section#espacios-cupula {
-    padding: 6% 0;
-    padding-top: 35%;
-    margin-top: -240px;
-  }
+
   ul.item-logo li {
     height: 65px;
     border-radius: 13px;
@@ -602,7 +611,11 @@ button.accordion-header.active span {
   }
   .text-nuestro-equipo h4 {
     color: #14387f;
-    font-size: 11px;
+    font-size: 16px;
+  }
+  .content-izq-nuestro-equipo {
+    width: 90%;
+    position: relative;
   }
 }
 
@@ -625,17 +638,21 @@ button.accordion-header.active span {
   }
   .img-nuestro-equipo span {
     top: 0;
-    left: 17%;
+    left: 12%;
+    right: 12%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .text-nuestro-equipo {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   .text-nuestro-equipo p {
-    font-size: 8px;
+    font-size: 14px;
   }
   .content-izq-nuestro-equipo:before {
-    width: 1px;
-    height: 50px;
-    background: #888888;
-    right: -10px;
-    top: -3px;
+    display: none;
   }
   .content-video-nuestra-historia {
     padding-top: 10%;
@@ -647,8 +664,8 @@ button.accordion-header.active span {
   }
   section#espacios-cupula {
     padding: 6% 0;
-    padding-top: 72%;
-    margin-top: -240px;
+    padding-top: 13%;
+    margin-top: 120px;
   }
   .content-espacios-cupula {
     display: flex;
@@ -781,10 +798,11 @@ button.accordion-header.active span {
   button.accordion-header span {
     font-weight: 400;
     display: block;
-    font-size: 10px;
+    font-size: 14px;
+    margin-top: 15px;
   }
   .accordion-content p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .accordion-header:hover {
     background-color: #f5f5f5;

@@ -103,7 +103,7 @@
     </div>
 </section>
 
-<section id="nuestra-historia">
+<!--<section id="nuestra-historia">
     <div class="container">
         <?php template_part_atomic('/atoms/a-titles/a-titles', 
                 array(
@@ -115,7 +115,7 @@
             <?php the_field('video_nuestra_historia'); ?>
         </div>
     </div>
-</section>
+</section> -->
 
 <section id="espacios-cupula">
     <div class="container">

@@ -1,7 +1,7 @@
 .m-form-aside{
   position: fixed;
   top: 10rem;
-  z-index: 5;
+  z-index: 2;
   opacity: 1;
   transition: 0.35s;
 }
