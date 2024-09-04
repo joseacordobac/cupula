@@ -210,8 +210,9 @@
                             <h4><?php the_sub_field('ano'); ?></h4>
                             <p><strong>Fecha de inicio de ventas:</strong> <?php the_sub_field('ciudad'); ?></p>
                             <p><strong>Unidades vendidas:</strong> <?php the_sub_field('area'); ?></p>
-                            <p><strong>Meses para su venta total: </strong> </p>
-                            <?php the_sub_field('servicios_contratados'); ?>
+                            <p><strong>Meses para su venta total: </strong>
+                                <?php the_sub_field('servicios_contratados'); ?> </p>
+
                         </div>
                     </div>
 
