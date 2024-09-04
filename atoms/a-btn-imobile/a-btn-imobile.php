@@ -15,10 +15,10 @@ while (have_rows('button', 'information')) : the_row();
   
   $button_img = get_sub_field('button_img', 'information');
   $img = wp_get_attachment_image($button_img, 'small', false, array('class' => 'a-btn-imobile__icon', 'alt' => 'contacto'));
-  
-?>
-
-    <a href="<?php the_sub_field('button_link', 'information') ?>" class="a-btn-imobile__content">
+  $button_link = get_sub_field('button_link', 'information');
+?>  
+    <?php $call = get_sub_field('button_text', 'information'); ?>
+    <a href="<?php echo $call === 'LLÁMANOS' ? 'tel:'.$button_link : $button_link; ?>" <?php echo $target; ?> class="a-btn-imobile__content">
       <div class="a-btn-imobile__icon-content" style="background: <?php the_sub_field('color_icono', 'information'); ?>;">
         <?php echo $img; ?>
       </div>
