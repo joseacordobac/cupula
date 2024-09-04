@@ -195,6 +195,7 @@ span.swiper-pagination-bullet {
     --size-medium: 2rem;
     --size-medium-regular: 1.75rem;
     --size-regular: 1.625rem;
+    --size-xlarge: 3rem;
   }
 
   .g-content-regular,
