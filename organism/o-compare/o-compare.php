@@ -8,20 +8,15 @@
 
  wp_enqueue_script('o-compare');
  wp_enqueue_style('o-compare');
-
-
-$args = u_args_pt('proyectos');
-
-$proyectos = new WP_Query($args);
 ?>
+
 <div class="o-compare-slider">
 
   <div class="o-compare-slider__content swiper-wrapper"> 
-    <?php if($proyectos->have_posts()):
-      while($proyectos->have_posts()):
-        $proyectos->the_post(); ?>
-        <?php get_template_part( '/molecules/m-card-compare/m-card-compare' ); ?>
-      <?php endwhile;
+    <?php if(have_rows('add_proyect')):
+      while(have_rows('add_proyect')): the_row();
+        get_template_part( '/molecules/m-card-compare/m-card-compare' );
+      endwhile;
     endif; ?>
   </div>
 

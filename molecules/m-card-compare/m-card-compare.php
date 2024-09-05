@@ -7,8 +7,8 @@
 
 wp_enqueue_style('m-card-compare');
 
-$imagen_render_id = get_field('render_imagen');
-$imagen_real_id = get_field('real');
+$imagen_render_id = get_sub_field('render_imagen');
+$imagen_real_id = get_sub_field('real');
 
 
 ?>
@@ -18,7 +18,7 @@ $imagen_real_id = get_field('real');
   <div class="g-content-regular">
       <?php get_template_part('/atoms/a-titles/a-titles', null, 
           array(
-              'title'         => get_the_title(),
+              'title'         => get_sub_field('proyect_name'),
               'titles-type'   => 'a-titles--simple',
             )
           ); 
