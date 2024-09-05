@@ -49,6 +49,15 @@
           </svg>
           <div class="o-dinamic-quote__build-info"></div>
         </div>
+        <div class="o-dinamic-quote__mobile">
+          <ul class="o-dinamic-quote__mobile-list">
+            <li class="o-dinamic-quote__tower o-dinamic-quote__tower--01 opacity" data-tower="torre-1">Torre 1</li>
+            <li class="o-dinamic-quote__tower o-dinamic-quote__tower--02 opacity" data-tower="torre-2">Torre 2</li>
+            <li class="o-dinamic-quote__tower o-dinamic-quote__tower--03" data-tower="torre-3">Torre 3</li>
+            <li class="o-dinamic-quote__tower o-dinamic-quote__tower--04" data-tower="torre-4">Torre 4</li>
+            <li class="o-dinamic-quote__tower o-dinamic-quote__tower--05 opacity" data-tower="torre-5">Torre 5</li>
+          </ul>
+        </div>
       </div>
 
       <div class="o-dinamic-quote__floor">
@@ -68,6 +77,18 @@
       <div class="o-dinamic-quote__area">
         <div class="o-dinamic-quote__area-content">
           <?php template_part_atomic('organism/o-dinamic-quote/floor'); ?>
+          <div class="o-dinamic-quote__area-mobile">
+            <ul class="o-dinamic-quote__section-list">
+              <li class="o-dinamic-floor-st" data-area="posición 1">Sección 1</li>
+              <li class="o-dinamic-floor-st" data-area="posición 2">Sección 2</li>
+              <li class="o-dinamic-floor-st" data-area="posición 3">Sección 3</li>
+              <li class="o-dinamic-floor-st" data-area="posición 4">Sección 4</li>
+              <li class="o-dinamic-floor-st" data-area="posición 5">Sección 5</li>
+              <li class="o-dinamic-floor-st" data-area="posición 6">Sección 6</li>
+              <li class="o-dinamic-floor-st" data-area="posición 7">Sección 7</li>
+              <li class="o-dinamic-floor-st" data-area="posición 8">Sección 8</li>
+            </ul>
+          </div>
         </div>
       </div>
 

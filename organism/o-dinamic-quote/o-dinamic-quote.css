@@ -171,6 +171,7 @@
   border-radius: 2.5rem;
   position: relative;
   height: var(--step-height);
+  overflow: hidden;
 }
 
 .o-dinamic-quote__floor-options {
@@ -295,6 +296,7 @@
   justify-content: center;
   margin: auto;
   height: 100%;
+  padding-bottom: 4rem;
 }
 
 .o-dinamic-quote__img {
@@ -316,7 +318,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: -10rem;
+  top: -5rem;
   z-index: 2;
   cursor: pointer;
 }
@@ -450,7 +452,17 @@
   text-align: center;
 }
 
+.o-dinamic-quote__mobile,
+.o-dinamic-quote__area-mobile{
+  display: none;
+}
+
 @media(max-width: 780px) {
+  :root{
+    --step-height: auto;
+  }
+
+
   .o-dinamic-quote{
     max-width: 95%;
   }
@@ -469,10 +481,6 @@
     flex-direction: column;
   }
 
-  .o-dinamic-quote__btn{
-    top: -7rem;
-  }
-
   .o-dinamic-quote__distribution{
     height: 552px;
   }
@@ -480,4 +488,117 @@
   .o-dinamic-quote__cardspay-content{
     flex-direction: column;
   }
+
+  /* */
+  .o-dinamic-quote__map-img{
+    display: none;
+  }
+  .o-dinamic-quote__map {
+    background: white;
+    background-image: url(../o-dinamic-quote/img/render-background.jpeg);
+    min-height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .o-dinamic-quote__svg{
+    display: none;
+  }
+
+  .o-dinamic-quote__mobile{
+    display: block;
+    height: 100%;
+  }
+
+  .o-dinamic-quote__mobile-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+    gap: 0.5rem;
+  }
+
+  .opacity{
+    opacity: 0.5;
+  }
+
+  .o-dinamic-quote__tower {
+    background: #EBEBEB;
+    border: white 0.1rem solid;
+    border-radius: 2.5rem;
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.35s;
+    color: var(--main-color);
+  }
+
+  /* STEP TWO */
+
+  .o-dinamic-quote__area {
+    background: white;
+    border-radius: 2rem;
+    height: 100%;
+  }
+
+  #Capa_1 {
+    display: none;
+  }
+  
+  .o-dinamic-quote__area-mobile {
+    display: block;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .o-dinamic-quote__section-list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+    gap: 0.5rem;
+  }
+
+  .o-dinamic-floor-st {
+    background: #EBEBEB;
+    border: white 0.1rem solid;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.35s;
+    color: var(--main-color);
+  }
+
+  .o-dinamic-quote__area-title{
+    position: relative;
+    top: 0px;
+  }
+
+  .o-dinamic-quote__cardpay-submit{
+    font-size: 1.4rem;
+  }
+
+  .o-dialog-form-card--second{
+    padding: 13px 22px;
+  }
+
+  .o-dinamic-quote__card-num{
+    grid-template-columns: 37% 50%;
+  }
+
+  .o-dinamic-quote__card-num__number{
+    justify-self: end;
+  }
+
 }
