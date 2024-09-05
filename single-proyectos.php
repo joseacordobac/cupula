@@ -69,10 +69,7 @@ wp_enqueue_style('single-proyectos');
         </article>
 
         <aside class="proyect-aside">
-            <?php template_part_atomic('molecules/m-form-aside/m-form-aside', array(
-                'asesor_name' => 'Natalia Serna',
-                'asesor_picture' => get_stylesheet_directory_uri() . '/assets/img/asesora.jpg',
-            )); ?>
+            <?php template_part_atomic('molecules/m-form-aside/m-form-aside'); ?>
         </aside>
     </div>
 

@@ -32,4 +32,13 @@ if( function_exists('acf_add_options_page') ) {
       'post_id' => 'information'
 		)
 	);
+
+	acf_add_options_sub_page(
+		array(
+			'page_title' => 'Tarjeta flotante',
+      'menu_title' => 'Tarjeta flotante',
+      'post_id' => 'float-card'
+		)
+	);
+
 }

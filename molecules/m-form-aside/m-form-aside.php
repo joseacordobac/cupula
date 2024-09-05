@@ -4,8 +4,8 @@
  * @internal
  */
   
- $asesor_name = isset($args['asesor_name']) ? $args['asesor_name'] : '';
- $asesor_picture = isset($args['asesor_picture']) ? $args['asesor_picture'] : '';
+ $asesor_name = get_field('asesor_name', 'float-card');
+ $asesor_picture = get_field('asesor_img', 'float-card');
 ?>
 
 <div class="m-form-aside">
