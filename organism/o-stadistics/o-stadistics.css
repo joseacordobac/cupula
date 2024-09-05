@@ -37,6 +37,10 @@
   padding-right: 2rem;
 }
 
+.o-stadisctics-card__description{
+  font-size: var(--size-medium);
+}
+
 @media(max-width:780px){
   .o-stadistics{
     grid-template-columns: 1fr;

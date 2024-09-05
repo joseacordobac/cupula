@@ -41,7 +41,7 @@
 }
 
 .a-numbers.o-tranning-model__number {
-    font-size: var(--size-mlarge);
+    font-size: 2.4rem;
     color: var(--quinary-color);
 }
 

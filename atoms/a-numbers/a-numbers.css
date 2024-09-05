@@ -1,5 +1,5 @@
 .a-numbers {
-    font-size: var(--size-xlarge);
+    font-size: var(--size-medium-large);
     color: var(--main-color);
     transition: all 0.3s ease-in-out;
 }

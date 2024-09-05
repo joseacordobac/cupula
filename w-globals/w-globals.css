@@ -191,8 +191,8 @@ span.swiper-pagination-bullet {
   :root {
     --size-xlarge: 4rem;
     --size-large: 2.8rem;
-    --size-medium-large: 2.288rem;
-    --size-medium: 2rem;
+    --size-medium-large: 2rem;
+    --size-medium: 1.4rem;
     --size-medium-regular: 1.75rem;
     --size-regular: 1.625rem;
     --size-xlarge: 3rem;
@@ -207,6 +207,9 @@ span.swiper-pagination-bullet {
     max-width: 95%;
   }
 }
+
+
+/*** for moving the content */
 
 .container {
   width: 82%;

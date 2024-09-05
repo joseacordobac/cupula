@@ -30,7 +30,7 @@
 }
 
 .m-testimonial-info {
-    padding: 20px 21px 28px 19px;
+    padding: 29px 35px 34px 23px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -43,12 +43,12 @@
 
 .m-testimonial  .m-testimonial-info__text {
     font-family: var(--font-text);
-    font-size: var(--size-medium-regular);
+    font-size: var(--size-medium);
 }
 
 .m-testimonial-info__name {
     color: var(--main-color);
-    font-size: 2rem;
+    font-size: var(--size-medium-large);
 }
 
 @media(max-width: 768px) {

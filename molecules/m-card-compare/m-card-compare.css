@@ -44,7 +44,7 @@
 }
 
 .m-card-compare__render-data {
-  font-size: 3rem;
+  font-size: var(--size-medium-large);
   color: var(--main-color);
 }
 

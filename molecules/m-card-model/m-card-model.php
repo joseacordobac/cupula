@@ -27,7 +27,8 @@
           <?php the_sub_field('phone'); ?>
         </p>
       </div>
-      <?php template_part_atomic('atoms/a-btn-places/a-btn-places', 
+      <?php 
+      template_part_atomic('atoms/a-btn-places/a-btn-places', 
           array(
             'waze' => get_sub_field('waze'), 
             'google_maps' => get_sub_field('google_maps')

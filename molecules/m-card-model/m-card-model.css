@@ -54,7 +54,7 @@
 }
 
 .m-card-model__body-data {
-  font-size: 1.6rem;
+  font-size: var(--size-medium);
 }
 
 .m-card-model__icon {
@@ -86,7 +86,7 @@
 }
 
 .m-card-model--horizontal .m-card-model__body-city {
-  font-size: 2.5rem;
+  font-size: var(--size-medium-large);
 }
 
 .m-card-model.m-card-model--horizontal .m-card-model__body-text {
@@ -94,7 +94,7 @@
 }
 
 .m-card-model.m-card-model--horizontal  .m-card-model__body-data {
-  font-size: 1.8rem;
+  font-size: var(--size-medium);
 }
 
 @media(max-width:780px){

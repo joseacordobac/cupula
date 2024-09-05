@@ -1,7 +1,7 @@
 <?php 
 
-  $waze_link = isset($args['waze_link']) ? $args['waze_link'] : '';
-  $maps_link = isset($args['maps_link']) ? $args['maps_link'] : '';
+  $waze_link = isset($args['waze']) ? $args['waze'] : '';
+  $maps_link = isset($args['google_maps']) ? $args['google_maps'] : '';
  ?>
 
 

@@ -71,7 +71,7 @@
 }
 
 .about-project__description {
-  font-size: 1.6rem;
+  font-size: var(--size-medium);
   padding-bottom: 3rem;
   border-bottom: solid 0.1rem gainsboro;
 }
