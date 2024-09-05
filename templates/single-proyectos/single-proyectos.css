@@ -179,10 +179,6 @@
   z-index: 6 !important;
 }
 
-button.forminator-button.forminator-button-submit.m-form-aside__btn-text{
-  font-size: 14px !important;
-}
-
 @media(max-width: 780px){
 
   .o-header{
@@ -284,4 +280,5 @@ button.forminator-button.forminator-button-submit.m-form-aside__btn-text{
   .title-content .a-btn-places {
     justify-content: flex-start;
   }
+
 }
