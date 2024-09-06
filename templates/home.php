@@ -138,7 +138,7 @@ wp_enqueue_style('home');
             ?>
         <div class="content-preguntas-frecuentes">
             <div class="accordion">
-                <?php while (have_rows('conoce_mas_de_nosotros', 208)): the_row();
+                <?php while (have_rows('conoce_mas_de_nosotros')): the_row();
             ?>
                 <div class="accordion-item">
                     <button class="accordion-header"><?php the_sub_field('titulo'); ?>
