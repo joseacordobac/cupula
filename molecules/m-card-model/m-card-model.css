@@ -12,11 +12,12 @@
   grid-row-end: -3;
   grid-template-columns: 100%;
   margin-bottom: 1rem;
+  gap: 0px;
 }
 
 .m-card-model__body {
   padding: 2rem;
-  padding-top: 0px;
+  padding-top: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,6 +56,8 @@
 
 .m-card-model__body-data {
   font-size: var(--size-medium);
+  text-decoration: none;
+  color: var(--black-color);
 }
 
 .m-card-model__icon {
