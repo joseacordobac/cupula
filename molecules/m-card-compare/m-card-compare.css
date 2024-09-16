@@ -10,6 +10,10 @@
   height: 70%;
 }
 
+.m-card-compare__img .a-img {
+  max-height: 350px;
+}
+
 .m-card-compare__label {
   position: absolute;
   top: 0;
