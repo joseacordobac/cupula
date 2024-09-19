@@ -51,48 +51,57 @@ document.addEventListener("DOMContentLoaded", function () {
   const contents = document.querySelectorAll(".content");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
+  const yearsContainer = document.querySelector(".years");
   let currentIndex = 0;
+  const totalYears = years.length;
 
   function showContent(index) {
     years.forEach((year) => year.classList.remove("active"));
     contents.forEach((content) => {
       content.classList.remove("active");
-      content.style.display = "none"; // Ensure the content is hidden before making it active
+      content.style.display = "none";
     });
 
     years[index].classList.add("active");
     contents[index].classList.add("active");
 
-    // Use a setTimeout to allow the display property to be set before changing the opacity
     setTimeout(() => {
       contents[index].style.display = "block";
     }, 0);
   }
 
-  years.forEach((year, index) => {
-    year.addEventListener("click", () => {
-      currentIndex = index;
-      showContent(currentIndex);
-    });
-  });
+  function updateSliderPosition() {
+    const yearWidth = years[currentIndex].offsetWidth;
+    const containerWidth = yearsContainer.offsetWidth;
+
+    // Mueve las fechas para centrar la fecha activa sin que se salga del contenedor
+    const offset = -currentIndex * (yearWidth + 20); // Calcula el desplazamiento
+    yearsContainer.style.transform = `translateX(${offset}px)`;
+  }
 
   prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      showContent(currentIndex);
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = totalYears - 1;
     }
+    showContent(currentIndex);
+    updateSliderPosition();
   });
 
   nextBtn.addEventListener("click", () => {
-    if (currentIndex < years.length - 1) {
-      currentIndex++;
-      showContent(currentIndex);
+    currentIndex++;
+    if (currentIndex >= totalYears) {
+      currentIndex = 0;
     }
+    showContent(currentIndex);
+    updateSliderPosition();
   });
 
-  // Initialize the first content to be shown
+  // Inicializa el primer contenido y la posición del slider
   showContent(currentIndex);
+  updateSliderPosition();
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const accordionHeaders = document.querySelectorAll(".accordion-header");
 

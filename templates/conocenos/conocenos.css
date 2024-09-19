@@ -285,92 +285,7 @@ ul.item-logo li img {
 
 /*------------------------TIMELINE--------------------------*/
 /*------------------------TIMELINE--------------------------*/
-.timeline-container {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  padding-top: 5%;
-}
 
-.timeline-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-#prevBtn {
-  transform: rotate(180deg);
-}
-button {
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.years {
-  display: flex;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px 0;
-  width: 65%;
-  justify-content: center;
-  gap: 12%;
-  position: relative;
-  padding-bottom: 4%;
-}
-.years:before {
-  content: "";
-  position: absolute;
-  width: 85%;
-  height: 2px;
-  background: #14387f;
-  top: 60px;
-  left: 7%;
-  right: 0;
-}
-
-.year {
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  color: #14387f;
-  font-size: 16px;
-  font-weight: 600;
-  position: relative;
-}
-
-.year:before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #14387f;
-  top: 45px;
-  left: 40%;
-  right: 0;
-  border-radius: 50%;
-}
-.year.active:before {
-  border: 4px solid #ffc32b;
-  top: 40px;
-}
-
-.timeline-content .content {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.timeline-content .content.active {
-  display: block;
-  opacity: 1;
-}
-.content {
-  width: 77%;
-  margin: 0 auto;
-}
 .content-main-timeline {
   display: flex;
 }
@@ -422,9 +337,83 @@ section#nuestra-trayectoria {
   padding-left: 6%;
 }
 
+.timeline-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 5%;
+  position: relative;
+}
+
+.timeline-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Asegura que los botones estén por encima del contenido */
+}
+
+#prevBtn {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+#nextBtn {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.years {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 18px 0;
+  width: 100%;
+  max-width: 85%;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.year {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #14387f;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  min-width: 80px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  width: 65%;
+  margin: 0 auto;
+}
+
 section#preguntas-frecuentes {
   background: #f5f5f5;
   padding: 6% 0;
+}
+section#time-line-trayectoria {
+  padding-top: 5%;
 }
 .accordion {
   max-width: 60%;
@@ -491,6 +480,10 @@ button.accordion-header.active span {
 @media (max-width: 1550px) {
   .img-nuestro-equipo span {
     left: 33%;
+  }
+  .timeline-content {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
