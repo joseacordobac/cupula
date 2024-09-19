@@ -421,12 +421,11 @@ section#time-line-trayectoria {
 }
 
 .accordion-item {
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  margin-bottom: 40px;
   border-radius: 20px;
 }
 .content-preguntas-frecuentes {
-  padding-top: 5%;
+  padding-top: 9%;
 }
 .accordion-header {
   border: none;
@@ -441,6 +440,8 @@ section#time-line-trayectoria {
   font-size: 16px;
   transition: background-color 0.3s ease;
   position: relative;
+  box-shadow: 0px 4px 20px -15px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
 }
 .accordion-header:before {
   content: url(https://cupula.movemospruebas.com/wp-content/uploads/2024/08/rowacordeon.svg);
@@ -581,6 +582,9 @@ button.accordion-header.active span {
 @media (max-width: 800px) {
   .img-banner-transversal {
     min-height: 400px;
+  }
+  .content-preguntas-frecuentes {
+    padding-top: 45%;
   }
   .content-second-section-conocenos {
     flex-direction: column-reverse;
