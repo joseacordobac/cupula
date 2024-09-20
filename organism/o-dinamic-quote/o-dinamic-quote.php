@@ -122,17 +122,17 @@
                 <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
               </header>
               <div class="o-dinamic-quote__card-body">
-                <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
+                <p class="o-dinamic-quote__card-body">"Puedes separar tu inmueble con un mínimo de $2.000.000 y durante los siguientes 8 días abonar los $8.000.000 restantes"</p>
               </div>
             </article>
             <article class="o-dimamic-quote__card-nums o-dialog-form-card--second">
               <header class="o-dinamic-quote__card-num">
                 <span class="o-dinamic-quote__card-num__number">2.</span>
-                <h5 class="o-dinamic-quote_card-num__title">46 cuotas</h5>
+                <h5 class="o-dinamic-quote_card-num__title">34 34 cuotas desde</h5>
                 <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
               </header>
               <div class="o-dinamic-quote__card-body">
-                <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
+                <p class="o-dinamic-quote__card-body">(cambia según área elegida) "Si cuentas con ahorros, primas o cesantías, puedes disminuir esta cuota mensual o ganar excelentes descuentos "</p>
               </div>
             </article>
             <article class="o-dimamic-quote__card-nums o-dialog-form-card--third">
@@ -142,7 +142,7 @@
                 <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
               </header>
               <div class="o-dinamic-quote__card-body">
-                <p class="o-dinamic-quote__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus imperdiet venenatis.</p>
+                <p class="o-dinamic-quote__card-body">(cambia según área elegida) "en una última cuota ya sea por crédito hipotecario o recursos propios"</p>
               </div>
             </article>
           </div>

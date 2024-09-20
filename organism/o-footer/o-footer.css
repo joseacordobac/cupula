@@ -48,7 +48,7 @@
 
 .o-footer__botton-nav-legal {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .menu-item {
@@ -95,6 +95,7 @@
     gap: 0.5rem;
     align-items: center;
     padding: 1rem;
+    text-align: center;
   }
   
   .o-footer__botton-nav-legal a {
