@@ -267,7 +267,7 @@ const insertSelectedInfo = () => {
 
   let getToInnerHtml = `<p class="o-dinamic-quote__sub-info">${dataSelected.torre} / ${dataSelected.area} M2</p><p class="o-dinamic-quote__sub-info">`
     dataSelected.distribución.data.forEach((plane) => {
-      getToInnerHtml += `${plane.aparment_characteristic}`
+      getToInnerHtml += `${plane.aparment_characteristic} - `
     })
   getToInnerHtml += `</p></div>`
   getToInner.innerHTML = getToInnerHtml

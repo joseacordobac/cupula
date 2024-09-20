@@ -49,6 +49,7 @@
 .o-footer__botton-nav-legal {
   display: flex;
   justify-content: flex-start;
+  gap: 1.2rem;
 }
 
 .menu-item {
