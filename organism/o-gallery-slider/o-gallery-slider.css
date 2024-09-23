@@ -6,8 +6,33 @@
   border-radius: 1.2rem;
 }
 
+.o-gallery-slider .swiper{
+  overflow: visible;
+}
+
+.section-gallery .o-gallery-slider{
+  padding: 2rem 0px;
+  overflow: hidden;
+}
+
+.section-gallery .o-gallery-slider__item{
+  height: 350px;
+}
+
 @media(max-width: 780px){
+  .o-gallery-slider{
+    overflow: hidden;
+  } 
+
   .o-gallery-slider__item{
     height: 25rem;
+  }
+
+  .section-gallery {
+    display: none;
+  }
+
+  .section-gallery .o-gallery-slider__item {
+    height: 200px;
   }
 }

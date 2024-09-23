@@ -107,8 +107,18 @@ wp_enqueue_style('single-proyectos');
 
                     </section>
 
-                    <div class="cotiza-you-apartment">
+                    <div class="cotiza-you-apartment" id="cotizador">
                         <?php template_part_atomic('organism/o-dinamic-quote/o-dinamic-quote'); ?>
+                    </div>
+
+                    <div class="section-gallery">
+                        <?php 
+                            template_part_atomic('organism/o-gallery-slider/o-gallery-slider', array(
+                                'repeater' => 'gallery-list',
+                                'img_id' => 'gallery-id-img',
+                                'custom_class' => 'o-gallery-slider--section'
+                            ));
+                        ?>
                     </div>
 
                     <div class="como-llegar" id="como-llegar">

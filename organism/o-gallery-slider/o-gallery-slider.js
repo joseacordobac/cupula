@@ -10,12 +10,14 @@ const swiperGallery = (getGallerySwiper) => {
       breakpoints: {
         0: {
           slidesPerView: 2,
+          loop: true,
           autoplay: {
             delay: 3000,
           },
         },
         780: {
           slidesPerView: 2,
+          loop: true,
           autoplay: {
             delay: 3000,
           },
@@ -30,6 +32,8 @@ const swiperGallery = (getGallerySwiper) => {
         clickable: true,
       }
   });
+
+  swiperToSlide(getGallerySwiper, gallerySwiper);
 
 }
 
