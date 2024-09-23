@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 76% 22%;
   gap: 2rem;
-  max-width: 75%;
+  max-width: 72%;
   margin: auto;
   padding: 10rem 0px;
 }
@@ -179,7 +179,7 @@
   z-index: 6 !important;
 }
 
-@media(min-width: 1350px){
+@media(min-width: 1480px){
 
   .main-proyect--content{
     max-width: 1350px;

@@ -601,4 +601,14 @@
     justify-self: end;
   }
 
+  /* step four */
+  .o-dinamic-quote__info-content{
+    text-align: center;
+  }
+
+  .o-dinamic-quote__list-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
