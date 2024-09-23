@@ -14,6 +14,7 @@
 
 .m-form-aside__content {
   background: white;
+  max-width: 300px;
   padding: 2rem 3rem;
   border-radius: var(--border-radius--regular);
   box-shadow: var(--shadow-boxes);
@@ -34,7 +35,7 @@
 .m-form-aside__asesor-picture {
   width: 9rem;
   border-radius: 50%;
-  height: 9rem;
+  height: 7rem;
   object-fit: cover;
 }
 

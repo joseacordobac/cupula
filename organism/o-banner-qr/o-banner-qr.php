@@ -39,9 +39,11 @@
                'class' => 'o-banner-qr__img-src',
            ));
         ?>
+        <?php if(get_field('qr')): ?>
         <div class="img_qr">
           <img src="<?php the_field('qr'); ?>" alt="" class="o-banner-qr__qr">
         </div>
+        <?php endif; ?>
     </div>
   </div>
 </div>

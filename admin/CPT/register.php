@@ -8,6 +8,7 @@ require_once 'cpt-constructor.php';
 // new CustomPostType(name, single name, related taxonomies, dash icon, type, register name, 'show in menu', has archive, 'rute name )
 new CustomPostType('Proyectos', 'proyecto', array('estado'), 'building', 'post', 'proyectos', false, true, 'proyectos' );
 new CustomPostType('Apartamentos', 'apartamento', array('filtro', 'seccion'), 'admin-multisite', 'post', 'apartamentos', false, true, 'apartamentos' );
+new CustomPostType('Comunicación interna', 'Comunicado', array('category', 'post_tag'), 'post-status', 'post', 'comunications', false, true, 'comunications' );
 
 
 /** Taxonomies **/

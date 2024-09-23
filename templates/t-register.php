@@ -13,6 +13,7 @@ function register_templates_custom() {
     'empresas',
     'blog',
     'trabaja-con-nosotros',
+    'single'
   );
 
   foreach($list_nameSpaces_register as $key => $value) {
