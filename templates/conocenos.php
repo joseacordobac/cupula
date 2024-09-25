@@ -13,7 +13,6 @@
  
  wp_enqueue_script('conocenos');
  wp_enqueue_style('conocenos');
-
  wp_enqueue_style('single');
  
  ?>

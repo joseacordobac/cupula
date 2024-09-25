@@ -107,6 +107,16 @@ wp_enqueue_style('single-proyectos');
 
                     </section>
 
+                    <div class="btn-cotizar">
+                        <?php template_part_atomic(
+                            'atoms/a-btn/a-btn', array(
+                            'button_text' => 'HABLAR CON UN ASESOR', 
+                            'button_link' => '#', 
+                            'btn_type' => 'a-btn--quinary js-btn-trigger', 
+                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg'), 'm-info-project'); 
+                        ?>
+                    </div>
+
                     <div class="cotiza-you-apartment" id="cotizador">
                         <?php template_part_atomic('organism/o-dinamic-quote/o-dinamic-quote'); ?>
                     </div>
@@ -162,7 +172,7 @@ wp_enqueue_style('single-proyectos');
                             'embed' => get_field('video_embed'),
                         ));?>
                     </div>
-
+                    
                     <div class="apartamento-modelo">
                         <?php template_part_atomic('atoms/a-titles/a-titles', array(
                             'title' => "Ven y conoce nuestro apartamento modelo",
@@ -177,6 +187,17 @@ wp_enqueue_style('single-proyectos');
                         );
                         ?>
                     </div>
+                    
+                    <div class="btn-cotizar">
+                        <?php template_part_atomic(
+                            'atoms/a-btn/a-btn', array(
+                            'button_text' => 'HABLAR CON UN ASESOR', 
+                            'button_link' => '#', 
+                            'btn_type' => 'a-btn--quinary js-btn-trigger', 
+                            'icons_path' => get_template_directory_uri().'/assets/icons/arrow-to-right.svg'), 'm-info-project'); 
+                        ?>
+                    </div>
+
                 </div>
             </article>
 
@@ -221,10 +242,15 @@ wp_enqueue_style('single-proyectos');
         <?php template_part_atomic('organism/o-banner-qr/o-banner-qr', array('custom_class' => 'o-banner-qr--secondary')); ?>
     </section>
 
-    <!-- organism/o-modal-slider -->
-    <?php //template_part_atomic('organism/o-modal-slider/o-modal-slider'); 
-    ?>
+    <?php template_part_atomic(
+    'organism/o-modal-form/o-modal-form', 
+    array(
+        'form_short_code' => '[forminator_form id="1204"]',
+        'custom_class' => 'o-dinamic-quote__modal',
+        'trigger_modal' => '.js-btn-trigger'
+    )); ?>
 
 </main>
+
 
 <?php get_footer(); ?>

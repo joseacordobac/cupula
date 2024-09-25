@@ -18,7 +18,8 @@ const openDialogModals = (dialogContent) => {
   const modalToOpen = document.querySelector('.o-modal-form');
 
   if(dialogContent){
-      dialogContent.addEventListener('click', ()=>{
+      dialogContent.addEventListener('click', (event)=>{
+        event.preventDefault()
         modalToOpen.classList.add('o-modal-form--open')
       })
       closeDialogModals()
@@ -31,10 +32,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
   const allLinks = document.querySelectorAll('a');
   const targetLink = Array.from(allLinks).find(link => link.getAttribute('href') === '#trigger-modal');
-  const triggerBtn = document.querySelector('.js-btn-trigger');
-
-  console.log(targetLink)
+  const triggerBtn = document.querySelectorAll('.js-btn-trigger');
 
   if(targetLink) openDialogModals(targetLink);
-  if(triggerBtn) openDialogModals(triggerBtn);
+  triggerBtn.forEach((btn)=>{
+    if(btn) openDialogModals(btn);
+  })
 })

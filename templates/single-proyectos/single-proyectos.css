@@ -179,6 +179,11 @@
   z-index: 6 !important;
 }
 
+.btn-cotizar{
+  text-align: center;
+  margin: 2rem auto;
+}
+
 @media(min-width: 1480px){
 
   .main-proyect--content{
