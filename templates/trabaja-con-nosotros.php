@@ -11,12 +11,9 @@
  wp_enqueue_script('js-swiper');
  wp_enqueue_style('css-swiper');
  
- wp_enqueue_script('ScrollTrigger');
- wp_enqueue_script('gsap');
- wp_enqueue_script('gsap-text');
-
  wp_enqueue_script('trabaja-con-nosotros');
  wp_enqueue_style('trabaja-con-nosotros');
+ wp_enqueue_style('single');
  
  ?>
 
