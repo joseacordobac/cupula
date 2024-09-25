@@ -79,14 +79,7 @@
           <?php template_part_atomic('organism/o-dinamic-quote/floor'); ?>
           <div class="o-dinamic-quote__area-mobile">
             <ul class="o-dinamic-quote__section-list">
-              <li class="o-dinamic-floor-st" data-area="posición 1">Sección 1</li>
-              <li class="o-dinamic-floor-st" data-area="posición 2">Sección 2</li>
-              <li class="o-dinamic-floor-st" data-area="posición 3">Sección 3</li>
-              <li class="o-dinamic-floor-st" data-area="posición 4">Sección 4</li>
-              <li class="o-dinamic-floor-st" data-area="posición 5">Sección 5</li>
-              <li class="o-dinamic-floor-st" data-area="posición 6">Sección 6</li>
-              <li class="o-dinamic-floor-st" data-area="posición 7">Sección 7</li>
-              <li class="o-dinamic-floor-st" data-area="posición 8">Sección 8</li>
+              
             </ul>
           </div>
         </div>

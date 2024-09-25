@@ -1,5 +1,7 @@
+console.log(window.location.origin)
+
 const environment = {
-  defaultParent : 22,
+  defaultParent : window.location.origin === 'http://cupula.local' ? 260 : 22, 
   nameSpace: '/wp-json/cupula/v1',
 }
 
@@ -119,10 +121,25 @@ const fetchPositions = async (id) => {
   return data
 }
 
+/** mobile insert data */
+const areasInsertMobile = async(data) => {
+  
+  let htmlToInner = ''
+  const getUl = document.querySelector('.o-dinamic-quote__section-list')
+  if(getUl){
+    data.forEach((area) => {
+      console.log(area)
+      htmlToInner += `<li class="o-dinamic-floor-st" data-area="${area.name}">${area.description}</li>`
+    })
+    getUl.innerHTML = htmlToInner
+  }
+}
+
 //select department section
 const onAreaClick = async(idFloor, nameFloor) => {
 
   const dataPosition = await fetchPositions(idFloor)
+  await areasInsertMobile(dataPosition)
   GETdataPositions = dataPosition
 
   dataSelected.piso = nameFloor
@@ -257,7 +274,7 @@ const insertDataCard = (cardContent, type) => {
   const getCardContent = document.querySelector(cardContent)
   const getToInner = getCardContent.querySelector('.o-dinamic-quote_card-num__title-sub')
   const numData = stringNumDecimal(dataSelected.datosPagos[type])
-  getToInner.innerHTML = `$${numData}`
+  getToInner.innerHTML = `${numData}`
 }
 
 /** Insert information in modal */
@@ -321,6 +338,8 @@ const openModalCotization = () => {
   textarea.value = textAreaInfor
 
 }
+
+
 
 
 window.addEventListener('load', ()=>{
