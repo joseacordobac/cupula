@@ -1,7 +1,7 @@
 <?php
 /**
  * Footer del tema.
- * @package OMTBID
+ * @package motevedra
  */
 ?>
 <script>

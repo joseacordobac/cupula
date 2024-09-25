@@ -19,7 +19,7 @@ get_template_part('atoms/a-btn-imobile/a-btn-imobile'); ?>
             <div class="o-footer__bottom-nav-menu">
                 <?php 
                     wp_nav_menu(array(
-                        'theme_location' => 'nav-project',
+                        'theme_location' => 'nav-footer',
                         'menu_class' => 'o-footer__botton-project o-footer-nav', 
                         'container' => 'div',
                         'container_class' => 'o-footer__botton-project-content',
@@ -31,7 +31,7 @@ get_template_part('atoms/a-btn-imobile/a-btn-imobile'); ?>
             <div class="o-footer__bottom-nav-social">
                 
                 <?php  get_template_part( 'molecules/m-nav-footer/m-nav-footer', null, array(
-                    'custom_class' => 'o-footer-nav',
+                    'custom_class' => 'nav-footer-left',
                 ) ); ?>
 
             </div>
