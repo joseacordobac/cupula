@@ -121,7 +121,7 @@
             <article class="o-dimamic-quote__card-nums o-dialog-form-card--second">
               <header class="o-dinamic-quote__card-num">
                 <span class="o-dinamic-quote__card-num__number">2.</span>
-                <h5 class="o-dinamic-quote_card-num__title">Cuotas</h5>
+                <h5 class="o-dinamic-quote_card-num__title">Cuotas de</h5>
                 <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
               </header>
               <div class="o-dinamic-quote__card-body">
@@ -131,7 +131,7 @@
             <article class="o-dimamic-quote__card-nums o-dialog-form-card--third">
               <header class="o-dinamic-quote__card-num">
                 <span class="o-dinamic-quote__card-num__number">3.</span>
-                <h5 class="o-dinamic-quote_card-num__title">Cuotas de</h5>
+                <h5 class="o-dinamic-quote_card-num__title">Númeto de cuotas</h5>
                 <h6 class="o-dinamic-quote_card-num__title-sub"></h6>
               </header>
               <div class="o-dinamic-quote__card-body">
