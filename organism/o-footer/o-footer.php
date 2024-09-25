@@ -31,7 +31,7 @@ get_template_part('atoms/a-btn-imobile/a-btn-imobile'); ?>
             <div class="o-footer__bottom-nav-social">
                 
                 <?php  get_template_part( 'molecules/m-nav-footer/m-nav-footer', null, array(
-                    'custom_class' => 'nav-footer-left',
+                    'custom_class' => 'o-footer-nav',
                 ) ); ?>
 
             </div>

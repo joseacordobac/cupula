@@ -7,7 +7,7 @@ wp_enqueue_script('m-nav-footer');
 $custom_class = isset($args['custom_class']) ? $args['custom_class'] : '';
 
 wp_nav_menu(array(
-  'theme_location' => 'nav-footer',
+  'theme_location' => 'nav-footer-left',
   'menu_class' => 'm-nav-footer ' . $custom_class, 
   'container' => 'div',
   'container_class' => 'm-nav__foote-container',

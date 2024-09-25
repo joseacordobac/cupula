@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-direction: column;
+    text-align: left;
 }
 
 .m-nav-footer a{
