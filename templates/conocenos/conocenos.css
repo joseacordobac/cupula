@@ -543,6 +543,7 @@ button.accordion-header.active span {
 @media (max-width: 1440px) {
   .container {
     width: 85%;
+    margin: auto;
   }
   .text-nuestro-equipo p {
     font-size: 10px;
