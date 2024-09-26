@@ -67,8 +67,12 @@
     gap: 0px;
   }
 
+  .card-experiencie .a-titles-title{
+    font-size: 1.6rem;
+  }
+
   .m-card-compare__content img{
-    max-height: 165px;
+    max-height: 196px;
   }
 
   .m-card-compare__body{

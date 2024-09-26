@@ -84,7 +84,7 @@
   }
 
   .o-footer-nav a {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .o-footer__bottom {
