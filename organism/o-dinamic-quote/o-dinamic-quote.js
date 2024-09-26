@@ -128,7 +128,6 @@ const areasInsertMobile = async(data) => {
   const getUl = document.querySelector('.o-dinamic-quote__section-list')
   if(getUl){
     data.forEach((area) => {
-      console.log(area)
       htmlToInner += `<li class="o-dinamic-floor-st" data-area="${area.name}">${area.description}</li>`
     })
     getUl.innerHTML = htmlToInner
@@ -185,8 +184,8 @@ const onColorArea = () => {
 
         const getTitleSection = document.querySelector('.o-dinamic-quote__area-title')
         const description = filterSection[0].description.replace(/(\r\n|\n|\r)/g, "<br>");
-
-        getTitleSection.innerHTML = `<h3>${description}</h3>`
+        const splitDescription = description.split('<br>')
+        getTitleSection.innerHTML = `<h3 class="o-dinamic-quote__area-title"> ${splitDescription[0]} <br> <span class="o-dinamic-quote__area-title-span">${splitDescription[1]}</span> </h3>`
 
         mouseCurrent.classList.add(`has-default`)
       })

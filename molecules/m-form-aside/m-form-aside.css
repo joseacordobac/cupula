@@ -28,14 +28,14 @@
 }
 
 .m-form-aside__name-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--main-color);
 }
 
 .m-form-aside__asesor-picture {
   width: 9rem;
   border-radius: 50%;
-  height: 7rem;
+  height: 6rem;
   object-fit: cover;
 }
 

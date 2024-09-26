@@ -339,6 +339,12 @@
   right: 14px;
 }
 
+.o-dinamic-quote__area-title-span {
+  font-size: 1.7rem;
+  position: relative;
+  top: -4px;
+}
+
 /** Step four */
 .o-dinamic-quote__cardspay{
   height: var(--step-height);
