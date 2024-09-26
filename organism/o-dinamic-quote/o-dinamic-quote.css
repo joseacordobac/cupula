@@ -259,8 +259,8 @@
   font-weight: bold;
   color: var(--main-color);
   position: absolute;
-  top: 5rem;
-  width: 100%;
+  top: 4rem;
+  width:100%;
 }
 
 .o-dinamic-quote-floor svg{
