@@ -67,6 +67,10 @@
     gap: 0px;
   }
 
+  .m-card-compare__content img{
+    max-height: 165px;
+  }
+
   .m-card-compare__body{
     gap: 1rem;
   }
