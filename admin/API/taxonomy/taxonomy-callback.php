@@ -9,7 +9,7 @@ class TaxonomyCallback
 
     $terms = get_terms(array(
       'taxonomy' => 'filtro',
-      'hide_empty' => false,
+      'hide_empty' => true,
       'parent' => $id_parent
     ));
 
