@@ -81,8 +81,8 @@ const htmlSliderDeparment = (data) => {
 
   if(insertHTML){
     data.forEach(({fields}) => {    
-      const { areas, planes, datos_generales} = fields
-      dataSelected.generalData = datos_generales
+      const { areas, planes, datos_payments} = fields
+      dataSelected.generalData = datos_payments
 
       planes.forEach(({ data,  plane_img}, index) => {
 
@@ -272,7 +272,7 @@ const fetchTaxonomyAPI = async () => {
 /** Insert information in card */
 const insertDataCard = (cardContent, type) => {
 
-  const datapagos = dataSelected.distribución.datos_generales
+  const datapagos = dataSelected.distribución.datos_payments
   const getCardContent = document.querySelector(cardContent)
   const getToInner = getCardContent.querySelector('.o-dinamic-quote_card-num__title-sub')
   const numData = stringNumDecimal(datapagos[type])
@@ -313,7 +313,7 @@ const showCotization = (data) => {
         'piso' : dataSelected.piso,
         'area' : data.areas,
         'distribución' : data.planes[slideIndex],
-        'datosPagos': data.datos_generales
+        'datosPagos': data.datos_payments
       }
       
       const hiddenStep = document.querySelector('.o-dinamic-quote__steps')
@@ -321,9 +321,9 @@ const showCotization = (data) => {
 
       insertSelectedInfo()
     
-      insertDataCard('.o-dialog-form-card--first', 'separa')
-      insertDataCard('.o-dialog-form-card--second', 'paga_restante')
-      insertDataCard('.o-dialog-form-card--third', 'valor_cuota')
+      insertDataCard('.o-dialog-form-card--first', 0)
+      insertDataCard('.o-dialog-form-card--second', 1)
+      insertDataCard('.o-dialog-form-card--third', 2)
 
       openModalCotization()
     })
