@@ -275,7 +275,7 @@ const insertDataCard = (cardContent, type) => {
   const datapagos = dataSelected.distribución.datos_payments
   const getCardContent = document.querySelector(cardContent)
   const getToInner = getCardContent.querySelector('.o-dinamic-quote_card-num__title-sub')
-  const numData = stringNumDecimal(datapagos[type])
+  const numData = datapagos[type].agregar_dato
   getToInner.innerHTML = `${numData}`
 
 }
