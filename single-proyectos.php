@@ -169,7 +169,7 @@ wp_enqueue_style('single-proyectos');
 
                     <div class="video-proyecto">
                         <?php template_part_atomic('molecules/m-youtube/m-youtube', array(
-                            'embed' => get_field('video_embed'),
+                            'embed' => get_field('project_video'),
                         ));?>
                     </div>
                     
