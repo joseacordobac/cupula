@@ -81,7 +81,9 @@ const htmlSliderDeparment = (data) => {
 
   if(insertHTML){
     data.forEach(({fields}) => {    
-      const { areas, planes} = fields
+      const { areas, planes, datos_generales} = fields
+      dataSelected.generalData = datos_generales
+
       planes.forEach(({ data,  plane_img}, index) => {
 
           aparmentInfo += `<div class="swiper-slide" data-index="${index}"><div class="o-dinamic-quote__slide-container"><div class="o-dinamic-quote__img-content"><img class="o-dinamic-quote__img" src="${plane_img}"></div>`
@@ -267,13 +269,15 @@ const fetchTaxonomyAPI = async () => {
 }
 
 
-
 /** Insert information in card */
 const insertDataCard = (cardContent, type) => {
+
+  const datapagos = dataSelected.distribución.datos_generales
   const getCardContent = document.querySelector(cardContent)
   const getToInner = getCardContent.querySelector('.o-dinamic-quote_card-num__title-sub')
-  const numData = stringNumDecimal(dataSelected.datosPagos[type])
+  const numData = stringNumDecimal(datapagos[type])
   getToInner.innerHTML = `${numData}`
+
 }
 
 /** Insert information in modal */
