@@ -322,8 +322,8 @@ const showCotization = (data) => {
       insertSelectedInfo()
     
       insertDataCard('.o-dialog-form-card--first', 0)
-      insertDataCard('.o-dialog-form-card--second', 1)
-      insertDataCard('.o-dialog-form-card--third', 2)
+      insertDataCard('.o-dialog-form-card--second', 2)
+      insertDataCard('.o-dialog-form-card--third', 1)
 
       openModalCotization()
     })
