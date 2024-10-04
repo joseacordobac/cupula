@@ -148,7 +148,7 @@ wp_enqueue_style('single-proyectos');
                         </div>
                         <div class="how-arrive__content">
                             <div class="how-arrive__map">
-                                <?php the_field('mapa'); ?>
+                            <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7606380454545!2d-75.79745129999999!3d4.8111127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387c0e6fd0da41%3A0x4237cc86f32ba580!2sSala%20de%20ventas%20Montevedra%20-%20CUPULA!5e0!3m2!1ses!2sco!4v1718236724361!5m2!1ses!2sco" width="600" height="450" allowfullscreen="allowfullscreen"></iframe>
                             </div>
                             <div class="how-arrive_information">
                                 <?php template_part_atomic('atoms/a-titles/a-titles', array(
