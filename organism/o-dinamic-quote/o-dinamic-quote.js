@@ -337,7 +337,7 @@ const openModalCotization = () => {
   const getBtn = document.querySelector('.o-dinamic-quote__cardpay-submit')
   const textarea = document.querySelector('.aparment-infomation textarea')
 
-  const textAreaInfor = `Apartamento: ${dataSelected.apartamento}\n Area: ${dataSelected.area}\n Piso: ${dataSelected.piso}\n Torre: ${dataSelected.torre}\n Plano: ${dataSelected.distribución.plane_img}`
+  const textAreaInfor = `Apartamento: ${dataSelected.apartamento}\n Area: ${dataSelected.area}\n Piso: ${dataSelected.piso}\n Torre: ${dataSelected.torre}\n Plano: ${dataSelected.distribución.plane_img} habitaciones: ${dataSelected.distribución}`
   textarea.value = textAreaInfor
 
 }
